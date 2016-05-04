@@ -1,4 +1,5 @@
 #!/bin/bash
+set -x
 
 source init.sh
 
@@ -6,6 +7,13 @@ ID=1
 for host in $HOSTS
 do
   ./zk/start.sh $host $ID
+  ID=$((ID + 1))
+done
+
+ID=1
+for host in $HOSTS
+do
+  ./mesos/master.sh $host $ID
   ID=$((ID + 1))
 done
 
