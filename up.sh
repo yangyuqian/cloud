@@ -2,6 +2,7 @@
 set -x
 
 source init.sh
+./reset.sh
 
 ID=1
 for host in $HOSTS
@@ -14,6 +15,13 @@ ID=1
 for host in $HOSTS
 do
   ./mesos/master.sh $host $ID
+  ID=$((ID + 1))
+done
+
+ID=1
+for host in $HOSTS
+do
+  ./mesos/slave.sh $host $ID
   ID=$((ID + 1))
 done
 

@@ -14,3 +14,5 @@ do
   init-docker-client $host
   pull-images $IMAGES
 done
+
+./reset.sh
