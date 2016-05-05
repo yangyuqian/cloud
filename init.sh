@@ -23,6 +23,8 @@ do
 
   ID=$((ID + 1))
 done
-export MESOS_ZK="$MESOS_ZK/mesos"
+export ZK_CLUSTER="$MESOS_ZK"
+export MESOS_ZK="$ZK_CLUSTER/mesos"
+export MARATHON_ZK="$ZK_CLUSTER/marathon"
 
 echo $MESOS_ZK

@@ -25,6 +25,13 @@ do
   ID=$((ID + 1))
 done
 
+ID=1
+for host in $HOSTS
+do
+  ./marathon/start.sh $host $ID
+  ID=$((ID + 1))
+done
+
 # sleep 1
 # echo "start zookeeper node"
 # docker run -d \
