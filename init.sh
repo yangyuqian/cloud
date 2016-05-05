@@ -2,6 +2,7 @@
 
 export HOSTS=`cat ./hosts`
 export IMAGES=`cat ./images`
+export USELESS_REGEX=`cat ./useless`
 
 function init-docker-client(){
   echo "DOCKER_HOST=tcp://$1:2375"
