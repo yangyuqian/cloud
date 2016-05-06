@@ -12,6 +12,7 @@ docker run -d \
   -e LIBPROCESS_IP=$1 \
   -e MESOS_IP=$1 \
   -e MESOS_MASTER=$MESOS_ZK \
+  -e DOCKER_API_VERSION=v1.21 \
   -v /sys/fs/cgroup:/sys/fs/cgroup \
   -v /var/run/docker.sock:/var/run/docker.sock \
   --name mesos-slave-node$2 --net host --privileged --restart always \
