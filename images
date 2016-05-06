@@ -2,3 +2,5 @@ mesoscloud/zookeeper:3.4.8-centos-7
 mesoscloud/mesos-master:0.24.1-centos-7
 mesoscloud/mesos-slave:0.24.1-centos-7
 mesoscloud/marathon:1.1.1-centos-7
+mesosphere/etcd-mesos:0.1.3
+yangyuqian/kubernetes:latest
