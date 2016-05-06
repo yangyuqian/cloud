@@ -4,6 +4,11 @@ export HOSTS=`cat ./hosts`
 export IMAGES=`cat ./images`
 export USELESS_REGEX=`cat ./useless`
 
+export ETCD_MASTER_IP=`tail -n 1 ./hosts`
+
+export KUBERNETES_MASTER_IP=`head -n 1 ./hosts`
+export KUBERNETES_MASTER=http://${KUBERNETES_MASTER_IP}:8888
+
 function init-docker-client(){
   echo "DOCKER_HOST=tcp://$1:2375"
   export DOCKER_HOST="tcp://$1:2375"
@@ -28,4 +33,7 @@ export ZK_CLUSTER="$MESOS_ZK"
 export MESOS_ZK="$ZK_CLUSTER/mesos"
 export MARATHON_ZK="$ZK_CLUSTER/marathon"
 
+export ETCD_IMAGE=`grep etcd ./images`
+
 echo $MESOS_ZK
+
