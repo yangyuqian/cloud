@@ -1,0 +1,33 @@
+I0507 02:57:42.598900    8434 mesos.go:75] new mesos cloud, master='zk://192.168.33.11:2181/mesos'
+I0507 02:57:42.599381    8434 replication_controller.go:220] Starting RC Manager
+I0507 02:57:42.603909    8434 nodecontroller.go:144] Sending events to api server.
+E0507 02:57:42.604335    8434 controllermanager.go:169] Failed to start service controller: the cloud provider does not support external load balancers.
+E0507 02:57:42.604473    8434 util.go:45] Metric for replenishment_controller already registered
+E0507 02:57:42.604537    8434 util.go:45] Metric for replenishment_controller already registered
+E0507 02:57:42.604546    8434 util.go:45] Metric for replenishment_controller already registered
+E0507 02:57:42.604553    8434 util.go:45] Metric for replenishment_controller already registered
+I0507 02:57:42.636538    8434 client.go:150] cloud master changed to '192.168.33.12:5050'
+I0507 02:57:42.650384    8434 controllermanager.go:234] Starting extensions/v1beta1 apis
+I0507 02:57:42.650398    8434 controllermanager.go:236] Starting horizontal pod controller.
+I0507 02:57:42.650487    8434 controllermanager.go:250] Starting daemon set controller
+I0507 02:57:42.650592    8434 controllermanager.go:256] Starting job controller
+I0507 02:57:42.650694    8434 controllermanager.go:262] Starting deployment controller
+I0507 02:57:42.650805    8434 controllermanager.go:268] Starting ReplicaSet controller
+I0507 02:57:42.651146    8434 plugins.go:291] Loaded volume plugin "kubernetes.io/host-path"
+I0507 02:57:42.651162    8434 plugins.go:291] Loaded volume plugin "kubernetes.io/nfs"
+I0507 02:57:42.651171    8434 plugins.go:291] Loaded volume plugin "kubernetes.io/aws-ebs"
+I0507 02:57:42.651178    8434 plugins.go:291] Loaded volume plugin "kubernetes.io/gce-pd"
+I0507 02:57:42.651186    8434 plugins.go:291] Loaded volume plugin "kubernetes.io/cinder"
+I0507 02:57:42.651394    8434 horizontal.go:125] Starting HPA Controller
+I0507 02:57:42.652407    8434 controller.go:223] Starting Daemon Sets controller manager
+W0507 02:57:42.654990    8434 request.go:347] Field selector: v1 - serviceaccounts - metadata.name - default: need to check if this is versioned correctly.
+W0507 02:57:42.678606    8434 request.go:347] Field selector: v1 - serviceaccounts - metadata.name - default: need to check if this is versioned correctly.
+E0507 02:57:42.680046    8434 reflector.go:316] pkg/controller/serviceaccount/serviceaccounts_controller.go:142: Failed to watch *api.ServiceAccount: too old resource version: 1 (9)
+W0507 02:57:43.682159    8434 request.go:347] Field selector: v1 - serviceaccounts - metadata.name - default: need to check if this is versioned correctly.
+W0507 02:57:43.684214    8434 request.go:347] Field selector: v1 - serviceaccounts - metadata.name - default: need to check if this is versioned correctly.
+I0507 02:58:45.895870    8434 client.go:150] cloud master changed to '192.168.33.13:5050'
+I0507 02:59:57.892684    8434 client.go:150] cloud master changed to '192.168.33.11:5050'
+W0507 03:02:52.812094    8434 request.go:347] Field selector: v1 - serviceaccounts - metadata.name - default: need to check if this is versioned correctly.
+E0507 03:02:53.080558    8434 nodecontroller.go:235] Error monitoring node status: client: etcd cluster is unavailable or misconfigured
+I0507 03:02:53.400941    8434 logs.go:41] Failed to connect to 192.168.33.11:2181: dial tcp 192.168.33.11:2181: getsockopt: connection refused
+I0507 03:02:54.401928    8434 logs.go:41] Failed to connect to 192.168.33.11:2181: dial tcp 192.168.33.11:2181: getsockopt: connection refused

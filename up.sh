@@ -34,3 +34,5 @@ done
 
 init-docker-client $KUBERNETES_MASTER_IP
 ./etcd/start.sh
+
+# ./k8s/start.sh

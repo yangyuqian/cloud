@@ -10,3 +10,4 @@ do
   docker images|grep -i none|awk '{print $3}'|xargs docker rmi
 done
 
+ps -ef|grep km|awk '{print $2}'|xargs kill -9

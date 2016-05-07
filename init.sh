@@ -8,6 +8,8 @@ export ETCD_MASTER_IP=`tail -n 1 ./hosts`
 
 export KUBERNETES_MASTER_IP=`head -n 1 ./hosts`
 export KUBERNETES_MASTER=http://${KUBERNETES_MASTER_IP}:8888
+export ZK_IP=$KUBERNETES_MASTER_IP
+export ZK_PORT=2181
 
 function init-docker-client(){
   echo "DOCKER_HOST=tcp://$1:2375"
@@ -37,3 +39,7 @@ export ETCD_IMAGE=`grep etcd ./images`
 
 echo $MESOS_ZK
 
+export K8S_API_PORT=8080
+export PATH=`pwd`/k8s:$PATH
+export MY_IP=192.168.33.10
+mkdir -p log
