@@ -1,33 +1,26 @@
-I0507 02:57:42.598900    8434 mesos.go:75] new mesos cloud, master='zk://192.168.33.11:2181/mesos'
-I0507 02:57:42.599381    8434 replication_controller.go:220] Starting RC Manager
-I0507 02:57:42.603909    8434 nodecontroller.go:144] Sending events to api server.
-E0507 02:57:42.604335    8434 controllermanager.go:169] Failed to start service controller: the cloud provider does not support external load balancers.
-E0507 02:57:42.604473    8434 util.go:45] Metric for replenishment_controller already registered
-E0507 02:57:42.604537    8434 util.go:45] Metric for replenishment_controller already registered
-E0507 02:57:42.604546    8434 util.go:45] Metric for replenishment_controller already registered
-E0507 02:57:42.604553    8434 util.go:45] Metric for replenishment_controller already registered
-I0507 02:57:42.636538    8434 client.go:150] cloud master changed to '192.168.33.12:5050'
-I0507 02:57:42.650384    8434 controllermanager.go:234] Starting extensions/v1beta1 apis
-I0507 02:57:42.650398    8434 controllermanager.go:236] Starting horizontal pod controller.
-I0507 02:57:42.650487    8434 controllermanager.go:250] Starting daemon set controller
-I0507 02:57:42.650592    8434 controllermanager.go:256] Starting job controller
-I0507 02:57:42.650694    8434 controllermanager.go:262] Starting deployment controller
-I0507 02:57:42.650805    8434 controllermanager.go:268] Starting ReplicaSet controller
-I0507 02:57:42.651146    8434 plugins.go:291] Loaded volume plugin "kubernetes.io/host-path"
-I0507 02:57:42.651162    8434 plugins.go:291] Loaded volume plugin "kubernetes.io/nfs"
-I0507 02:57:42.651171    8434 plugins.go:291] Loaded volume plugin "kubernetes.io/aws-ebs"
-I0507 02:57:42.651178    8434 plugins.go:291] Loaded volume plugin "kubernetes.io/gce-pd"
-I0507 02:57:42.651186    8434 plugins.go:291] Loaded volume plugin "kubernetes.io/cinder"
-I0507 02:57:42.651394    8434 horizontal.go:125] Starting HPA Controller
-I0507 02:57:42.652407    8434 controller.go:223] Starting Daemon Sets controller manager
-W0507 02:57:42.654990    8434 request.go:347] Field selector: v1 - serviceaccounts - metadata.name - default: need to check if this is versioned correctly.
-W0507 02:57:42.678606    8434 request.go:347] Field selector: v1 - serviceaccounts - metadata.name - default: need to check if this is versioned correctly.
-E0507 02:57:42.680046    8434 reflector.go:316] pkg/controller/serviceaccount/serviceaccounts_controller.go:142: Failed to watch *api.ServiceAccount: too old resource version: 1 (9)
-W0507 02:57:43.682159    8434 request.go:347] Field selector: v1 - serviceaccounts - metadata.name - default: need to check if this is versioned correctly.
-W0507 02:57:43.684214    8434 request.go:347] Field selector: v1 - serviceaccounts - metadata.name - default: need to check if this is versioned correctly.
-I0507 02:58:45.895870    8434 client.go:150] cloud master changed to '192.168.33.13:5050'
-I0507 02:59:57.892684    8434 client.go:150] cloud master changed to '192.168.33.11:5050'
-W0507 03:02:52.812094    8434 request.go:347] Field selector: v1 - serviceaccounts - metadata.name - default: need to check if this is versioned correctly.
-E0507 03:02:53.080558    8434 nodecontroller.go:235] Error monitoring node status: client: etcd cluster is unavailable or misconfigured
-I0507 03:02:53.400941    8434 logs.go:41] Failed to connect to 192.168.33.11:2181: dial tcp 192.168.33.11:2181: getsockopt: connection refused
-I0507 03:02:54.401928    8434 logs.go:41] Failed to connect to 192.168.33.11:2181: dial tcp 192.168.33.11:2181: getsockopt: connection refused
+I0509 09:08:50.108313    3138 replication_controller.go:220] Starting RC Manager
+I0509 09:08:50.112738    3138 mesos.go:75] new mesos cloud, master='zk://192.168.33.11:2181/mesos'
+I0509 09:08:50.112865    3138 nodecontroller.go:144] Sending events to api server.
+E0509 09:08:50.113285    3138 controllermanager.go:169] Failed to start service controller: the cloud provider does not support external load balancers.
+E0509 09:08:50.113474    3138 util.go:45] Metric for replenishment_controller already registered
+E0509 09:08:50.113544    3138 util.go:45] Metric for replenishment_controller already registered
+E0509 09:08:50.113552    3138 util.go:45] Metric for replenishment_controller already registered
+E0509 09:08:50.113559    3138 util.go:45] Metric for replenishment_controller already registered
+I0509 09:08:50.134894    3138 client.go:150] cloud master changed to '192.168.33.11:5050'
+I0509 09:08:50.152053    3138 controllermanager.go:234] Starting extensions/v1beta1 apis
+I0509 09:08:50.152068    3138 controllermanager.go:236] Starting horizontal pod controller.
+I0509 09:08:50.152176    3138 controllermanager.go:250] Starting daemon set controller
+I0509 09:08:50.152266    3138 controllermanager.go:256] Starting job controller
+I0509 09:08:50.152501    3138 controllermanager.go:262] Starting deployment controller
+I0509 09:08:50.152595    3138 controllermanager.go:268] Starting ReplicaSet controller
+I0509 09:08:50.153335    3138 horizontal.go:125] Starting HPA Controller
+I0509 09:08:50.153677    3138 controller.go:223] Starting Daemon Sets controller manager
+I0509 09:08:50.158336    3138 plugins.go:291] Loaded volume plugin "kubernetes.io/host-path"
+I0509 09:08:50.158370    3138 plugins.go:291] Loaded volume plugin "kubernetes.io/nfs"
+I0509 09:08:50.158387    3138 plugins.go:291] Loaded volume plugin "kubernetes.io/aws-ebs"
+I0509 09:08:50.158399    3138 plugins.go:291] Loaded volume plugin "kubernetes.io/gce-pd"
+I0509 09:08:50.158414    3138 plugins.go:291] Loaded volume plugin "kubernetes.io/cinder"
+W0509 09:08:50.159594    3138 request.go:347] Field selector: v1 - serviceaccounts - metadata.name - default: need to check if this is versioned correctly.
+W0509 09:08:50.171805    3138 request.go:347] Field selector: v1 - serviceaccounts - metadata.name - default: need to check if this is versioned correctly.
+W0509 09:14:34.175808    3138 request.go:347] Field selector: v1 - serviceaccounts - metadata.name - default: need to check if this is versioned correctly.
+E0509 09:14:53.140806    3138 reflector.go:316] pkg/controller/gc/gc_controller.go:85: Failed to watch *api.Pod: too old resource version: 3 (10)

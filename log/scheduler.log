@@ -1,40 +1,44 @@
-I0507 02:57:47.569702    8443 service.go:374] Hosting artifact 'km' at 'http://0.0.0.0:10251/km'
-I0507 02:57:47.569781    8443 service.go:503] prepared executor command "./km" with args '[./km minion --run-proxy=true --proxy-bindall=false --proxy-logv=0 --proxy-mode=userspace --path-override= --max-log-size=10Mi --max-log-backups=5 --max-log-age=7 --conntrack-max=0 --conntrack-tcp-timeout-established=0 --api-servers=192.168.33.10:8080 --v=0 --allow-privileged=false --suicide-timeout=20m0s --mesos-launch-grace-period=5m0s --mesos-cgroup-prefix=mesos --cadvisor-port=4194 --sync-frequency=10s --contain-pod-resources=true --enable-debugging-handlers=true --cluster-dns=10.10.10.10 --cluster-domain=cluster.local --housekeeping_interval=10s --global_housekeeping_interval=1m0s]'
-I0507 02:57:47.569823    8443 service.go:530] started with executor id 933b3e16c439fdaf_k8sm-executor
-I0507 02:57:47.571639    8443 service.go:1018] Framework configured with mesos user root
-I0507 02:57:47.572161    8443 ha.go:132] scheduler process entered standby stage
-I0507 02:57:47.572635    8443 service.go:640] self-electing in non-HA mode
-I0507 02:57:47.572882    8443 service.go:623] Starting HTTP interface
-I0507 02:57:47.572932    8443 ha.go:154] scheduler process entered master stage
-I0507 02:57:47.572951    8443 service.go:912] performing deferred initialization
-I0507 02:57:47.572965    8443 framework.go:182] initializing kubernetes mesos scheduler
-I0507 02:57:47.576342    8443 service.go:917] deferred init complete
-I0507 02:57:47.577857    8443 service.go:930] did not find framework ID in storage
-I0507 02:57:47.577874    8443 service.go:937] constructing mesos scheduler driver
-I0507 02:57:47.579257    8443 scheduler.go:212] found failover_timeout = 1281023h53m38.427387904s
-I0507 02:57:47.579291    8443 standalone.go:46] creating new standalone detector for &MasterInfo{Id:*master,Ip:*0,Port:*5050,Pid:*master@192.168.33.11:5050,Hostname:*192.168.33.11,Version:nil,Address:nil,XXX_unrecognized:[],}
-I0507 02:57:47.579410    8443 scheduler.go:334] Initializing mesos scheduler driver
-I0507 02:57:47.579483    8443 service.go:943] constructed mesos scheduler driver: &{<nil> 0xc820162200 <nil> 0xc820017c80 1 0xc8201854d0 0xc82020b260 false [] 4.611686018427388e+18 false 0xc82023be30 map[] map[] <nil> false <nil> false 0x4d8b40 0xc20d50 0xc820017ce0 {{0 0} 0 0 0 0} 0xc20bb0 0xc820017d40}
-I0507 02:57:47.579516    8443 ha.go:161] starting driver...
-I0507 02:57:47.579526    8443 scheduler.go:833] Starting the scheduler driver...
-I0507 02:57:47.579559    8443 http_transporter.go:383] listening on 0.0.0.0 port 54687
-I0507 02:57:47.579611    8443 scheduler.go:850] Mesos scheduler driver started with PID=scheduler(1)@127.0.1.1:54687
-I0507 02:57:47.579624    8443 scheduler.go:862] starting master detector *detector.Standalone: {initial: &MasterInfo{Id:*master,Ip:*0,Port:*5050,Pid:*master@192.168.33.11:5050,Hostname:*192.168.33.11,Version:nil,Address:nil,XXX_unrecognized:[],}}
-I0507 02:57:47.579646    8443 standalone.go:67] Detect()
-I0507 02:57:47.579651    8443 standalone.go:69] spinning up asyc master detector poller
-I0507 02:57:47.579660    8443 standalone.go:78] spawning asyc master detector listener
-I0507 02:57:47.579666    8443 scheduler.go:864] master detector started
-I0507 02:57:47.579671    8443 ha.go:164] driver started successfully and is running
-I0507 02:57:47.579717    8443 standalone.go:140] polling for master leadership at '192.168.33.11:5050'
-I0507 02:57:47.579722    8443 standalone.go:80] waiting for polled to send updates
-E0507 02:57:47.581462    8443 standalone.go:180] HTTP request failed with code 404: 404 Not Found
-E0507 02:58:17.581428    8443 standalone.go:180] HTTP request failed with code 404: 404 Not Found
-E0507 02:58:47.583272    8443 standalone.go:180] HTTP request failed with code 404: 404 Not Found
-E0507 02:59:17.583864    8443 standalone.go:180] HTTP request failed with code 404: 404 Not Found
-E0507 02:59:47.588949    8443 standalone.go:180] HTTP request failed with code 404: 404 Not Found
-E0507 03:00:17.588070    8443 standalone.go:180] HTTP request failed with code 404: 404 Not Found
-E0507 03:00:47.590686    8443 standalone.go:180] HTTP request failed with code 404: 404 Not Found
-E0507 03:01:17.589759    8443 standalone.go:180] HTTP request failed with code 404: 404 Not Found
-E0507 03:01:47.592657    8443 standalone.go:180] HTTP request failed with code 404: 404 Not Found
-E0507 03:02:17.592597    8443 standalone.go:180] HTTP request failed with code 404: 404 Not Found
-E0507 03:02:47.593127    8443 standalone.go:180] HTTP request failed with code 404: 404 Not Found
+I0509 09:08:55.109458    3146 service.go:374] Hosting artifact 'km' at 'http://0.0.0.0:10251/km'
+I0509 09:08:55.109584    3146 service.go:503] prepared executor command "./km" with args '[./km minion --run-proxy=true --proxy-bindall=false --proxy-logv=0 --proxy-mode=userspace --path-override= --max-log-size=10Mi --max-log-backups=5 --max-log-age=7 --conntrack-max=0 --conntrack-tcp-timeout-established=0 --api-servers=192.168.33.10:8080 --v=0 --allow-privileged=false --suicide-timeout=20m0s --mesos-launch-grace-period=5m0s --mesos-cgroup-prefix=mesos --cadvisor-port=4194 --sync-frequency=10s --contain-pod-resources=true --enable-debugging-handlers=true --cluster-dns=10.10.10.10 --cluster-domain=cluster.local --housekeeping_interval=10s --global_housekeeping_interval=1m0s]'
+I0509 09:08:55.109815    3146 service.go:530] started with executor id 933b3e16c439fdaf_k8sm-executor
+I0509 09:08:55.111910    3146 service.go:1018] Framework configured with mesos user root
+I0509 09:08:55.112494    3146 service.go:640] self-electing in non-HA mode
+I0509 09:08:55.112640    3146 ha.go:132] scheduler process entered standby stage
+I0509 09:08:55.112674    3146 service.go:623] Starting HTTP interface
+I0509 09:08:55.112796    3146 ha.go:154] scheduler process entered master stage
+I0509 09:08:55.112807    3146 service.go:912] performing deferred initialization
+I0509 09:08:55.112818    3146 framework.go:182] initializing kubernetes mesos scheduler
+I0509 09:08:55.117468    3146 service.go:917] deferred init complete
+I0509 09:08:55.119002    3146 service.go:930] did not find framework ID in storage
+I0509 09:08:55.119058    3146 service.go:937] constructing mesos scheduler driver
+I0509 09:08:55.122445    3146 scheduler.go:212] found failover_timeout = 1281023h53m38.427387904s
+I0509 09:08:55.122489    3146 standalone.go:46] creating new standalone detector for &MasterInfo{Id:*master,Ip:*0,Port:*5050,Pid:*master@192.168.33.11:5050,Hostname:*192.168.33.11,Version:nil,Address:nil,XXX_unrecognized:[],}
+I0509 09:08:55.122634    3146 scheduler.go:334] Initializing mesos scheduler driver
+I0509 09:08:55.122721    3146 service.go:943] constructed mesos scheduler driver: &{<nil> 0xc820158280 <nil> 0xc820086c60 1 0xc820090630 0xc820437810 false [] 4.611686018427388e+18 false 0xc82041f620 map[] map[] <nil> false <nil> false 0x4d8b40 0xc20d50 0xc820086cc0 {{0 0} 0 0 0 0} 0xc20bb0 0xc820086d20}
+I0509 09:08:55.122757    3146 ha.go:161] starting driver...
+I0509 09:08:55.122766    3146 scheduler.go:833] Starting the scheduler driver...
+I0509 09:08:55.122976    3146 http_transporter.go:383] listening on 0.0.0.0 port 45086
+I0509 09:08:55.123034    3146 scheduler.go:850] Mesos scheduler driver started with PID=scheduler(1)@127.0.1.1:45086
+I0509 09:08:55.123049    3146 scheduler.go:862] starting master detector *detector.Standalone: {initial: &MasterInfo{Id:*master,Ip:*0,Port:*5050,Pid:*master@192.168.33.11:5050,Hostname:*192.168.33.11,Version:nil,Address:nil,XXX_unrecognized:[],}}
+I0509 09:08:55.123077    3146 standalone.go:67] Detect()
+I0509 09:08:55.123082    3146 standalone.go:69] spinning up asyc master detector poller
+I0509 09:08:55.123089    3146 standalone.go:78] spawning asyc master detector listener
+I0509 09:08:55.123094    3146 scheduler.go:864] master detector started
+I0509 09:08:55.123100    3146 ha.go:164] driver started successfully and is running
+I0509 09:08:55.123131    3146 standalone.go:80] waiting for polled to send updates
+I0509 09:08:55.123133    3146 standalone.go:140] polling for master leadership at '192.168.33.11:5050'
+E0509 09:08:55.125019    3146 standalone.go:180] HTTP request failed with code 404: 404 Not Found
+E0509 09:09:25.126438    3146 standalone.go:180] HTTP request failed with code 404: 404 Not Found
+E0509 09:09:55.129701    3146 standalone.go:180] HTTP request failed with code 404: 404 Not Found
+E0509 09:10:25.129176    3146 standalone.go:180] HTTP request failed with code 404: 404 Not Found
+E0509 09:10:55.130979    3146 standalone.go:180] HTTP request failed with code 404: 404 Not Found
+E0509 09:11:25.133008    3146 standalone.go:180] HTTP request failed with code 404: 404 Not Found
+E0509 09:11:55.133319    3146 standalone.go:180] HTTP request failed with code 404: 404 Not Found
+E0509 09:12:25.133232    3146 standalone.go:180] HTTP request failed with code 404: 404 Not Found
+E0509 09:12:55.135012    3146 standalone.go:180] HTTP request failed with code 404: 404 Not Found
+E0509 09:13:25.134106    3146 standalone.go:180] HTTP request failed with code 404: 404 Not Found
+E0509 09:13:55.134644    3146 standalone.go:180] HTTP request failed with code 404: 404 Not Found
+E0509 09:14:25.135903    3146 standalone.go:180] HTTP request failed with code 404: 404 Not Found
+E0509 09:14:55.142060    3146 standalone.go:180] HTTP request failed with code 404: 404 Not Found
+E0509 09:15:25.141793    3146 standalone.go:180] HTTP request failed with code 404: 404 Not Found
+E0509 09:15:55.142701    3146 standalone.go:180] HTTP request failed with code 404: 404 Not Found

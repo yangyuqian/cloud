@@ -36,6 +36,7 @@ export MESOS_ZK="$ZK_CLUSTER/mesos"
 export MARATHON_ZK="$ZK_CLUSTER/marathon"
 
 export ETCD_IMAGE=`grep etcd ./images`
+export K8S_IMAGE=`grep yangyuqian/kubernetes ./images`
 
 echo $MESOS_ZK
 

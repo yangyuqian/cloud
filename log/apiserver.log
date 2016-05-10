@@ -22075,3 +22075,1229 @@ I0507 03:02:53.820122    8332 reflector.go:274] Listing and watching *api.Pod fr
 E0507 03:02:53.820425    8332 cacher.go:218] unexpected ListAndWatch error: pkg/storage/cacher.go:161: Failed to list *api.Namespace: client: etcd cluster is unavailable or misconfigured
 E0507 03:02:53.820484    8332 cacher.go:218] unexpected ListAndWatch error: pkg/storage/cacher.go:161: Failed to list *api.Pod: client: etcd cluster is unavailable or misconfigured
 I0507 03:02:54.394157    8332 logs.go:41] Failed to connect to 192.168.33.11:2181: dial tcp 192.168.33.11:2181: getsockopt: connection refused
+Flag --address has been deprecated, see --insecure-bind-address instead
+Flag --port has been deprecated, see --insecure-port instead
+I0509 09:08:45.510432    3130 interface.go:248] Default route transits interface "eth0"
+I0509 09:08:45.510553    3130 interface.go:93] Interface eth0 is up
+I0509 09:08:45.510693    3130 interface.go:138] Interface "eth0" has 2 addresses :[10.0.2.15/24 fe80::a00:27ff:fe98:dcaa/64].
+I0509 09:08:45.510711    3130 interface.go:105] Checking addr  10.0.2.15/24.
+I0509 09:08:45.510719    3130 interface.go:114] IP found 10.0.2.15
+I0509 09:08:45.510726    3130 interface.go:144] valid IPv4 address for interface "eth0" found as 10.0.2.15.
+I0509 09:08:45.510733    3130 interface.go:254] Choosing IP 10.0.2.15 
+I0509 09:08:45.510753    3130 genericapiserver.go:597] Will report 10.0.2.15 as public IP address.
+I0509 09:08:45.511635    3130 mesos.go:75] new mesos cloud, master='zk://192.168.33.11:2181/mesos'
+I0509 09:08:45.512361    3130 detect.go:120] Created new detector to watch [192.168.33.11:2181] /mesos
+I0509 09:08:45.512387    3130 detect.go:249] invoking detector boostrap
+I0509 09:08:45.512446    3130 detect.go:289] spawning detect()
+I0509 09:08:45.512586    3130 genericapiserver.go:274] Setting GenericAPIServer service IP to "10.10.10.1" (read-write).
+I0509 09:08:45.512598    3130 genericapiserver.go:287] Node port range unspecified. Defaulting to 30000-32767.
+I0509 09:08:45.515582    3130 detect.go:295] detecting children at .
+I0509 09:08:45.515615    3130 detect.go:303] watching children at .
+I0509 09:08:45.526475    3130 storage_factory.go:186] storing { podTemplates} in v1, reading as __internal from { <nil> /registry [http://192.168.33.11:4001]    false 50000}
+I0509 09:08:45.531647    3130 detect.go:393] Top node selected: 'json.info_0000000003'
+I0509 09:08:45.531697    3130 detect.go:160] changing leader node from "" -> "json.info_0000000003"
+I0509 09:08:45.532831    3130 storage_factory.go:186] storing { events} in v1, reading as __internal from { <nil> /registry [http://192.168.33.11:4001]    false 50000}
+I0509 09:08:45.533128    3130 storage_factory.go:186] storing { limitRanges} in v1, reading as __internal from { <nil> /registry [http://192.168.33.11:4001]    false 50000}
+I0509 09:08:45.533159    3130 reflector.go:274] Listing and watching *api.PodTemplate from pkg/storage/cacher.go:161
+I0509 09:08:45.533780    3130 storage_factory.go:186] storing { resourceQuotas} in v1, reading as __internal from { <nil> /registry [http://192.168.33.11:4001]    false 50000}
+I0509 09:08:45.533945    3130 storage_factory.go:186] storing { secrets} in v1, reading as __internal from { <nil> /registry [http://192.168.33.11:4001]    false 50000}
+I0509 09:08:45.534051    3130 storage_factory.go:186] storing { serviceAccounts} in v1, reading as __internal from { <nil> /registry [http://192.168.33.11:4001]    false 50000}
+I0509 09:08:45.534402    3130 storage_factory.go:186] storing { persistentVolumes} in v1, reading as __internal from { <nil> /registry [http://192.168.33.11:4001]    false 50000}
+I0509 09:08:45.534762    3130 storage_factory.go:186] storing { persistentVolumeClaims} in v1, reading as __internal from { <nil> /registry [http://192.168.33.11:4001]    false 50000}
+I0509 09:08:45.534828    3130 storage_factory.go:186] storing { configMaps} in v1, reading as __internal from { <nil> /registry [http://192.168.33.11:4001]    false 50000}
+I0509 09:08:45.534932    3130 storage_factory.go:186] storing { namespaces} in v1, reading as __internal from { <nil> /registry [http://192.168.33.11:4001]    false 50000}
+I0509 09:08:45.534982    3130 storage_factory.go:186] storing { endpoints} in v1, reading as __internal from { <nil> /registry [http://192.168.33.11:4001]    false 50000}
+I0509 09:08:45.535121    3130 storage_factory.go:186] storing { nodes} in v1, reading as __internal from { <nil> /registry [http://192.168.33.11:4001]    false 50000}
+I0509 09:08:45.535259    3130 storage_factory.go:186] storing { pods} in v1, reading as __internal from { <nil> /registry [http://192.168.33.11:4001]    false 50000}
+I0509 09:08:45.535395    3130 storage_factory.go:186] storing { services} in v1, reading as __internal from { <nil> /registry [http://192.168.33.11:4001]    false 50000}
+I0509 09:08:45.535594    3130 storage_factory.go:186] storing { services} in v1, reading as __internal from { <nil> /registry [http://192.168.33.11:4001]    false 50000}
+I0509 09:08:45.535718    3130 storage_factory.go:186] storing { replicationControllers} in v1, reading as __internal from { <nil> /registry [http://192.168.33.11:4001]    false 50000}
+I0509 09:08:45.535874    3130 storage_factory.go:186] storing {extensions thirdpartyresources} in extensions/v1beta1, reading as extensions/__internal from { <nil> /registry [http://192.168.33.11:4001]    false 50000}
+I0509 09:08:45.535944    3130 storage_factory.go:186] storing {extensions horizontalpodautoscalers} in autoscaling/v1, reading as extensions/__internal from { <nil> /registry [http://192.168.33.11:4001]    false 50000}
+I0509 09:08:45.536524    3130 storage_factory.go:186] storing { replicationControllers} in v1, reading as __internal from { <nil> /registry [http://192.168.33.11:4001]    false 50000}
+I0509 09:08:45.536627    3130 storage_factory.go:186] storing {extensions thirdpartyresources} in extensions/v1beta1, reading as extensions/__internal from { <nil> /registry [http://192.168.33.11:4001]    false 50000}
+I0509 09:08:45.536678    3130 storage_factory.go:186] storing {extensions daemonsets} in extensions/v1beta1, reading as extensions/__internal from { <nil> /registry [http://192.168.33.11:4001]    false 50000}
+I0509 09:08:45.534527    3130 detect.go:170] detected master info: &MasterInfo{Id:*20160509-090428-186755264-5050-1,Ip:*186755264,Port:*5050,Pid:*master@192.168.33.11:5050,Hostname:*192.168.33.11,Version:*0.24.1,Address:&Address{Hostname:*192.168.33.11,Ip:*192.168.33.11,Port:*5050,XXX_unrecognized:[],},XXX_unrecognized:[],}
+I0509 09:08:45.538548    3130 client.go:150] cloud master changed to '192.168.33.11:5050'
+I0509 09:08:45.538580    3130 detect.go:340] resting before next detection cycle
+I0509 09:08:45.538799    3130 reflector.go:274] Listing and watching *api.Namespace from pkg/storage/cacher.go:161
+I0509 09:08:45.540144    3130 reflector.go:274] Listing and watching *api.LimitRange from pkg/storage/cacher.go:161
+I0509 09:08:45.540783    3130 reflector.go:274] Listing and watching *api.ResourceQuota from pkg/storage/cacher.go:161
+I0509 09:08:45.540963    3130 reflector.go:274] Listing and watching *api.Secret from pkg/storage/cacher.go:161
+I0509 09:08:45.541035    3130 storage_factory.go:186] storing {extensions deployments} in extensions/v1beta1, reading as extensions/__internal from { <nil> /registry [http://192.168.33.11:4001]    false 50000}
+I0509 09:08:45.541149    3130 reflector.go:274] Listing and watching *api.ServiceAccount from pkg/storage/cacher.go:161
+I0509 09:08:45.541262    3130 reflector.go:274] Listing and watching *api.PersistentVolume from pkg/storage/cacher.go:161
+I0509 09:08:45.541386    3130 reflector.go:274] Listing and watching *api.PersistentVolumeClaim from pkg/storage/cacher.go:161
+I0509 09:08:45.541500    3130 reflector.go:274] Listing and watching *api.ConfigMap from pkg/storage/cacher.go:161
+I0509 09:08:45.542929    3130 meta.go:46] Calling Accessor on non-internal object: *api.PodTemplateList
+I0509 09:08:45.543394    3130 reflector.go:274] Listing and watching *api.Endpoints from pkg/storage/cacher.go:161
+I0509 09:08:45.545025    3130 reflector.go:274] Listing and watching *api.Node from pkg/storage/cacher.go:161
+I0509 09:08:45.541424    3130 storage_factory.go:186] storing {extensions jobs} in batch/v1, reading as extensions/__internal from { <nil> /registry [http://192.168.33.11:4001]    false 50000}
+I0509 09:08:45.545268    3130 reflector.go:274] Listing and watching *api.Pod from pkg/storage/cacher.go:161
+I0509 09:08:45.545298    3130 storage_factory.go:186] storing {extensions ingresses} in extensions/v1beta1, reading as extensions/__internal from { <nil> /registry [http://192.168.33.11:4001]    false 50000}
+I0509 09:08:45.545459    3130 storage_factory.go:186] storing {extensions podsecuritypolicy} in extensions/v1beta1, reading as extensions/__internal from { <nil> /registry [http://192.168.33.11:4001]    false 50000}
+I0509 09:08:45.545516    3130 reflector.go:274] Listing and watching *api.Service from pkg/storage/cacher.go:161
+I0509 09:08:45.545867    3130 meta.go:46] Calling Accessor on non-internal object: *api.PersistentVolumeList
+I0509 09:08:45.545945    3130 storage_factory.go:186] storing {extensions replicasets} in extensions/v1beta1, reading as extensions/__internal from { <nil> /registry [http://192.168.33.11:4001]    false 50000}
+I0509 09:08:45.546036    3130 reflector.go:274] Listing and watching *api.ReplicationController from pkg/storage/cacher.go:161
+I0509 09:08:45.546086    3130 storage_factory.go:186] storing {autoscaling horizontalpodautoscalers} in autoscaling/v1, reading as autoscaling/__internal from { <nil> /registry [http://192.168.33.11:4001]    false 50000}
+I0509 09:08:45.546164    3130 storage_factory.go:186] storing {batch jobs} in batch/v1, reading as batch/__internal from { <nil> /registry [http://192.168.33.11:4001]    false 50000}
+I0509 09:08:45.546217    3130 reflector.go:274] Listing and watching *extensions.HorizontalPodAutoscaler from pkg/storage/cacher.go:161
+I0509 09:08:45.546253    3130 storage_factory.go:186] storing {apps petsets} in apps/v1alpha1, reading as apps/__internal from { <nil> /registry [http://192.168.33.11:4001]    false 50000}
+I0509 09:08:45.546960    3130 reflector.go:274] Listing and watching *api.ReplicationController from pkg/storage/cacher.go:161
+I0509 09:08:45.547833    3130 reflector.go:274] Listing and watching *extensions.DaemonSet from pkg/storage/cacher.go:161
+I0509 09:08:45.552796    3130 meta.go:46] Calling Accessor on non-internal object: *api.ResourceQuotaList
+I0509 09:08:45.553152    3130 meta.go:46] Calling Accessor on non-internal object: *api.LimitRangeList
+I0509 09:08:45.553788    3130 meta.go:46] Calling Accessor on non-internal object: *api.NamespaceList
+I0509 09:08:45.555119    3130 meta.go:46] Calling Accessor on non-internal object: *api.PodList
+I0509 09:08:45.555612    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:08:45.556113    3130 meta.go:46] Calling Accessor on non-internal object: *api.ReplicationControllerList
+I0509 09:08:45.556315    3130 reflector.go:274] Listing and watching *apps.PetSet from pkg/storage/cacher.go:161
+I0509 09:08:45.543036    3130 reflector.go:274] Listing and watching *extensions.Deployment from pkg/storage/cacher.go:161
+I0509 09:08:45.556614    3130 meta.go:46] Calling Accessor on non-internal object: *extensions.HorizontalPodAutoscalerList
+I0509 09:08:45.556958    3130 meta.go:46] Calling Accessor on non-internal object: *api.SecretList
+I0509 09:08:45.557224    3130 meta.go:46] Calling Accessor on non-internal object: *api.ServiceAccountList
+I0509 09:08:45.557424    3130 reflector.go:274] Listing and watching *batch.Job from pkg/storage/cacher.go:161
+I0509 09:08:45.557578    3130 meta.go:46] Calling Accessor on non-internal object: *api.ConfigMapList
+I0509 09:08:45.557613    3130 reflector.go:274] Listing and watching *extensions.Ingress from pkg/storage/cacher.go:161
+I0509 09:08:45.557782    3130 reflector.go:274] Listing and watching *extensions.PodSecurityPolicy from pkg/storage/cacher.go:161
+I0509 09:08:45.557969    3130 reflector.go:274] Listing and watching *extensions.ReplicaSet from pkg/storage/cacher.go:161
+I0509 09:08:45.558111    3130 meta.go:46] Calling Accessor on non-internal object: *extensions.DaemonSetList
+I0509 09:08:45.558158    3130 reflector.go:274] Listing and watching *extensions.HorizontalPodAutoscaler from pkg/storage/cacher.go:161
+I0509 09:08:45.558311    3130 reflector.go:274] Listing and watching *batch.Job from pkg/storage/cacher.go:161
+I0509 09:08:45.561135    3130 meta.go:46] Calling Accessor on non-internal object: *api.ServiceList
+I0509 09:08:45.568148    3130 meta.go:46] Calling Accessor on non-internal object: *api.PersistentVolumeClaimList
+I0509 09:08:45.568424    3130 meta.go:46] Calling Accessor on non-internal object: *api.ReplicationControllerList
+I0509 09:08:45.568680    3130 meta.go:46] Calling Accessor on non-internal object: *api.EndpointsList
+I0509 09:08:45.568868    3130 meta.go:46] Calling Accessor on non-internal object: *apps.PetSetList
+I0509 09:08:45.569170    3130 meta.go:46] Calling Accessor on non-internal object: *extensions.ReplicaSetList
+I0509 09:08:45.569329    3130 meta.go:46] Calling Accessor on non-internal object: *extensions.HorizontalPodAutoscalerList
+I0509 09:08:45.569532    3130 meta.go:46] Calling Accessor on non-internal object: *extensions.DeploymentList
+I0509 09:08:45.569811    3130 meta.go:46] Calling Accessor on non-internal object: *extensions.IngressList
+I0509 09:08:45.570349    3130 meta.go:46] Calling Accessor on non-internal object: *batch.JobList
+I0509 09:08:45.570550    3130 meta.go:46] Calling Accessor on non-internal object: *batch.JobList
+I0509 09:08:45.573331    3130 meta.go:46] Calling Accessor on non-internal object: *extensions.PodSecurityPolicyList
+W0509 09:08:45.610410    3130 controller.go:262] Resetting endpoints for master service "kubernetes" to kind:"" apiVersion:"" 
+[restful] 2016/05/09 09:08:45 log.go:30: [restful/swagger] listing is available at https://10.0.2.15:443/swaggerapi/
+[restful] 2016/05/09 09:08:45 log.go:30: [restful/swagger] https://10.0.2.15:443/swaggerui/ is mapped to folder /swagger-ui/
+I0509 09:08:45.638565    3130 genericapiserver.go:694] Serving insecurely on 192.168.33.10:8080
+I0509 09:08:50.117110    3130 meta.go:46] Calling Accessor on non-internal object: *api.ResourceQuotaList
+I0509 09:08:50.117369    3130 handlers.go:161] GET /api/v1/resourcequotas?resourceVersion=0: (1.047425ms) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/resource-quota-controller] 192.168.33.10:47057]
+I0509 09:08:50.117614    3130 meta.go:46] Calling Accessor on non-internal object: *api.PodList
+I0509 09:08:50.117803    3130 handlers.go:161] GET /api/v1/pods?resourceVersion=0: (295.082µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/replication-controller] 192.168.33.10:47048]
+I0509 09:08:50.118023    3130 meta.go:46] Calling Accessor on non-internal object: *api.ServiceList
+I0509 09:08:50.118184    3130 handlers.go:161] GET /api/v1/services?resourceVersion=0: (283.501µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/endpoint-controller] 192.168.33.10:47047]
+I0509 09:08:50.118439    3130 meta.go:46] Calling Accessor on non-internal object: *api.ReplicationControllerList
+I0509 09:08:50.118621    3130 handlers.go:161] GET /api/v1/replicationcontrollers?resourceVersion=0: (350.498µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/replication-controller] 192.168.33.10:47049]
+I0509 09:08:50.118891    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:08:50.119027    3130 handlers.go:161] GET /api/v1/nodes?resourceVersion=0: (317.997µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-controller] 192.168.33.10:47050]
+I0509 09:08:50.120080    3130 meta.go:46] Calling Accessor on non-internal object: *api.PodList
+I0509 09:08:50.120181    3130 handlers.go:161] GET /api/v1/pods?resourceVersion=0: (1.012492ms) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/endpoint-controller] 192.168.33.10:47052]
+I0509 09:08:50.120809    3130 meta.go:46] Calling Accessor on non-internal object: *api.SecretList
+I0509 09:08:50.121047    3130 handlers.go:161] GET /api/v1/secrets?resourceVersion=0: (4.982605ms) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/resource-quota-controller] 192.168.33.10:47058]
+I0509 09:08:50.121310    3130 meta.go:46] Calling Accessor on non-internal object: *api.PodList
+I0509 09:08:50.121465    3130 handlers.go:161] GET /api/v1/pods?resourceVersion=0: (269.982µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-controller] 192.168.33.10:47054]
+I0509 09:08:50.123055    3130 meta.go:46] Calling Accessor on non-internal object: *api.PodList
+I0509 09:08:50.123184    3130 handlers.go:161] GET /api/v1/pods?fieldSelector=status.phase%21%3DPending%2Cstatus.phase%21%3DRunning%2Cstatus.phase%21%3DUnknown&resourceVersion=0: (1.622763ms) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/garbage-collector] 192.168.33.10:47055]
+I0509 09:08:50.124204    3130 meta.go:46] Calling Accessor on non-internal object: *api.PersistentVolumeClaimList
+I0509 09:08:50.124337    3130 handlers.go:161] GET /api/v1/persistentvolumeclaims?resourceVersion=0: (309.072µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/resource-quota-controller] 192.168.33.10:47057]
+I0509 09:08:50.124575    3130 handlers.go:161] GET /api: (5.342035ms) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/resource-quota-controller] 192.168.33.10:47051]
+I0509 09:08:50.124644    3130 meta.go:46] Calling Accessor on non-internal object: *api.ServiceList
+I0509 09:08:50.124770    3130 handlers.go:161] GET /api/v1/services?resourceVersion=0: (278.564µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/resource-quota-controller] 192.168.33.10:47059]
+I0509 09:08:50.125110    3130 meta.go:46] Calling Accessor on non-internal object: *api.PodList
+I0509 09:08:50.125281    3130 handlers.go:161] GET /api/v1/pods?resourceVersion=0: (541.128µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/resource-quota-controller] 192.168.33.10:47063]
+I0509 09:08:50.125320    3130 meta.go:46] Calling Accessor on non-internal object: *extensions.DaemonSetList
+I0509 09:08:50.125496    3130 meta.go:46] Calling Accessor on non-internal object: *api.ReplicationControllerList
+I0509 09:08:50.125603    3130 handlers.go:161] GET /api/v1/replicationcontrollers?resourceVersion=0: (221.66µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/resource-quota-controller] 192.168.33.10:47061]
+I0509 09:08:50.125772    3130 handlers.go:161] GET /apis/extensions/v1beta1/daemonsets?resourceVersion=0: (610.186µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-controller] 192.168.33.10:47060]
+I0509 09:08:50.125938    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:08:50.126038    3130 handlers.go:161] GET /api/v1/nodes?resourceVersion=0: (217.352µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47064]
+I0509 09:08:50.126624    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:08:50.126769    3130 handlers.go:161] GET /api/v1/nodes: (3.509123ms) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-controller] 192.168.33.10:47056]
+I0509 09:08:50.135807    3130 handlers.go:161] GET /apis: (29.969µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/resource-quota-controller] 192.168.33.10:47069]
+I0509 09:08:50.137874    3130 handlers.go:161] GET /api: (193.252µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0] 192.168.33.10:47069]
+I0509 09:08:50.140668    3130 handlers.go:161] GET /apis: (13.202µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0] 192.168.33.10:47069]
+I0509 09:08:50.141522    3130 handlers.go:161] GET /apis/apps/v1alpha1: (157.261µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0] 192.168.33.10:47069]
+I0509 09:08:50.142100    3130 handlers.go:161] GET /apis/autoscaling/v1: (114.09µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0] 192.168.33.10:47069]
+I0509 09:08:50.142883    3130 handlers.go:161] GET /apis/batch/v1: (155.391µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0] 192.168.33.10:47069]
+I0509 09:08:50.143866    3130 handlers.go:161] GET /apis/extensions/v1beta1: (416.431µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0] 192.168.33.10:47069]
+I0509 09:08:50.145194    3130 handlers.go:161] GET /api/v1: (587.586µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0] 192.168.33.10:47069]
+I0509 09:08:50.147568    3130 handlers.go:161] GET /api: (239.685µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/namespace-controller] 192.168.33.10:47069]
+I0509 09:08:50.148332    3130 handlers.go:161] GET /apis: (251.633µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/namespace-controller] 192.168.33.10:47069]
+I0509 09:08:50.149110    3130 handlers.go:161] GET /apis/apps/v1alpha1: (104.54µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/namespace-controller] 192.168.33.10:47069]
+I0509 09:08:50.149804    3130 handlers.go:161] GET /apis/autoscaling/v1: (77.324µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/namespace-controller] 192.168.33.10:47069]
+I0509 09:08:50.150408    3130 handlers.go:161] GET /apis/batch/v1: (62.197µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/namespace-controller] 192.168.33.10:47069]
+I0509 09:08:50.150903    3130 handlers.go:161] GET /apis/extensions/v1beta1: (240.272µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/namespace-controller] 192.168.33.10:47069]
+I0509 09:08:50.151740    3130 handlers.go:161] GET /api/v1: (356.009µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/namespace-controller] 192.168.33.10:47069]
+I0509 09:08:50.153695    3130 meta.go:46] Calling Accessor on non-internal object: *api.PodList
+I0509 09:08:50.153790    3130 handlers.go:161] GET /api/v1/pods?resourceVersion=0: (362.179µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/job-controller] 192.168.33.10:47069]
+I0509 09:08:50.155516    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:08:50.155635    3130 handlers.go:161] GET /api/v1/nodes?resourceVersion=0: (292.834µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/daemon-set-controller] 192.168.33.10:47080]
+I0509 09:08:50.155825    3130 meta.go:46] Calling Accessor on non-internal object: *batch.JobList
+I0509 09:08:50.155962    3130 handlers.go:161] GET /apis/batch/v1/jobs?resourceVersion=0: (228.891µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/job-controller] 192.168.33.10:47077]
+I0509 09:08:50.156190    3130 meta.go:46] Calling Accessor on non-internal object: *api.NamespaceList
+I0509 09:08:50.156346    3130 handlers.go:161] GET /api/v1/namespaces?resourceVersion=0: (292.991µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/namespace-controller] 192.168.33.10:47078]
+I0509 09:08:50.158588    3130 meta.go:46] Calling Accessor on non-internal object: *extensions.HorizontalPodAutoscalerList
+I0509 09:08:50.158758    3130 handlers.go:161] GET /apis/extensions/v1beta1/horizontalpodautoscalers?resourceVersion=0: (365.909µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/horizontal-pod-autoscaler] 192.168.33.10:47069]
+I0509 09:08:50.158950    3130 meta.go:46] Calling Accessor on non-internal object: *extensions.DaemonSetList
+I0509 09:08:50.159044    3130 handlers.go:161] GET /apis/extensions/v1beta1/daemonsets?resourceVersion=0: (199.55µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/daemon-set-controller] 192.168.33.10:47079]
+I0509 09:08:50.159319    3130 meta.go:46] Calling Accessor on non-internal object: *extensions.DeploymentList
+I0509 09:08:50.159452    3130 handlers.go:161] GET /apis/extensions/v1beta1/deployments?resourceVersion=0: (250.381µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/deployment-controller] 192.168.33.10:47081]
+I0509 09:08:50.160499    3130 meta.go:46] Calling Accessor on non-internal object: *api.PodList
+I0509 09:08:50.160594    3130 handlers.go:161] GET /api/v1/pods?resourceVersion=0: (209.558µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/daemon-set-controller] 192.168.33.10:47076]
+I0509 09:08:50.161614    3130 meta.go:46] Calling Accessor on non-internal object: *api.NamespaceList
+I0509 09:08:50.161846    3130 handlers.go:161] GET /api/v1/namespaces?resourceVersion=0: (714.279µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/service-account-controller] 192.168.33.10:47076]
+I0509 09:08:50.161975    3130 meta.go:46] Calling Accessor on non-internal object: *api.PodList
+I0509 09:08:50.162088    3130 handlers.go:161] GET /api/v1/pods?resourceVersion=0: (216.738µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/replicaset-controller] 192.168.33.10:47088]
+I0509 09:08:50.162501    3130 meta.go:46] Calling Accessor on non-internal object: *api.ServiceAccountList
+I0509 09:08:50.162631    3130 handlers.go:161] GET /api/v1/serviceaccounts?fieldSelector=metadata.name%3Ddefault&resourceVersion=0: (245.364µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/service-account-controller] 192.168.33.10:47086]
+I0509 09:08:50.162941    3130 meta.go:46] Calling Accessor on non-internal object: *api.PersistentVolumeClaimList
+I0509 09:08:50.163030    3130 handlers.go:161] GET /api/v1/persistentvolumeclaims?resourceVersion=0: (274.719µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/persistent-volume-binder] 192.168.33.10:47084]
+I0509 09:08:50.163221    3130 meta.go:46] Calling Accessor on non-internal object: *api.PersistentVolumeList
+I0509 09:08:50.163337    3130 handlers.go:161] GET /api/v1/persistentvolumes?resourceVersion=0: (249.892µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/persistent-volume-binder] 192.168.33.10:47081]
+I0509 09:08:50.163522    3130 meta.go:46] Calling Accessor on non-internal object: *api.PersistentVolumeList
+I0509 09:08:50.163607    3130 handlers.go:161] GET /api/v1/persistentvolumes?resourceVersion=0: (190.73µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/persistent-volume-recycler] 192.168.33.10:47085]
+I0509 09:08:50.163855    3130 meta.go:46] Calling Accessor on non-internal object: *extensions.ReplicaSetList
+I0509 09:08:50.163957    3130 handlers.go:161] GET /apis/extensions/v1beta1/replicasets?resourceVersion=0: (227.057µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/deployment-controller] 192.168.33.10:47069]
+I0509 09:08:50.164419    3130 meta.go:46] Calling Accessor on non-internal object: *api.PodList
+I0509 09:08:50.164483    3130 handlers.go:161] GET /api/v1/pods?resourceVersion=0: (178.283µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/deployment-controller] 192.168.33.10:47077]
+I0509 09:08:50.164724    3130 meta.go:46] Calling Accessor on non-internal object: *extensions.ReplicaSetList
+I0509 09:08:50.164811    3130 handlers.go:161] GET /apis/extensions/v1beta1/replicasets?resourceVersion=0: (2.658045ms) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/replicaset-controller] 192.168.33.10:47087]
+I0509 09:08:50.180266    3130 handlers.go:161] POST /api/v1/namespaces/default/serviceaccounts: (5.310321ms) 201 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/service-account-controller] 192.168.33.10:47069]
+I0509 09:08:53.128197    3130 handlers.go:161] GET /api/v1/watch/nodes?resourceVersion=3&timeoutSeconds=3: (3.000536413s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47064]
+I0509 09:08:54.131114    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:08:54.131237    3130 handlers.go:161] GET /api/v1/nodes?resourceVersion=0: (393.512µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47064]
+I0509 09:08:55.116825    3130 meta.go:46] Calling Accessor on non-internal object: *api.PodList
+I0509 09:08:55.117051    3130 handlers.go:161] GET /api/v1/pods: (3.300384ms) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0] 192.168.33.10:47100]
+I0509 09:08:55.133374    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:08:55.133541    3130 handlers.go:161] GET /api/v1/nodes: (1.554249ms) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-controller] 192.168.33.10:47069]
+I0509 09:08:57.132476    3130 handlers.go:161] GET /api/v1/watch/nodes?resourceVersion=3&timeoutSeconds=3: (3.000624904s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47064]
+I0509 09:08:58.136256    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:08:58.136390    3130 handlers.go:161] GET /api/v1/nodes?resourceVersion=0: (485.102µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47064]
+I0509 09:09:00.138902    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:09:00.139045    3130 handlers.go:161] GET /api/v1/nodes: (2.655383ms) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-controller] 192.168.33.10:47069]
+I0509 09:09:01.138951    3130 handlers.go:161] GET /api/v1/watch/nodes?resourceVersion=3&timeoutSeconds=3: (3.001692466s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47064]
+I0509 09:09:02.141666    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:09:02.141880    3130 handlers.go:161] GET /api/v1/nodes?resourceVersion=0: (1.443318ms) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47064]
+I0509 09:09:05.142174    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:09:05.142373    3130 handlers.go:161] GET /api/v1/nodes: (1.691653ms) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-controller] 192.168.33.10:47069]
+I0509 09:09:05.143069    3130 handlers.go:161] GET /api/v1/watch/nodes?resourceVersion=3&timeoutSeconds=3: (3.000521932s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47064]
+I0509 09:09:06.145799    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:09:06.145902    3130 handlers.go:161] GET /api/v1/nodes?resourceVersion=0: (356.161µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47064]
+I0509 09:09:09.148488    3130 handlers.go:161] GET /api/v1/watch/nodes?resourceVersion=3&timeoutSeconds=3: (3.00179908s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47064]
+I0509 09:09:10.146534    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:09:10.147286    3130 handlers.go:161] GET /api/v1/nodes: (2.282739ms) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-controller] 192.168.33.10:47064]
+I0509 09:09:10.151135    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:09:10.151253    3130 handlers.go:161] GET /api/v1/nodes?resourceVersion=0: (402.225µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47064]
+I0509 09:09:13.153563    3130 handlers.go:161] GET /api/v1/watch/nodes?resourceVersion=3&timeoutSeconds=3: (3.001444682s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47064]
+I0509 09:09:14.157123    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:09:14.157262    3130 handlers.go:161] GET /api/v1/nodes?resourceVersion=0: (799.358µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47064]
+I0509 09:09:15.151352    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:09:15.151857    3130 handlers.go:161] GET /api/v1/nodes: (2.708623ms) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-controller] 192.168.33.10:47069]
+I0509 09:09:17.158790    3130 handlers.go:161] GET /api/v1/watch/nodes?resourceVersion=3&timeoutSeconds=3: (3.000846236s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47064]
+I0509 09:09:18.124383    3130 handlers.go:161] GET /api/v1/watch/replicationcontrollers?resourceVersion=3&timeoutSeconds=28: (28.000729539s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/replication-controller] 192.168.33.10:47049]
+I0509 09:09:18.127946    3130 handlers.go:161] GET /api/v1/watch/services?resourceVersion=7&timeoutSeconds=28: (28.000623379s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/endpoint-controller] 192.168.33.10:47047]
+I0509 09:09:18.160730    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:09:18.161005    3130 handlers.go:161] GET /api/v1/nodes?resourceVersion=0: (781.692µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47064]
+I0509 09:09:18.166187    3130 handlers.go:161] GET /apis/batch/v1/watch/jobs?resourceVersion=3&timeoutSeconds=28: (28.001159654s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/job-controller] 192.168.33.10:47076]
+I0509 09:09:18.173479    3130 handlers.go:161] GET /apis/extensions/v1beta1/watch/horizontalpodautoscalers?resourceVersion=3&timeoutSeconds=28: (28.00085386s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/horizontal-pod-autoscaler] 192.168.33.10:47078]
+I0509 09:09:18.173711    3130 handlers.go:161] GET /apis/extensions/v1beta1/watch/daemonsets?resourceVersion=3&timeoutSeconds=28: (28.000920869s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/daemon-set-controller] 192.168.33.10:47082]
+I0509 09:09:18.175450    3130 handlers.go:161] GET /apis/extensions/v1beta1/watch/deployments?resourceVersion=3&timeoutSeconds=28: (28.000802864s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/deployment-controller] 192.168.33.10:47083]
+I0509 09:09:18.177184    3130 handlers.go:161] GET /apis/extensions/v1beta1/watch/replicasets?resourceVersion=3&timeoutSeconds=28: (28.000677318s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/replicaset-controller] 192.168.33.10:47098]
+I0509 09:09:19.127403    3130 meta.go:46] Calling Accessor on non-internal object: *api.ReplicationControllerList
+I0509 09:09:19.127639    3130 handlers.go:161] GET /api/v1/replicationcontrollers?resourceVersion=0: (603.05µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/replication-controller] 192.168.33.10:47076]
+I0509 09:09:19.130090    3130 meta.go:46] Calling Accessor on non-internal object: *api.ServiceList
+I0509 09:09:19.130348    3130 handlers.go:161] GET /api/v1/services?resourceVersion=0: (542.476µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/endpoint-controller] 192.168.33.10:47069]
+I0509 09:09:19.168362    3130 meta.go:46] Calling Accessor on non-internal object: *batch.JobList
+I0509 09:09:19.168643    3130 handlers.go:161] GET /apis/batch/v1/jobs?resourceVersion=0: (571.722µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/job-controller] 192.168.33.10:47107]
+I0509 09:09:19.176565    3130 meta.go:46] Calling Accessor on non-internal object: *extensions.HorizontalPodAutoscalerList
+I0509 09:09:19.176743    3130 handlers.go:161] GET /apis/extensions/v1beta1/horizontalpodautoscalers?resourceVersion=0: (562.797µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/horizontal-pod-autoscaler] 192.168.33.10:47108]
+I0509 09:09:19.177121    3130 meta.go:46] Calling Accessor on non-internal object: *extensions.DeploymentList
+I0509 09:09:19.177240    3130 handlers.go:161] GET /apis/extensions/v1beta1/deployments?resourceVersion=0: (326.886µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/deployment-controller] 192.168.33.10:47110]
+I0509 09:09:19.177552    3130 meta.go:46] Calling Accessor on non-internal object: *extensions.DaemonSetList
+I0509 09:09:19.177651    3130 handlers.go:161] GET /apis/extensions/v1beta1/daemonsets?resourceVersion=0: (247.066µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/daemon-set-controller] 192.168.33.10:47109]
+I0509 09:09:19.179236    3130 meta.go:46] Calling Accessor on non-internal object: *extensions.ReplicaSetList
+I0509 09:09:19.179374    3130 handlers.go:161] GET /apis/extensions/v1beta1/replicasets?resourceVersion=0: (460.048µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/replicaset-controller] 192.168.33.10:47111]
+I0509 09:09:20.155148    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:09:20.155403    3130 handlers.go:161] GET /api/v1/nodes: (1.733491ms) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-controller] 192.168.33.10:47112]
+I0509 09:09:21.164537    3130 handlers.go:161] GET /api/v1/watch/nodes?resourceVersion=3&timeoutSeconds=3: (3.002627278s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47064]
+I0509 09:09:22.166509    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:09:22.166683    3130 handlers.go:161] GET /api/v1/nodes?resourceVersion=0: (559.825µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47064]
+I0509 09:09:25.159048    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:09:25.159240    3130 handlers.go:161] GET /api/v1/nodes: (2.366267ms) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-controller] 192.168.33.10:47112]
+I0509 09:09:25.167958    3130 handlers.go:161] GET /api/v1/watch/nodes?resourceVersion=3&timeoutSeconds=3: (3.000512639s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47064]
+I0509 09:09:26.171997    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:09:26.172132    3130 handlers.go:161] GET /api/v1/nodes?resourceVersion=0: (575.45µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47064]
+I0509 09:09:29.177116    3130 handlers.go:161] GET /api/v1/watch/nodes?resourceVersion=3&timeoutSeconds=3: (3.003908996s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47064]
+I0509 09:09:30.162349    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:09:30.162543    3130 handlers.go:161] GET /api/v1/nodes: (1.590357ms) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-controller] 192.168.33.10:47064]
+I0509 09:09:30.178424    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:09:30.178568    3130 handlers.go:161] GET /api/v1/nodes?resourceVersion=0: (551.844µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47064]
+I0509 09:09:33.180024    3130 handlers.go:161] GET /api/v1/watch/nodes?resourceVersion=3&timeoutSeconds=3: (3.000865668s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47064]
+I0509 09:09:34.182122    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:09:34.182329    3130 handlers.go:161] GET /api/v1/nodes?resourceVersion=0: (546.734µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47064]
+I0509 09:09:35.165724    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:09:35.165928    3130 handlers.go:161] GET /api/v1/nodes: (1.855503ms) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-controller] 192.168.33.10:47112]
+I0509 09:09:37.183643    3130 handlers.go:161] GET /api/v1/watch/nodes?resourceVersion=3&timeoutSeconds=3: (3.000622948s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47064]
+I0509 09:09:38.185192    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:09:38.185330    3130 handlers.go:161] GET /api/v1/nodes?resourceVersion=0: (553.431µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47064]
+I0509 09:09:40.169249    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:09:40.169501    3130 handlers.go:161] GET /api/v1/nodes: (1.662359ms) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-controller] 192.168.33.10:47112]
+I0509 09:09:41.187301    3130 handlers.go:161] GET /api/v1/watch/nodes?resourceVersion=3&timeoutSeconds=3: (3.001167435s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47064]
+I0509 09:09:42.189328    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:09:42.189449    3130 handlers.go:161] GET /api/v1/nodes?resourceVersion=0: (449.33µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47064]
+I0509 09:09:45.172506    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:09:45.172669    3130 handlers.go:161] GET /api/v1/nodes: (1.823092ms) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-controller] 192.168.33.10:47112]
+I0509 09:09:45.191511    3130 handlers.go:161] GET /api/v1/watch/nodes?resourceVersion=3&timeoutSeconds=3: (3.001454645s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47064]
+I0509 09:09:46.193614    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:09:46.193828    3130 handlers.go:161] GET /api/v1/nodes?resourceVersion=0: (788.696µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47064]
+I0509 09:09:47.130955    3130 handlers.go:161] GET /api/v1/watch/replicationcontrollers?resourceVersion=3&timeoutSeconds=28: (28.002284028s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/replication-controller] 192.168.33.10:47076]
+I0509 09:09:47.132258    3130 handlers.go:161] GET /api/v1/watch/services?resourceVersion=7&timeoutSeconds=28: (28.000966453s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/endpoint-controller] 192.168.33.10:47069]
+I0509 09:09:47.171882    3130 handlers.go:161] GET /apis/batch/v1/watch/jobs?resourceVersion=3&timeoutSeconds=28: (28.002517603s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/job-controller] 192.168.33.10:47107]
+I0509 09:09:47.178484    3130 handlers.go:161] GET /apis/extensions/v1beta1/watch/deployments?resourceVersion=3&timeoutSeconds=28: (28.000408802s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/deployment-controller] 192.168.33.10:47110]
+I0509 09:09:47.178551    3130 handlers.go:161] GET /apis/extensions/v1beta1/watch/horizontalpodautoscalers?resourceVersion=3&timeoutSeconds=28: (28.000711184s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/horizontal-pod-autoscaler] 192.168.33.10:47108]
+I0509 09:09:47.178917    3130 handlers.go:161] GET /apis/extensions/v1beta1/watch/daemonsets?resourceVersion=3&timeoutSeconds=28: (28.00063166s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/daemon-set-controller] 192.168.33.10:47109]
+I0509 09:09:47.180795    3130 handlers.go:161] GET /apis/extensions/v1beta1/watch/replicasets?resourceVersion=3&timeoutSeconds=28: (28.000681726s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/replicaset-controller] 192.168.33.10:47111]
+I0509 09:09:48.138414    3130 meta.go:46] Calling Accessor on non-internal object: *api.ReplicationControllerList
+I0509 09:09:48.138602    3130 handlers.go:161] GET /api/v1/replicationcontrollers?resourceVersion=0: (516.205µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/replication-controller] 192.168.33.10:47076]
+I0509 09:09:48.138782    3130 meta.go:46] Calling Accessor on non-internal object: *api.ServiceList
+I0509 09:09:48.139003    3130 handlers.go:161] GET /api/v1/services?resourceVersion=0: (617.348µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/endpoint-controller] 192.168.33.10:47112]
+I0509 09:09:48.177435    3130 meta.go:46] Calling Accessor on non-internal object: *batch.JobList
+I0509 09:09:48.177735    3130 handlers.go:161] GET /apis/batch/v1/jobs?resourceVersion=0: (577.304µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/job-controller] 192.168.33.10:47119]
+I0509 09:09:48.181590    3130 meta.go:46] Calling Accessor on non-internal object: *extensions.HorizontalPodAutoscalerList
+I0509 09:09:48.181620    3130 meta.go:46] Calling Accessor on non-internal object: *extensions.DaemonSetList
+I0509 09:09:48.181764    3130 handlers.go:161] GET /apis/extensions/v1beta1/horizontalpodautoscalers?resourceVersion=0: (394.866µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/horizontal-pod-autoscaler] 192.168.33.10:47120]
+I0509 09:09:48.181764    3130 handlers.go:161] GET /apis/extensions/v1beta1/daemonsets?resourceVersion=0: (383.159µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/daemon-set-controller] 192.168.33.10:47121]
+I0509 09:09:48.182062    3130 meta.go:46] Calling Accessor on non-internal object: *extensions.DeploymentList
+I0509 09:09:48.182188    3130 handlers.go:161] GET /apis/extensions/v1beta1/deployments?resourceVersion=0: (287.424µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/deployment-controller] 192.168.33.10:47123]
+I0509 09:09:48.184005    3130 meta.go:46] Calling Accessor on non-internal object: *extensions.ReplicaSetList
+I0509 09:09:48.184142    3130 handlers.go:161] GET /apis/extensions/v1beta1/replicasets?resourceVersion=0: (284.849µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/replicaset-controller] 192.168.33.10:47124]
+I0509 09:09:49.196998    3130 handlers.go:161] GET /api/v1/watch/nodes?resourceVersion=3&timeoutSeconds=3: (3.002025538s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47064]
+I0509 09:09:50.177464    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:09:50.178123    3130 handlers.go:161] GET /api/v1/nodes: (2.479942ms) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-controller] 192.168.33.10:47064]
+I0509 09:09:50.199164    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:09:50.199360    3130 handlers.go:161] GET /api/v1/nodes?resourceVersion=0: (729.172µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47064]
+I0509 09:09:53.201329    3130 handlers.go:161] GET /api/v1/watch/nodes?resourceVersion=3&timeoutSeconds=3: (3.000704135s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47064]
+I0509 09:09:54.202931    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:09:54.203098    3130 handlers.go:161] GET /api/v1/nodes?resourceVersion=0: (593.978µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47064]
+I0509 09:09:55.182949    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:09:55.183152    3130 handlers.go:161] GET /api/v1/nodes: (1.593101ms) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-controller] 192.168.33.10:47125]
+I0509 09:09:57.205765    3130 handlers.go:161] GET /api/v1/watch/nodes?resourceVersion=3&timeoutSeconds=3: (3.001896454s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47064]
+I0509 09:09:58.209157    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:09:58.209296    3130 handlers.go:161] GET /api/v1/nodes?resourceVersion=0: (614.935µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47064]
+I0509 09:10:00.188470    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:10:00.189009    3130 handlers.go:161] GET /api/v1/nodes: (2.079219ms) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-controller] 192.168.33.10:47125]
+I0509 09:10:01.212098    3130 handlers.go:161] GET /api/v1/watch/nodes?resourceVersion=3&timeoutSeconds=3: (3.001990524s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47064]
+I0509 09:10:02.219029    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:10:02.219176    3130 handlers.go:161] GET /api/v1/nodes?resourceVersion=0: (492.019µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47064]
+I0509 09:10:05.193080    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:10:05.193314    3130 handlers.go:161] GET /api/v1/nodes: (2.406943ms) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-controller] 192.168.33.10:47125]
+I0509 09:10:05.227941    3130 handlers.go:161] GET /api/v1/watch/nodes?resourceVersion=3&timeoutSeconds=3: (3.008151545s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47064]
+I0509 09:10:06.315425    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:10:06.315617    3130 handlers.go:161] GET /api/v1/nodes?resourceVersion=0: (686.985µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47064]
+I0509 09:10:09.317583    3130 handlers.go:161] GET /api/v1/watch/nodes?resourceVersion=3&timeoutSeconds=3: (3.00092461s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47064]
+I0509 09:10:10.197339    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:10:10.197542    3130 handlers.go:161] GET /api/v1/nodes: (1.723128ms) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-controller] 192.168.33.10:47064]
+I0509 09:10:10.321186    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:10:10.321410    3130 handlers.go:161] GET /api/v1/nodes?resourceVersion=0: (831.285µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47064]
+I0509 09:10:13.324545    3130 handlers.go:161] GET /api/v1/watch/nodes?resourceVersion=3&timeoutSeconds=3: (3.002040073s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47064]
+I0509 09:10:14.326498    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:10:14.326695    3130 handlers.go:161] GET /api/v1/nodes?resourceVersion=0: (574.534µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47064]
+I0509 09:10:15.201187    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:10:15.203125    3130 handlers.go:161] GET /api/v1/nodes: (3.981798ms) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-controller] 192.168.33.10:47125]
+I0509 09:10:16.141140    3130 handlers.go:161] GET /api/v1/watch/replicationcontrollers?resourceVersion=3&timeoutSeconds=28: (28.001683118s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/replication-controller] 192.168.33.10:47076]
+I0509 09:10:16.141284    3130 handlers.go:161] GET /api/v1/watch/services?resourceVersion=7&timeoutSeconds=28: (28.001376853s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/endpoint-controller] 192.168.33.10:47112]
+I0509 09:10:16.179533    3130 handlers.go:161] GET /apis/batch/v1/watch/jobs?resourceVersion=3&timeoutSeconds=28: (28.000719562s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/job-controller] 192.168.33.10:47119]
+I0509 09:10:16.183101    3130 handlers.go:161] GET /apis/extensions/v1beta1/watch/daemonsets?resourceVersion=3&timeoutSeconds=28: (28.000484423s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/daemon-set-controller] 192.168.33.10:47120]
+I0509 09:10:16.183283    3130 handlers.go:161] GET /apis/extensions/v1beta1/watch/deployments?resourceVersion=3&timeoutSeconds=28: (28.000340956s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/deployment-controller] 192.168.33.10:47123]
+I0509 09:10:16.183431    3130 handlers.go:161] GET /apis/extensions/v1beta1/watch/horizontalpodautoscalers?resourceVersion=3&timeoutSeconds=28: (28.000666604s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/horizontal-pod-autoscaler] 192.168.33.10:47121]
+I0509 09:10:16.185864    3130 handlers.go:161] GET /apis/extensions/v1beta1/watch/replicasets?resourceVersion=3&timeoutSeconds=28: (28.00054591s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/replicaset-controller] 192.168.33.10:47124]
+I0509 09:10:17.143493    3130 meta.go:46] Calling Accessor on non-internal object: *api.ReplicationControllerList
+I0509 09:10:17.143612    3130 handlers.go:161] GET /api/v1/replicationcontrollers?resourceVersion=0: (408.001µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/replication-controller] 192.168.33.10:47076]
+I0509 09:10:17.143925    3130 meta.go:46] Calling Accessor on non-internal object: *api.ServiceList
+I0509 09:10:17.144057    3130 handlers.go:161] GET /api/v1/services?resourceVersion=0: (290.846µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/endpoint-controller] 192.168.33.10:47125]
+I0509 09:10:17.181892    3130 meta.go:46] Calling Accessor on non-internal object: *batch.JobList
+I0509 09:10:17.182023    3130 handlers.go:161] GET /apis/batch/v1/jobs?resourceVersion=0: (451.248µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/job-controller] 192.168.33.10:47129]
+I0509 09:10:17.186101    3130 meta.go:46] Calling Accessor on non-internal object: *extensions.DaemonSetList
+I0509 09:10:17.186265    3130 handlers.go:161] GET /apis/extensions/v1beta1/daemonsets?resourceVersion=0: (419.268µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/daemon-set-controller] 192.168.33.10:47131]
+I0509 09:10:17.186284    3130 meta.go:46] Calling Accessor on non-internal object: *extensions.HorizontalPodAutoscalerList
+I0509 09:10:17.186482    3130 meta.go:46] Calling Accessor on non-internal object: *extensions.DeploymentList
+I0509 09:10:17.186593    3130 handlers.go:161] GET /apis/extensions/v1beta1/deployments?resourceVersion=0: (193.631µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/deployment-controller] 192.168.33.10:47132]
+I0509 09:10:17.187141    3130 handlers.go:161] GET /apis/extensions/v1beta1/horizontalpodautoscalers?resourceVersion=0: (1.307255ms) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/horizontal-pod-autoscaler] 192.168.33.10:47130]
+I0509 09:10:17.189175    3130 meta.go:46] Calling Accessor on non-internal object: *extensions.ReplicaSetList
+I0509 09:10:17.189335    3130 handlers.go:161] GET /apis/extensions/v1beta1/replicasets?resourceVersion=0: (514.892µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/replicaset-controller] 192.168.33.10:47133]
+I0509 09:10:17.329277    3130 handlers.go:161] GET /api/v1/watch/nodes?resourceVersion=3&timeoutSeconds=3: (3.001710754s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47064]
+I0509 09:10:18.335589    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:10:18.335735    3130 handlers.go:161] GET /api/v1/nodes?resourceVersion=0: (466.716µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47064]
+I0509 09:10:20.207729    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:10:20.207916    3130 handlers.go:161] GET /api/v1/nodes: (1.636277ms) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-controller] 192.168.33.10:47134]
+I0509 09:10:21.337324    3130 handlers.go:161] GET /api/v1/watch/nodes?resourceVersion=3&timeoutSeconds=3: (3.000806021s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47064]
+I0509 09:10:22.339365    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:10:22.339528    3130 handlers.go:161] GET /api/v1/nodes?resourceVersion=0: (599.002µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47064]
+I0509 09:10:25.213016    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:10:25.213228    3130 handlers.go:161] GET /api/v1/nodes: (2.327908ms) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-controller] 192.168.33.10:47134]
+I0509 09:10:25.341058    3130 handlers.go:161] GET /api/v1/watch/nodes?resourceVersion=3&timeoutSeconds=3: (3.00066182s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47064]
+I0509 09:10:26.343722    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:10:26.343845    3130 handlers.go:161] GET /api/v1/nodes?resourceVersion=0: (449.466µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47064]
+I0509 09:10:29.346669    3130 handlers.go:161] GET /api/v1/watch/nodes?resourceVersion=3&timeoutSeconds=3: (3.00213964s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47064]
+I0509 09:10:30.219116    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:10:30.219356    3130 handlers.go:161] GET /api/v1/nodes: (2.565952ms) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-controller] 192.168.33.10:47064]
+I0509 09:10:30.348670    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:10:30.348921    3130 handlers.go:161] GET /api/v1/nodes?resourceVersion=0: (651.31µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47064]
+I0509 09:10:33.350582    3130 handlers.go:161] GET /api/v1/watch/nodes?resourceVersion=3&timeoutSeconds=3: (3.00066513s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47064]
+I0509 09:10:34.351955    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:10:34.352060    3130 handlers.go:161] GET /api/v1/nodes?resourceVersion=0: (399.669µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47064]
+I0509 09:10:35.223975    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:10:35.224123    3130 handlers.go:161] GET /api/v1/nodes: (1.970465ms) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-controller] 192.168.33.10:47134]
+I0509 09:10:37.354227    3130 handlers.go:161] GET /api/v1/watch/nodes?resourceVersion=3&timeoutSeconds=3: (3.001422455s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47064]
+I0509 09:10:38.355877    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:10:38.356056    3130 handlers.go:161] GET /api/v1/nodes?resourceVersion=0: (623.517µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47064]
+I0509 09:10:40.229320    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:10:40.229574    3130 handlers.go:161] GET /api/v1/nodes: (2.296959ms) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-controller] 192.168.33.10:47134]
+I0509 09:10:41.357471    3130 handlers.go:161] GET /api/v1/watch/nodes?resourceVersion=3&timeoutSeconds=3: (3.000869395s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47064]
+I0509 09:10:42.360304    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:10:42.360498    3130 handlers.go:161] GET /api/v1/nodes?resourceVersion=0: (597.604µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47064]
+I0509 09:10:45.145971    3130 handlers.go:161] GET /api/v1/watch/replicationcontrollers?resourceVersion=3&timeoutSeconds=28: (28.001794408s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/replication-controller] 192.168.33.10:47076]
+I0509 09:10:45.146219    3130 handlers.go:161] GET /api/v1/watch/services?resourceVersion=7&timeoutSeconds=28: (28.001676531s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/endpoint-controller] 192.168.33.10:47125]
+I0509 09:10:45.183471    3130 handlers.go:161] GET /apis/batch/v1/watch/jobs?resourceVersion=3&timeoutSeconds=28: (28.000492867s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/job-controller] 192.168.33.10:47129]
+I0509 09:10:45.187216    3130 handlers.go:161] GET /apis/extensions/v1beta1/watch/daemonsets?resourceVersion=3&timeoutSeconds=28: (28.000534499s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/daemon-set-controller] 192.168.33.10:47131]
+I0509 09:10:45.187655    3130 handlers.go:161] GET /apis/extensions/v1beta1/watch/deployments?resourceVersion=3&timeoutSeconds=28: (28.000461658s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/deployment-controller] 192.168.33.10:47132]
+I0509 09:10:45.188319    3130 handlers.go:161] GET /apis/extensions/v1beta1/watch/horizontalpodautoscalers?resourceVersion=3&timeoutSeconds=28: (28.000546266s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/horizontal-pod-autoscaler] 192.168.33.10:47130]
+I0509 09:10:45.190605    3130 handlers.go:161] GET /apis/extensions/v1beta1/watch/replicasets?resourceVersion=3&timeoutSeconds=28: (28.000532617s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/replicaset-controller] 192.168.33.10:47133]
+I0509 09:10:45.234296    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:10:45.234492    3130 handlers.go:161] GET /api/v1/nodes: (1.924757ms) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-controller] 192.168.33.10:47076]
+I0509 09:10:45.362471    3130 handlers.go:161] GET /api/v1/watch/nodes?resourceVersion=3&timeoutSeconds=3: (3.000894342s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47064]
+I0509 09:10:46.149393    3130 meta.go:46] Calling Accessor on non-internal object: *api.ServiceList
+I0509 09:10:46.149497    3130 meta.go:46] Calling Accessor on non-internal object: *api.ReplicationControllerList
+I0509 09:10:46.149531    3130 handlers.go:161] GET /api/v1/services?resourceVersion=0: (516.141µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/endpoint-controller] 192.168.33.10:47076]
+I0509 09:10:46.150359    3130 handlers.go:161] GET /api/v1/replicationcontrollers?resourceVersion=0: (1.091598ms) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/replication-controller] 192.168.33.10:47134]
+I0509 09:10:46.185341    3130 meta.go:46] Calling Accessor on non-internal object: *batch.JobList
+I0509 09:10:46.185518    3130 handlers.go:161] GET /apis/batch/v1/jobs?resourceVersion=0: (640.491µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/job-controller] 192.168.33.10:47141]
+I0509 09:10:46.189550    3130 meta.go:46] Calling Accessor on non-internal object: *extensions.DeploymentList
+I0509 09:10:46.189700    3130 handlers.go:161] GET /apis/extensions/v1beta1/deployments?resourceVersion=0: (253.772µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/deployment-controller] 192.168.33.10:47143]
+I0509 09:10:46.189700    3130 meta.go:46] Calling Accessor on non-internal object: *extensions.DaemonSetList
+I0509 09:10:46.189824    3130 handlers.go:161] GET /apis/extensions/v1beta1/daemonsets?resourceVersion=0: (534.068µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/daemon-set-controller] 192.168.33.10:47142]
+I0509 09:10:46.190089    3130 meta.go:46] Calling Accessor on non-internal object: *extensions.HorizontalPodAutoscalerList
+I0509 09:10:46.190348    3130 handlers.go:161] GET /apis/extensions/v1beta1/horizontalpodautoscalers?resourceVersion=0: (565.748µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/horizontal-pod-autoscaler] 192.168.33.10:47144]
+I0509 09:10:46.192372    3130 meta.go:46] Calling Accessor on non-internal object: *extensions.ReplicaSetList
+I0509 09:10:46.192493    3130 handlers.go:161] GET /apis/extensions/v1beta1/replicasets?resourceVersion=0: (417.336µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/replicaset-controller] 192.168.33.10:47145]
+I0509 09:10:46.370401    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:10:46.370582    3130 handlers.go:161] GET /api/v1/nodes?resourceVersion=0: (673.745µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47146]
+I0509 09:10:49.372735    3130 handlers.go:161] GET /api/v1/watch/nodes?resourceVersion=3&timeoutSeconds=3: (3.00164338s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47146]
+I0509 09:10:50.238661    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:10:50.238911    3130 handlers.go:161] GET /api/v1/nodes: (2.189526ms) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-controller] 192.168.33.10:47146]
+I0509 09:10:50.374420    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:10:50.374579    3130 handlers.go:161] GET /api/v1/nodes?resourceVersion=0: (609.077µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47146]
+I0509 09:10:53.378144    3130 handlers.go:161] GET /api/v1/watch/nodes?resourceVersion=3&timeoutSeconds=3: (3.002795465s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47146]
+I0509 09:10:54.379987    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:10:54.380161    3130 handlers.go:161] GET /api/v1/nodes?resourceVersion=0: (613.682µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47146]
+I0509 09:10:55.243371    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:10:55.243560    3130 handlers.go:161] GET /api/v1/nodes: (2.361297ms) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-controller] 192.168.33.10:47147]
+I0509 09:10:57.383517    3130 handlers.go:161] GET /api/v1/watch/nodes?resourceVersion=3&timeoutSeconds=3: (3.002227488s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47146]
+I0509 09:10:58.386165    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:10:58.386273    3130 handlers.go:161] GET /api/v1/nodes?resourceVersion=0: (410.284µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47146]
+I0509 09:11:00.247899    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:11:00.248133    3130 handlers.go:161] GET /api/v1/nodes: (1.727001ms) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-controller] 192.168.33.10:47147]
+I0509 09:11:01.388460    3130 handlers.go:161] GET /api/v1/watch/nodes?resourceVersion=3&timeoutSeconds=3: (3.001550159s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47146]
+I0509 09:11:02.390214    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:11:02.390355    3130 handlers.go:161] GET /api/v1/nodes?resourceVersion=0: (487.566µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47146]
+I0509 09:11:05.254087    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:11:05.254242    3130 handlers.go:161] GET /api/v1/nodes: (2.224826ms) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-controller] 192.168.33.10:47147]
+I0509 09:11:05.393202    3130 handlers.go:161] GET /api/v1/watch/nodes?resourceVersion=3&timeoutSeconds=3: (3.002142729s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47146]
+I0509 09:11:06.396052    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:11:06.396227    3130 handlers.go:161] GET /api/v1/nodes?resourceVersion=0: (571.064µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47146]
+I0509 09:11:09.397804    3130 handlers.go:161] GET /api/v1/watch/nodes?resourceVersion=3&timeoutSeconds=3: (3.000894702s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47146]
+I0509 09:11:10.258739    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:11:10.258896    3130 handlers.go:161] GET /api/v1/nodes: (1.640898ms) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-controller] 192.168.33.10:47146]
+I0509 09:11:10.400528    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:11:10.400724    3130 handlers.go:161] GET /api/v1/nodes?resourceVersion=0: (738.949µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47146]
+I0509 09:11:13.402337    3130 handlers.go:161] GET /api/v1/watch/nodes?resourceVersion=3&timeoutSeconds=3: (3.000775898s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47146]
+I0509 09:11:14.151192    3130 handlers.go:161] GET /api/v1/watch/services?resourceVersion=7&timeoutSeconds=28: (28.00057265s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/endpoint-controller] 192.168.33.10:47076]
+I0509 09:11:14.151556    3130 handlers.go:161] GET /api/v1/watch/replicationcontrollers?resourceVersion=3&timeoutSeconds=28: (28.000623268s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/replication-controller] 192.168.33.10:47134]
+I0509 09:11:14.186637    3130 handlers.go:161] GET /apis/batch/v1/watch/jobs?resourceVersion=3&timeoutSeconds=28: (28.000481998s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/job-controller] 192.168.33.10:47141]
+I0509 09:11:14.191691    3130 handlers.go:161] GET /apis/extensions/v1beta1/watch/horizontalpodautoscalers?resourceVersion=3&timeoutSeconds=28: (28.000378965s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/horizontal-pod-autoscaler] 192.168.33.10:47144]
+I0509 09:11:14.191724    3130 handlers.go:161] GET /apis/extensions/v1beta1/watch/daemonsets?resourceVersion=3&timeoutSeconds=28: (28.001052293s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/daemon-set-controller] 192.168.33.10:47142]
+I0509 09:11:14.191691    3130 handlers.go:161] GET /apis/extensions/v1beta1/watch/deployments?resourceVersion=3&timeoutSeconds=28: (28.001226931s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/deployment-controller] 192.168.33.10:47143]
+I0509 09:11:14.193755    3130 handlers.go:161] GET /apis/extensions/v1beta1/watch/replicasets?resourceVersion=3&timeoutSeconds=28: (28.000520833s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/replicaset-controller] 192.168.33.10:47145]
+I0509 09:11:14.405263    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:11:14.405460    3130 handlers.go:161] GET /api/v1/nodes?resourceVersion=0: (564.508µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47146]
+I0509 09:11:15.154865    3130 meta.go:46] Calling Accessor on non-internal object: *api.ServiceList
+I0509 09:11:15.155048    3130 handlers.go:161] GET /api/v1/services?resourceVersion=0: (673.695µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/endpoint-controller] 192.168.33.10:47147]
+I0509 09:11:15.155302    3130 meta.go:46] Calling Accessor on non-internal object: *api.ReplicationControllerList
+I0509 09:11:15.155443    3130 handlers.go:161] GET /api/v1/replicationcontrollers?resourceVersion=0: (370.602µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/replication-controller] 192.168.33.10:47150]
+I0509 09:11:15.188747    3130 meta.go:46] Calling Accessor on non-internal object: *batch.JobList
+I0509 09:11:15.189105    3130 handlers.go:161] GET /apis/batch/v1/jobs?resourceVersion=0: (727.955µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/job-controller] 192.168.33.10:47151]
+I0509 09:11:15.194607    3130 meta.go:46] Calling Accessor on non-internal object: *extensions.DeploymentList
+I0509 09:11:15.194750    3130 meta.go:46] Calling Accessor on non-internal object: *extensions.DaemonSetList
+I0509 09:11:15.194829    3130 handlers.go:161] GET /apis/extensions/v1beta1/deployments?resourceVersion=0: (1.064521ms) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/deployment-controller] 192.168.33.10:47152]
+I0509 09:11:15.194908    3130 handlers.go:161] GET /apis/extensions/v1beta1/daemonsets?resourceVersion=0: (1.086737ms) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/daemon-set-controller] 192.168.33.10:47154]
+I0509 09:11:15.195114    3130 meta.go:46] Calling Accessor on non-internal object: *extensions.HorizontalPodAutoscalerList
+I0509 09:11:15.195230    3130 handlers.go:161] GET /apis/extensions/v1beta1/horizontalpodautoscalers?resourceVersion=0: (253.851µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/horizontal-pod-autoscaler] 192.168.33.10:47153]
+I0509 09:11:15.196474    3130 meta.go:46] Calling Accessor on non-internal object: *extensions.ReplicaSetList
+I0509 09:11:15.196578    3130 handlers.go:161] GET /apis/extensions/v1beta1/replicasets?resourceVersion=0: (266.067µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/replicaset-controller] 192.168.33.10:47155]
+I0509 09:11:15.265026    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:11:15.265624    3130 handlers.go:161] GET /api/v1/nodes: (2.388545ms) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-controller] 192.168.33.10:47156]
+I0509 09:11:17.406623    3130 handlers.go:161] GET /api/v1/watch/nodes?resourceVersion=3&timeoutSeconds=3: (3.000643586s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47146]
+I0509 09:11:18.407855    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:11:18.407976    3130 handlers.go:161] GET /api/v1/nodes?resourceVersion=0: (441.953µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47146]
+I0509 09:11:20.269739    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:11:20.269968    3130 handlers.go:161] GET /api/v1/nodes: (1.694943ms) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-controller] 192.168.33.10:47156]
+I0509 09:11:21.410656    3130 handlers.go:161] GET /api/v1/watch/nodes?resourceVersion=3&timeoutSeconds=3: (3.002012176s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47146]
+I0509 09:11:22.412701    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:11:22.413060    3130 handlers.go:161] GET /api/v1/nodes?resourceVersion=0: (873.08µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47146]
+I0509 09:11:25.275188    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:11:25.275845    3130 handlers.go:161] GET /api/v1/nodes: (3.074707ms) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-controller] 192.168.33.10:47156]
+I0509 09:11:25.417090    3130 handlers.go:161] GET /api/v1/watch/nodes?resourceVersion=3&timeoutSeconds=3: (3.002392357s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47146]
+I0509 09:11:26.419803    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:11:26.419968    3130 handlers.go:161] GET /api/v1/nodes?resourceVersion=0: (438.68µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47146]
+I0509 09:11:29.423170    3130 handlers.go:161] GET /api/v1/watch/nodes?resourceVersion=3&timeoutSeconds=3: (3.002267126s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47146]
+I0509 09:11:30.279840    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:11:30.280263    3130 handlers.go:161] GET /api/v1/nodes: (2.050653ms) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-controller] 192.168.33.10:47146]
+I0509 09:11:30.425745    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:11:30.425951    3130 handlers.go:161] GET /api/v1/nodes?resourceVersion=0: (641.647µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47146]
+I0509 09:11:33.429328    3130 handlers.go:161] GET /api/v1/watch/nodes?resourceVersion=3&timeoutSeconds=3: (3.002656689s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47146]
+I0509 09:11:34.431319    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:11:34.431515    3130 handlers.go:161] GET /api/v1/nodes?resourceVersion=0: (673.592µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47146]
+I0509 09:11:35.284345    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:11:35.284588    3130 handlers.go:161] GET /api/v1/nodes: (2.333379ms) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-controller] 192.168.33.10:47156]
+I0509 09:11:37.434697    3130 handlers.go:161] GET /api/v1/watch/nodes?resourceVersion=3&timeoutSeconds=3: (3.002021331s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47146]
+I0509 09:11:38.436604    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:11:38.436796    3130 handlers.go:161] GET /api/v1/nodes?resourceVersion=0: (602.611µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47146]
+I0509 09:11:40.287723    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:11:40.287893    3130 handlers.go:161] GET /api/v1/nodes: (1.679996ms) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-controller] 192.168.33.10:47156]
+I0509 09:11:41.440000    3130 handlers.go:161] GET /api/v1/watch/nodes?resourceVersion=3&timeoutSeconds=3: (3.002314873s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47146]
+I0509 09:11:42.442760    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:11:42.443077    3130 handlers.go:161] GET /api/v1/nodes?resourceVersion=0: (885.541µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47146]
+I0509 09:11:43.156356    3130 handlers.go:161] GET /api/v1/watch/services?resourceVersion=7&timeoutSeconds=28: (28.000305769s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/endpoint-controller] 192.168.33.10:47150]
+I0509 09:11:43.156402    3130 handlers.go:161] GET /api/v1/watch/replicationcontrollers?resourceVersion=3&timeoutSeconds=28: (28.000595336s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/replication-controller] 192.168.33.10:47147]
+I0509 09:11:43.190428    3130 handlers.go:161] GET /apis/batch/v1/watch/jobs?resourceVersion=3&timeoutSeconds=28: (28.000627555s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/job-controller] 192.168.33.10:47151]
+I0509 09:11:43.196817    3130 handlers.go:161] GET /apis/extensions/v1beta1/watch/horizontalpodautoscalers?resourceVersion=3&timeoutSeconds=28: (28.001145279s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/horizontal-pod-autoscaler] 192.168.33.10:47152]
+I0509 09:11:43.196967    3130 handlers.go:161] GET /apis/extensions/v1beta1/watch/daemonsets?resourceVersion=3&timeoutSeconds=28: (28.001024605s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/daemon-set-controller] 192.168.33.10:47154]
+I0509 09:11:43.197001    3130 handlers.go:161] GET /apis/extensions/v1beta1/watch/deployments?resourceVersion=3&timeoutSeconds=28: (28.001169171s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/deployment-controller] 192.168.33.10:47153]
+I0509 09:11:43.197826    3130 handlers.go:161] GET /apis/extensions/v1beta1/watch/replicasets?resourceVersion=3&timeoutSeconds=28: (28.000472333s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/replicaset-controller] 192.168.33.10:47155]
+I0509 09:11:44.158088    3130 meta.go:46] Calling Accessor on non-internal object: *api.ServiceList
+I0509 09:11:44.158279    3130 handlers.go:161] GET /api/v1/services?resourceVersion=0: (537.346µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/endpoint-controller] 192.168.33.10:47156]
+I0509 09:11:44.158092    3130 meta.go:46] Calling Accessor on non-internal object: *api.ReplicationControllerList
+I0509 09:11:44.158514    3130 handlers.go:161] GET /api/v1/replicationcontrollers?resourceVersion=0: (709.563µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/replication-controller] 192.168.33.10:47147]
+I0509 09:11:44.192655    3130 meta.go:46] Calling Accessor on non-internal object: *batch.JobList
+I0509 09:11:44.192854    3130 handlers.go:161] GET /apis/batch/v1/jobs?resourceVersion=0: (557.044µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/job-controller] 192.168.33.10:47160]
+I0509 09:11:44.199121    3130 meta.go:46] Calling Accessor on non-internal object: *extensions.DaemonSetList
+I0509 09:11:44.199309    3130 handlers.go:161] GET /apis/extensions/v1beta1/daemonsets?resourceVersion=0: (400.817µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/daemon-set-controller] 192.168.33.10:47163]
+I0509 09:11:44.199560    3130 meta.go:46] Calling Accessor on non-internal object: *extensions.HorizontalPodAutoscalerList
+I0509 09:11:44.199674    3130 handlers.go:161] GET /apis/extensions/v1beta1/horizontalpodautoscalers?resourceVersion=0: (239.96µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/horizontal-pod-autoscaler] 192.168.33.10:47161]
+I0509 09:11:44.199934    3130 meta.go:46] Calling Accessor on non-internal object: *extensions.DeploymentList
+I0509 09:11:44.200041    3130 handlers.go:161] GET /apis/extensions/v1beta1/deployments?resourceVersion=0: (258.93µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/deployment-controller] 192.168.33.10:47162]
+I0509 09:11:44.200628    3130 meta.go:46] Calling Accessor on non-internal object: *extensions.ReplicaSetList
+I0509 09:11:44.200732    3130 handlers.go:161] GET /apis/extensions/v1beta1/replicasets?resourceVersion=0: (212.073µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/replicaset-controller] 192.168.33.10:47164]
+I0509 09:11:45.292575    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:11:45.293313    3130 handlers.go:161] GET /api/v1/nodes: (1.982334ms) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-controller] 192.168.33.10:47165]
+I0509 09:11:45.444527    3130 handlers.go:161] GET /api/v1/watch/nodes?resourceVersion=3&timeoutSeconds=3: (3.000597933s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47146]
+I0509 09:11:46.446073    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:11:46.446221    3130 handlers.go:161] GET /api/v1/nodes?resourceVersion=0: (517.256µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47146]
+I0509 09:11:49.447410    3130 handlers.go:161] GET /api/v1/watch/nodes?resourceVersion=3&timeoutSeconds=3: (3.000487589s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47146]
+I0509 09:11:50.296239    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:11:50.296435    3130 handlers.go:161] GET /api/v1/nodes: (1.869245ms) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-controller] 192.168.33.10:47146]
+I0509 09:11:50.449091    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:11:50.449256    3130 handlers.go:161] GET /api/v1/nodes?resourceVersion=0: (621.399µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47146]
+I0509 09:11:53.451888    3130 handlers.go:161] GET /api/v1/watch/nodes?resourceVersion=3&timeoutSeconds=3: (3.001887656s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47146]
+I0509 09:11:54.453774    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:11:54.453920    3130 handlers.go:161] GET /api/v1/nodes?resourceVersion=0: (511.218µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47146]
+I0509 09:11:55.300094    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:11:55.300262    3130 handlers.go:161] GET /api/v1/nodes: (2.345259ms) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-controller] 192.168.33.10:47165]
+I0509 09:11:57.457143    3130 handlers.go:161] GET /api/v1/watch/nodes?resourceVersion=3&timeoutSeconds=3: (3.002447752s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47146]
+I0509 09:11:58.459356    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:11:58.459493    3130 handlers.go:161] GET /api/v1/nodes?resourceVersion=0: (459.111µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47146]
+I0509 09:12:00.304366    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:12:00.305743    3130 handlers.go:161] GET /api/v1/nodes: (2.628528ms) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-controller] 192.168.33.10:47165]
+I0509 09:12:01.461818    3130 handlers.go:161] GET /api/v1/watch/nodes?resourceVersion=3&timeoutSeconds=3: (3.001532222s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47146]
+I0509 09:12:02.463484    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:12:02.463663    3130 handlers.go:161] GET /api/v1/nodes?resourceVersion=0: (563.996µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47146]
+I0509 09:12:05.309565    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:12:05.311452    3130 handlers.go:161] GET /api/v1/nodes: (3.981672ms) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-controller] 192.168.33.10:47165]
+I0509 09:12:05.467977    3130 handlers.go:161] GET /api/v1/watch/nodes?resourceVersion=3&timeoutSeconds=3: (3.002228973s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47146]
+I0509 09:12:06.470544    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:12:06.470662    3130 handlers.go:161] GET /api/v1/nodes?resourceVersion=0: (412.565µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47146]
+I0509 09:12:09.472001    3130 handlers.go:161] GET /api/v1/watch/nodes?resourceVersion=3&timeoutSeconds=3: (3.000757707s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47146]
+I0509 09:12:10.316065    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:12:10.317606    3130 handlers.go:161] GET /api/v1/nodes: (3.128562ms) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-controller] 192.168.33.10:47146]
+I0509 09:12:10.474182    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:12:10.474423    3130 handlers.go:161] GET /api/v1/nodes?resourceVersion=0: (585.786µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47146]
+I0509 09:12:12.159657    3130 handlers.go:161] GET /api/v1/watch/services?resourceVersion=7&timeoutSeconds=28: (28.000518734s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/endpoint-controller] 192.168.33.10:47156]
+I0509 09:12:12.159878    3130 handlers.go:161] GET /api/v1/watch/replicationcontrollers?resourceVersion=3&timeoutSeconds=28: (28.000541797s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/replication-controller] 192.168.33.10:47147]
+I0509 09:12:12.195256    3130 handlers.go:161] GET /apis/batch/v1/watch/jobs?resourceVersion=3&timeoutSeconds=28: (28.001700619s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/job-controller] 192.168.33.10:47160]
+I0509 09:12:12.200672    3130 handlers.go:161] GET /apis/extensions/v1beta1/watch/daemonsets?resourceVersion=3&timeoutSeconds=28: (28.000373606s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/daemon-set-controller] 192.168.33.10:47163]
+I0509 09:12:12.200718    3130 handlers.go:161] GET /apis/extensions/v1beta1/watch/horizontalpodautoscalers?resourceVersion=3&timeoutSeconds=28: (28.000604487s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/horizontal-pod-autoscaler] 192.168.33.10:47161]
+I0509 09:12:12.201434    3130 handlers.go:161] GET /apis/extensions/v1beta1/watch/deployments?resourceVersion=3&timeoutSeconds=28: (28.00040779s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/deployment-controller] 192.168.33.10:47162]
+I0509 09:12:12.201771    3130 handlers.go:161] GET /apis/extensions/v1beta1/watch/replicasets?resourceVersion=3&timeoutSeconds=28: (28.000497232s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/replicaset-controller] 192.168.33.10:47164]
+I0509 09:12:13.161315    3130 meta.go:46] Calling Accessor on non-internal object: *api.ServiceList
+I0509 09:12:13.161360    3130 meta.go:46] Calling Accessor on non-internal object: *api.ReplicationControllerList
+I0509 09:12:13.161468    3130 handlers.go:161] GET /api/v1/replicationcontrollers?resourceVersion=0: (368.825µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/replication-controller] 192.168.33.10:47165]
+I0509 09:12:13.161483    3130 handlers.go:161] GET /api/v1/services?resourceVersion=0: (492.251µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/endpoint-controller] 192.168.33.10:47156]
+I0509 09:12:13.198810    3130 meta.go:46] Calling Accessor on non-internal object: *batch.JobList
+I0509 09:12:13.199030    3130 handlers.go:161] GET /apis/batch/v1/jobs?resourceVersion=0: (559.094µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/job-controller] 192.168.33.10:47172]
+I0509 09:12:13.203809    3130 meta.go:46] Calling Accessor on non-internal object: *extensions.ReplicaSetList
+I0509 09:12:13.203977    3130 handlers.go:161] GET /apis/extensions/v1beta1/replicasets?resourceVersion=0: (384.909µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/replicaset-controller] 192.168.33.10:47173]
+I0509 09:12:13.204458    3130 meta.go:46] Calling Accessor on non-internal object: *extensions.DeploymentList
+I0509 09:12:13.204583    3130 handlers.go:161] GET /apis/extensions/v1beta1/deployments?resourceVersion=0: (263.702µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/deployment-controller] 192.168.33.10:47175]
+I0509 09:12:13.204833    3130 meta.go:46] Calling Accessor on non-internal object: *extensions.HorizontalPodAutoscalerList
+I0509 09:12:13.205345    3130 meta.go:46] Calling Accessor on non-internal object: *extensions.DaemonSetList
+I0509 09:12:13.205458    3130 handlers.go:161] GET /apis/extensions/v1beta1/daemonsets?resourceVersion=0: (226.05µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/daemon-set-controller] 192.168.33.10:47174]
+I0509 09:12:13.205866    3130 handlers.go:161] GET /apis/extensions/v1beta1/horizontalpodautoscalers?resourceVersion=0: (1.19931ms) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/horizontal-pod-autoscaler] 192.168.33.10:47176]
+I0509 09:12:13.475745    3130 handlers.go:161] GET /api/v1/watch/nodes?resourceVersion=3&timeoutSeconds=3: (3.000728697s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47146]
+I0509 09:12:14.477600    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:12:14.477768    3130 handlers.go:161] GET /api/v1/nodes?resourceVersion=0: (504.777µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47146]
+I0509 09:12:15.321395    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:12:15.321949    3130 handlers.go:161] GET /api/v1/nodes: (2.063468ms) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-controller] 192.168.33.10:47177]
+I0509 09:12:17.480612    3130 handlers.go:161] GET /api/v1/watch/nodes?resourceVersion=3&timeoutSeconds=3: (3.002112867s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47146]
+I0509 09:12:18.482505    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:12:18.482694    3130 handlers.go:161] GET /api/v1/nodes?resourceVersion=0: (639.335µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47146]
+I0509 09:12:20.324487    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:12:20.324630    3130 handlers.go:161] GET /api/v1/nodes: (1.609606ms) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-controller] 192.168.33.10:47177]
+I0509 09:12:21.484075    3130 handlers.go:161] GET /api/v1/watch/nodes?resourceVersion=3&timeoutSeconds=3: (3.0007272s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47146]
+I0509 09:12:22.486457    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:12:22.486663    3130 handlers.go:161] GET /api/v1/nodes?resourceVersion=0: (407.41µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47146]
+I0509 09:12:25.332765    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:12:25.333078    3130 handlers.go:161] GET /api/v1/nodes: (2.029144ms) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-controller] 192.168.33.10:47177]
+I0509 09:12:25.488090    3130 handlers.go:161] GET /api/v1/watch/nodes?resourceVersion=3&timeoutSeconds=3: (3.000679687s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47146]
+I0509 09:12:26.489756    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:12:26.489977    3130 handlers.go:161] GET /api/v1/nodes?resourceVersion=0: (779.75µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47146]
+I0509 09:12:29.491283    3130 handlers.go:161] GET /api/v1/watch/nodes?resourceVersion=3&timeoutSeconds=3: (3.000554803s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47146]
+I0509 09:12:30.341971    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:12:30.342177    3130 handlers.go:161] GET /api/v1/nodes: (2.063045ms) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-controller] 192.168.33.10:47146]
+I0509 09:12:30.493422    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:12:30.493649    3130 handlers.go:161] GET /api/v1/nodes?resourceVersion=0: (874.272µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47146]
+I0509 09:12:33.496681    3130 handlers.go:161] GET /api/v1/watch/nodes?resourceVersion=3&timeoutSeconds=3: (3.002179555s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47146]
+I0509 09:12:34.499718    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:12:34.499911    3130 handlers.go:161] GET /api/v1/nodes?resourceVersion=0: (698.351µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47146]
+I0509 09:12:35.347398    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:12:35.347841    3130 handlers.go:161] GET /api/v1/nodes: (1.916805ms) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-controller] 192.168.33.10:47177]
+I0509 09:12:37.503195    3130 handlers.go:161] GET /api/v1/watch/nodes?resourceVersion=3&timeoutSeconds=3: (3.00239265s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47146]
+I0509 09:12:38.505413    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:12:38.505554    3130 handlers.go:161] GET /api/v1/nodes?resourceVersion=0: (830.961µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47146]
+I0509 09:12:40.351736    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:12:40.351931    3130 handlers.go:161] GET /api/v1/nodes: (1.851183ms) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-controller] 192.168.33.10:47177]
+I0509 09:12:41.162766    3130 handlers.go:161] GET /api/v1/watch/replicationcontrollers?resourceVersion=3&timeoutSeconds=28: (28.000726597s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/replication-controller] 192.168.33.10:47156]
+I0509 09:12:41.163715    3130 handlers.go:161] GET /api/v1/watch/services?resourceVersion=7&timeoutSeconds=28: (28.001685274s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/endpoint-controller] 192.168.33.10:47165]
+I0509 09:12:41.201993    3130 handlers.go:161] GET /apis/batch/v1/watch/jobs?resourceVersion=3&timeoutSeconds=28: (28.001991421s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/job-controller] 192.168.33.10:47172]
+I0509 09:12:41.205539    3130 handlers.go:161] GET /apis/extensions/v1beta1/watch/replicasets?resourceVersion=3&timeoutSeconds=28: (28.000490143s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/replicaset-controller] 192.168.33.10:47173]
+I0509 09:12:41.205993    3130 handlers.go:161] GET /apis/extensions/v1beta1/watch/deployments?resourceVersion=3&timeoutSeconds=28: (28.000391863s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/deployment-controller] 192.168.33.10:47175]
+I0509 09:12:41.206475    3130 handlers.go:161] GET /apis/extensions/v1beta1/watch/daemonsets?resourceVersion=3&timeoutSeconds=28: (28.000472679s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/daemon-set-controller] 192.168.33.10:47174]
+I0509 09:12:41.207295    3130 handlers.go:161] GET /apis/extensions/v1beta1/watch/horizontalpodautoscalers?resourceVersion=3&timeoutSeconds=28: (28.000401015s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/horizontal-pod-autoscaler] 192.168.33.10:47176]
+I0509 09:12:41.507946    3130 handlers.go:161] GET /api/v1/watch/nodes?resourceVersion=3&timeoutSeconds=3: (3.001813118s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47146]
+I0509 09:12:42.166380    3130 meta.go:46] Calling Accessor on non-internal object: *api.ServiceList
+I0509 09:12:42.166483    3130 meta.go:46] Calling Accessor on non-internal object: *api.ReplicationControllerList
+I0509 09:12:42.166559    3130 handlers.go:161] GET /api/v1/services?resourceVersion=0: (1.461114ms) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/endpoint-controller] 192.168.33.10:47165]
+I0509 09:12:42.166587    3130 handlers.go:161] GET /api/v1/replicationcontrollers?resourceVersion=0: (1.44593ms) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/replication-controller] 192.168.33.10:47177]
+I0509 09:12:42.205245    3130 meta.go:46] Calling Accessor on non-internal object: *batch.JobList
+I0509 09:12:42.205398    3130 handlers.go:161] GET /apis/batch/v1/jobs?resourceVersion=0: (570.127µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/job-controller] 192.168.33.10:47181]
+I0509 09:12:42.206977    3130 meta.go:46] Calling Accessor on non-internal object: *extensions.ReplicaSetList
+I0509 09:12:42.207082    3130 handlers.go:161] GET /apis/extensions/v1beta1/replicasets?resourceVersion=0: (216.759µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/replicaset-controller] 192.168.33.10:47183]
+I0509 09:12:42.207095    3130 meta.go:46] Calling Accessor on non-internal object: *extensions.DeploymentList
+I0509 09:12:42.207199    3130 handlers.go:161] GET /apis/extensions/v1beta1/deployments?resourceVersion=0: (237.601µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/deployment-controller] 192.168.33.10:47182]
+I0509 09:12:42.208278    3130 meta.go:46] Calling Accessor on non-internal object: *extensions.DaemonSetList
+I0509 09:12:42.208368    3130 handlers.go:161] GET /apis/extensions/v1beta1/daemonsets?resourceVersion=0: (203.2µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/daemon-set-controller] 192.168.33.10:47184]
+I0509 09:12:42.209335    3130 meta.go:46] Calling Accessor on non-internal object: *extensions.HorizontalPodAutoscalerList
+I0509 09:12:42.209451    3130 handlers.go:161] GET /apis/extensions/v1beta1/horizontalpodautoscalers?resourceVersion=0: (288.843µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/horizontal-pod-autoscaler] 192.168.33.10:47184]
+I0509 09:12:42.510880    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:12:42.511082    3130 handlers.go:161] GET /api/v1/nodes?resourceVersion=0: (638.823µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47186]
+I0509 09:12:45.358012    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:12:45.358214    3130 handlers.go:161] GET /api/v1/nodes: (1.865393ms) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-controller] 192.168.33.10:47187]
+I0509 09:12:45.513072    3130 handlers.go:161] GET /api/v1/watch/nodes?resourceVersion=3&timeoutSeconds=3: (3.00127383s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47186]
+I0509 09:12:46.516749    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:12:46.517069    3130 handlers.go:161] GET /api/v1/nodes?resourceVersion=0: (1.155515ms) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47186]
+I0509 09:12:49.518593    3130 handlers.go:161] GET /api/v1/watch/nodes?resourceVersion=3&timeoutSeconds=3: (3.000687051s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47186]
+I0509 09:12:50.361280    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:12:50.361512    3130 handlers.go:161] GET /api/v1/nodes: (1.870157ms) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-controller] 192.168.33.10:47186]
+I0509 09:12:50.520549    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:12:50.520651    3130 handlers.go:161] GET /api/v1/nodes?resourceVersion=0: (544.332µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47186]
+I0509 09:12:53.522131    3130 handlers.go:161] GET /api/v1/watch/nodes?resourceVersion=3&timeoutSeconds=3: (3.000854712s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47186]
+I0509 09:12:54.525173    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:12:54.525364    3130 handlers.go:161] GET /api/v1/nodes?resourceVersion=0: (766.139µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47186]
+I0509 09:12:55.365873    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:12:55.366280    3130 handlers.go:161] GET /api/v1/nodes: (3.374049ms) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-controller] 192.168.33.10:47187]
+I0509 09:12:57.526841    3130 handlers.go:161] GET /api/v1/watch/nodes?resourceVersion=3&timeoutSeconds=3: (3.000697366s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47186]
+I0509 09:12:58.530058    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:12:58.530390    3130 handlers.go:161] GET /api/v1/nodes?resourceVersion=0: (796.689µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47186]
+I0509 09:13:00.370291    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:13:00.371289    3130 handlers.go:161] GET /api/v1/nodes: (2.575884ms) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-controller] 192.168.33.10:47187]
+I0509 09:13:01.533309    3130 handlers.go:161] GET /api/v1/watch/nodes?resourceVersion=3&timeoutSeconds=3: (3.002159728s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47186]
+I0509 09:13:02.535171    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:13:02.535358    3130 handlers.go:161] GET /api/v1/nodes?resourceVersion=0: (565.314µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47186]
+I0509 09:13:05.374886    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:13:05.375699    3130 handlers.go:161] GET /api/v1/nodes: (2.164935ms) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-controller] 192.168.33.10:47187]
+I0509 09:13:05.537848    3130 handlers.go:161] GET /api/v1/watch/nodes?resourceVersion=3&timeoutSeconds=3: (3.001443585s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47186]
+I0509 09:13:06.541063    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:13:06.541203    3130 handlers.go:161] GET /api/v1/nodes?resourceVersion=0: (647.229µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47186]
+I0509 09:13:09.542826    3130 handlers.go:161] GET /api/v1/watch/nodes?resourceVersion=3&timeoutSeconds=3: (3.000824286s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47186]
+I0509 09:13:10.168705    3130 handlers.go:161] GET /api/v1/watch/replicationcontrollers?resourceVersion=3&timeoutSeconds=28: (28.001673516s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/replication-controller] 192.168.33.10:47165]
+I0509 09:13:10.169038    3130 handlers.go:161] GET /api/v1/watch/services?resourceVersion=7&timeoutSeconds=28: (28.001820078s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/endpoint-controller] 192.168.33.10:47177]
+I0509 09:13:10.206999    3130 handlers.go:161] GET /apis/batch/v1/watch/jobs?resourceVersion=3&timeoutSeconds=28: (28.000633436s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/job-controller] 192.168.33.10:47181]
+I0509 09:13:10.207985    3130 handlers.go:161] GET /apis/extensions/v1beta1/watch/deployments?resourceVersion=3&timeoutSeconds=28: (28.000345822s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/deployment-controller] 192.168.33.10:47183]
+I0509 09:13:10.208181    3130 handlers.go:161] GET /apis/extensions/v1beta1/watch/replicasets?resourceVersion=3&timeoutSeconds=28: (28.000415562s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/replicaset-controller] 192.168.33.10:47182]
+I0509 09:13:10.209476    3130 handlers.go:161] GET /apis/extensions/v1beta1/watch/daemonsets?resourceVersion=3&timeoutSeconds=28: (28.000381144s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/daemon-set-controller] 192.168.33.10:47185]
+I0509 09:13:10.210391    3130 handlers.go:161] GET /apis/extensions/v1beta1/watch/horizontalpodautoscalers?resourceVersion=3&timeoutSeconds=28: (28.000427268s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/horizontal-pod-autoscaler] 192.168.33.10:47184]
+I0509 09:13:10.380207    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:13:10.380482    3130 handlers.go:161] GET /api/v1/nodes: (2.294994ms) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-controller] 192.168.33.10:47186]
+I0509 09:13:10.546311    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:13:10.546478    3130 handlers.go:161] GET /api/v1/nodes?resourceVersion=0: (576.36µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47186]
+I0509 09:13:11.170711    3130 meta.go:46] Calling Accessor on non-internal object: *api.ServiceList
+I0509 09:13:11.170920    3130 meta.go:46] Calling Accessor on non-internal object: *api.ReplicationControllerList
+I0509 09:13:11.170981    3130 handlers.go:161] GET /api/v1/services?resourceVersion=0: (785.138µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/endpoint-controller] 192.168.33.10:47187]
+I0509 09:13:11.171065    3130 handlers.go:161] GET /api/v1/replicationcontrollers?resourceVersion=0: (322.856µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/replication-controller] 192.168.33.10:47194]
+I0509 09:13:11.209455    3130 meta.go:46] Calling Accessor on non-internal object: *batch.JobList
+I0509 09:13:11.209647    3130 handlers.go:161] GET /apis/batch/v1/jobs?resourceVersion=0: (354.935µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/job-controller] 192.168.33.10:47195]
+I0509 09:13:11.209841    3130 meta.go:46] Calling Accessor on non-internal object: *extensions.ReplicaSetList
+I0509 09:13:11.209978    3130 handlers.go:161] GET /apis/extensions/v1beta1/replicasets?resourceVersion=0: (367.395µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/replicaset-controller] 192.168.33.10:47196]
+I0509 09:13:11.211053    3130 meta.go:46] Calling Accessor on non-internal object: *extensions.DeploymentList
+I0509 09:13:11.211151    3130 handlers.go:161] GET /apis/extensions/v1beta1/deployments?resourceVersion=0: (309.89µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/deployment-controller] 192.168.33.10:47196]
+I0509 09:13:11.212059    3130 meta.go:46] Calling Accessor on non-internal object: *extensions.HorizontalPodAutoscalerList
+I0509 09:13:11.212171    3130 handlers.go:161] GET /apis/extensions/v1beta1/horizontalpodautoscalers?resourceVersion=0: (240.425µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/horizontal-pod-autoscaler] 192.168.33.10:47199]
+I0509 09:13:11.212195    3130 meta.go:46] Calling Accessor on non-internal object: *extensions.DaemonSetList
+I0509 09:13:11.212454    3130 handlers.go:161] GET /apis/extensions/v1beta1/daemonsets?resourceVersion=0: (410.24µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/daemon-set-controller] 192.168.33.10:47198]
+I0509 09:13:13.548101    3130 handlers.go:161] GET /api/v1/watch/nodes?resourceVersion=3&timeoutSeconds=3: (3.000793758s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47186]
+I0509 09:13:14.549506    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:13:14.549600    3130 handlers.go:161] GET /api/v1/nodes?resourceVersion=0: (299.379µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47186]
+I0509 09:13:15.384320    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:13:15.384584    3130 handlers.go:161] GET /api/v1/nodes: (1.935294ms) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-controller] 192.168.33.10:47200]
+I0509 09:13:17.550779    3130 handlers.go:161] GET /api/v1/watch/nodes?resourceVersion=3&timeoutSeconds=3: (3.000707751s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47186]
+I0509 09:13:18.554183    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:13:18.554312    3130 handlers.go:161] GET /api/v1/nodes?resourceVersion=0: (512.968µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47186]
+I0509 09:13:20.388549    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:13:20.388750    3130 handlers.go:161] GET /api/v1/nodes: (1.921989ms) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-controller] 192.168.33.10:47200]
+I0509 09:13:21.558116    3130 handlers.go:161] GET /api/v1/watch/nodes?resourceVersion=3&timeoutSeconds=3: (3.003050589s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47186]
+I0509 09:13:22.431336    3130 handlers.go:161] GET /api: (262.253µs) 200 [[kubectl/v0.0.0 (linux/amd64) kubernetes/32621b0] 192.168.33.10:47202]
+I0509 09:13:22.435551    3130 handlers.go:161] GET /apis: (132.232µs) 200 [[kubectl/v0.0.0 (linux/amd64) kubernetes/32621b0] 192.168.33.10:47202]
+I0509 09:13:22.436485    3130 handlers.go:161] GET /api: (207.635µs) 200 [[kubectl/v0.0.0 (linux/amd64) kubernetes/32621b0] 192.168.33.10:47202]
+I0509 09:13:22.437008    3130 handlers.go:161] GET /apis: (233.507µs) 200 [[kubectl/v0.0.0 (linux/amd64) kubernetes/32621b0] 192.168.33.10:47202]
+I0509 09:13:22.440338    3130 meta.go:46] Calling Accessor on non-internal object: *api.PodList
+I0509 09:13:22.440460    3130 handlers.go:161] GET /api/v1/namespaces/default/pods: (1.721714ms) 200 [[kubectl/v0.0.0 (linux/amd64) kubernetes/32621b0] 192.168.33.10:47202]
+I0509 09:13:22.559668    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:13:22.559807    3130 handlers.go:161] GET /api/v1/nodes?resourceVersion=0: (511.058µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47186]
+I0509 09:13:25.393972    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:13:25.394864    3130 handlers.go:161] GET /api/v1/nodes: (2.667049ms) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-controller] 192.168.33.10:47200]
+I0509 09:13:25.561476    3130 handlers.go:161] GET /api/v1/watch/nodes?resourceVersion=3&timeoutSeconds=3: (3.001108508s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47186]
+I0509 09:13:26.564600    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:13:26.564768    3130 handlers.go:161] GET /api/v1/nodes?resourceVersion=0: (555.031µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47186]
+I0509 09:13:28.573922    3130 handlers.go:161] GET /api: (197.102µs) 200 [[kubectl/v0.0.0 (linux/amd64) kubernetes/32621b0] 192.168.33.10:47204]
+I0509 09:13:28.574859    3130 handlers.go:161] GET /apis: (250.426µs) 200 [[kubectl/v0.0.0 (linux/amd64) kubernetes/32621b0] 192.168.33.10:47204]
+I0509 09:13:28.575859    3130 handlers.go:161] GET /api: (209.748µs) 200 [[kubectl/v0.0.0 (linux/amd64) kubernetes/32621b0] 192.168.33.10:47204]
+I0509 09:13:28.576507    3130 handlers.go:161] GET /apis: (256.363µs) 200 [[kubectl/v0.0.0 (linux/amd64) kubernetes/32621b0] 192.168.33.10:47204]
+I0509 09:13:28.578120    3130 meta.go:46] Calling Accessor on non-internal object: *api.ServiceList
+I0509 09:13:28.578279    3130 handlers.go:161] GET /api/v1/namespaces/default/services: (1.104719ms) 200 [[kubectl/v0.0.0 (linux/amd64) kubernetes/32621b0] 192.168.33.10:47204]
+I0509 09:13:29.567744    3130 handlers.go:161] GET /api/v1/watch/nodes?resourceVersion=3&timeoutSeconds=3: (3.002422028s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47186]
+I0509 09:13:30.400124    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:13:30.400335    3130 handlers.go:161] GET /api/v1/nodes: (2.136147ms) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-controller] 192.168.33.10:47186]
+I0509 09:13:30.570632    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:13:30.570829    3130 handlers.go:161] GET /api/v1/nodes?resourceVersion=0: (631.56µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47186]
+I0509 09:13:33.573829    3130 handlers.go:161] GET /api/v1/watch/nodes?resourceVersion=3&timeoutSeconds=3: (3.001848774s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47186]
+I0509 09:13:34.136239    3130 handlers.go:161] GET /api: (284.94µs) 200 [[kubectl/v0.0.0 (linux/amd64) kubernetes/32621b0] 192.168.33.10:47205]
+I0509 09:13:34.137292    3130 handlers.go:161] GET /apis: (337.539µs) 200 [[kubectl/v0.0.0 (linux/amd64) kubernetes/32621b0] 192.168.33.10:47205]
+I0509 09:13:34.138207    3130 handlers.go:161] GET /api: (217.913µs) 200 [[kubectl/v0.0.0 (linux/amd64) kubernetes/32621b0] 192.168.33.10:47205]
+I0509 09:13:34.138933    3130 handlers.go:161] GET /apis: (233.687µs) 200 [[kubectl/v0.0.0 (linux/amd64) kubernetes/32621b0] 192.168.33.10:47205]
+I0509 09:13:34.140629    3130 meta.go:46] Calling Accessor on non-internal object: *api.ServiceList
+I0509 09:13:34.140755    3130 handlers.go:161] GET /api/v1/namespaces/default/services: (1.325784ms) 200 [[kubectl/v0.0.0 (linux/amd64) kubernetes/32621b0] 192.168.33.10:47205]
+I0509 09:13:34.575662    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:13:34.575822    3130 handlers.go:161] GET /api/v1/nodes?resourceVersion=0: (566.651µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47186]
+I0509 09:13:35.404029    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:13:35.404183    3130 handlers.go:161] GET /api/v1/nodes: (1.810894ms) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-controller] 192.168.33.10:47200]
+I0509 09:13:35.511647    3130 handlers.go:161] GET /api: (478.94µs) 200 [[kubectl/v0.0.0 (linux/amd64) kubernetes/32621b0] 192.168.33.10:47207]
+I0509 09:13:35.512470    3130 handlers.go:161] GET /apis: (288.435µs) 200 [[kubectl/v0.0.0 (linux/amd64) kubernetes/32621b0] 192.168.33.10:47207]
+I0509 09:13:35.513349    3130 handlers.go:161] GET /api: (232.072µs) 200 [[kubectl/v0.0.0 (linux/amd64) kubernetes/32621b0] 192.168.33.10:47207]
+I0509 09:13:35.513880    3130 handlers.go:161] GET /apis: (111.857µs) 200 [[kubectl/v0.0.0 (linux/amd64) kubernetes/32621b0] 192.168.33.10:47207]
+I0509 09:13:35.515752    3130 meta.go:46] Calling Accessor on non-internal object: *api.ServiceList
+I0509 09:13:35.515830    3130 handlers.go:161] GET /api/v1/namespaces/default/services: (1.437021ms) 200 [[kubectl/v0.0.0 (linux/amd64) kubernetes/32621b0] 192.168.33.10:47207]
+I0509 09:13:36.473077    3130 handlers.go:161] GET /api: (429.568µs) 200 [[kubectl/v0.0.0 (linux/amd64) kubernetes/32621b0] 192.168.33.10:47208]
+I0509 09:13:36.478257    3130 handlers.go:161] GET /apis: (225.547µs) 200 [[kubectl/v0.0.0 (linux/amd64) kubernetes/32621b0] 192.168.33.10:47208]
+I0509 09:13:36.479045    3130 handlers.go:161] GET /api: (125.162µs) 200 [[kubectl/v0.0.0 (linux/amd64) kubernetes/32621b0] 192.168.33.10:47208]
+I0509 09:13:36.479669    3130 handlers.go:161] GET /apis: (110.95µs) 200 [[kubectl/v0.0.0 (linux/amd64) kubernetes/32621b0] 192.168.33.10:47208]
+I0509 09:13:36.481497    3130 meta.go:46] Calling Accessor on non-internal object: *api.ServiceList
+I0509 09:13:36.481629    3130 handlers.go:161] GET /api/v1/namespaces/default/services: (1.317863ms) 200 [[kubectl/v0.0.0 (linux/amd64) kubernetes/32621b0] 192.168.33.10:47208]
+I0509 09:13:37.578711    3130 handlers.go:161] GET /api/v1/watch/nodes?resourceVersion=3&timeoutSeconds=3: (3.002214775s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47186]
+I0509 09:13:38.581563    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:13:38.581794    3130 handlers.go:161] GET /api/v1/nodes?resourceVersion=0: (520.079µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47186]
+I0509 09:13:39.172798    3130 handlers.go:161] GET /api/v1/watch/services?resourceVersion=7&timeoutSeconds=28: (28.000688373s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/endpoint-controller] 192.168.33.10:47194]
+I0509 09:13:39.172822    3130 handlers.go:161] GET /api/v1/watch/replicationcontrollers?resourceVersion=3&timeoutSeconds=28: (28.000711845s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/replication-controller] 192.168.33.10:47187]
+I0509 09:13:39.212599    3130 handlers.go:161] GET /apis/extensions/v1beta1/watch/replicasets?resourceVersion=3&timeoutSeconds=28: (28.001997718s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/replicaset-controller] 192.168.33.10:47195]
+I0509 09:13:39.212646    3130 handlers.go:161] GET /apis/extensions/v1beta1/watch/deployments?resourceVersion=3&timeoutSeconds=28: (28.000960383s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/deployment-controller] 192.168.33.10:47196]
+I0509 09:13:39.212771    3130 handlers.go:161] GET /apis/batch/v1/watch/jobs?resourceVersion=3&timeoutSeconds=28: (28.001971455s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/job-controller] 192.168.33.10:47197]
+I0509 09:13:39.213466    3130 handlers.go:161] GET /apis/extensions/v1beta1/watch/horizontalpodautoscalers?resourceVersion=3&timeoutSeconds=28: (28.00021401s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/horizontal-pod-autoscaler] 192.168.33.10:47199]
+I0509 09:13:39.213471    3130 handlers.go:161] GET /apis/extensions/v1beta1/watch/daemonsets?resourceVersion=3&timeoutSeconds=28: (28.000413828s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/daemon-set-controller] 192.168.33.10:47198]
+I0509 09:13:40.174639    3130 meta.go:46] Calling Accessor on non-internal object: *api.ReplicationControllerList
+I0509 09:13:40.174855    3130 handlers.go:161] GET /api/v1/replicationcontrollers?resourceVersion=0: (478.134µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/replication-controller] 192.168.33.10:47200]
+I0509 09:13:40.174642    3130 meta.go:46] Calling Accessor on non-internal object: *api.ServiceList
+I0509 09:13:40.175117    3130 handlers.go:161] GET /api/v1/services?resourceVersion=0: (783.448µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/endpoint-controller] 192.168.33.10:47194]
+I0509 09:13:40.215471    3130 meta.go:46] Calling Accessor on non-internal object: *extensions.DeploymentList
+I0509 09:13:40.215626    3130 handlers.go:161] GET /apis/extensions/v1beta1/deployments?resourceVersion=0: (323.64µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/deployment-controller] 192.168.33.10:47210]
+I0509 09:13:40.215644    3130 meta.go:46] Calling Accessor on non-internal object: *extensions.ReplicaSetList
+I0509 09:13:40.215763    3130 handlers.go:161] GET /apis/extensions/v1beta1/replicasets?resourceVersion=0: (216.736µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/replicaset-controller] 192.168.33.10:47211]
+I0509 09:13:40.215857    3130 meta.go:46] Calling Accessor on non-internal object: *extensions.HorizontalPodAutoscalerList
+I0509 09:13:40.215958    3130 meta.go:46] Calling Accessor on non-internal object: *batch.JobList
+I0509 09:13:40.215471    3130 meta.go:46] Calling Accessor on non-internal object: *extensions.DaemonSetList
+I0509 09:13:40.216061    3130 handlers.go:161] GET /apis/batch/v1/jobs?resourceVersion=0: (190.633µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/job-controller] 192.168.33.10:47212]
+I0509 09:13:40.215964    3130 handlers.go:161] GET /apis/extensions/v1beta1/horizontalpodautoscalers?resourceVersion=0: (220.515µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/horizontal-pod-autoscaler] 192.168.33.10:47209]
+I0509 09:13:40.216061    3130 handlers.go:161] GET /apis/extensions/v1beta1/daemonsets?resourceVersion=0: (800.628µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/daemon-set-controller] 192.168.33.10:47213]
+I0509 09:13:40.411771    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:13:40.411972    3130 handlers.go:161] GET /api/v1/nodes: (1.875085ms) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-controller] 192.168.33.10:47215]
+I0509 09:13:41.584262    3130 handlers.go:161] GET /api/v1/watch/nodes?resourceVersion=3&timeoutSeconds=3: (3.001596367s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47186]
+I0509 09:13:42.586130    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:13:42.586264    3130 handlers.go:161] GET /api/v1/nodes?resourceVersion=0: (492.306µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47186]
+I0509 09:13:45.415896    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:13:45.416076    3130 handlers.go:161] GET /api/v1/nodes: (1.765467ms) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-controller] 192.168.33.10:47215]
+I0509 09:13:45.587539    3130 handlers.go:161] GET /api/v1/watch/nodes?resourceVersion=3&timeoutSeconds=3: (3.000612143s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47186]
+I0509 09:13:46.589792    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:13:46.589919    3130 handlers.go:161] GET /api/v1/nodes?resourceVersion=0: (451.834µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47186]
+I0509 09:13:48.126187    3130 handlers.go:161] GET /api/v1/watch/resourcequotas?resourceVersion=3&timeoutSeconds=298: (4m58.002353319s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/resource-quota-controller] 192.168.33.10:47050]
+I0509 09:13:48.139273    3130 handlers.go:161] GET /api/v1/watch/pods?resourceVersion=3&timeoutSeconds=298: (4m58.002474044s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/endpoint-controller] 192.168.33.10:47057]
+I0509 09:13:48.175739    3130 handlers.go:161] GET /api/v1/watch/namespaces?resourceVersion=6&timeoutSeconds=298: (4m58.000675275s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/namespace-controller] 192.168.33.10:47077]
+I0509 09:13:49.127919    3130 meta.go:46] Calling Accessor on non-internal object: *api.ResourceQuotaList
+I0509 09:13:49.128085    3130 handlers.go:161] GET /api/v1/resourcequotas?resourceVersion=0: (624.848µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/resource-quota-controller] 192.168.33.10:47050]
+I0509 09:13:49.141198    3130 meta.go:46] Calling Accessor on non-internal object: *api.PodList
+I0509 09:13:49.141314    3130 handlers.go:161] GET /api/v1/pods?resourceVersion=0: (417.309µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/endpoint-controller] 192.168.33.10:47215]
+I0509 09:13:49.179907    3130 meta.go:46] Calling Accessor on non-internal object: *api.NamespaceList
+I0509 09:13:49.180206    3130 handlers.go:161] GET /api/v1/namespaces?resourceVersion=0: (876.453µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/namespace-controller] 192.168.33.10:47220]
+I0509 09:13:49.592472    3130 handlers.go:161] GET /api/v1/watch/nodes?resourceVersion=3&timeoutSeconds=3: (3.001716219s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47186]
+I0509 09:13:50.108132    3130 meta.go:46] Calling Accessor on non-internal object: *api.EndpointsList
+I0509 09:13:50.108532    3130 handlers.go:161] GET /api/v1/endpoints: (2.381433ms) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/endpoint-controller] 192.168.33.10:47186]
+I0509 09:13:50.138099    3130 handlers.go:161] GET /apis/extensions/v1beta1/watch/daemonsets?resourceVersion=3&timeoutSeconds=300: (5m0.000633887s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-controller] 192.168.33.10:47056]
+I0509 09:13:50.421237    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:13:50.421862    3130 handlers.go:161] GET /api/v1/nodes: (2.73743ms) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-controller] 192.168.33.10:47186]
+I0509 09:13:50.594451    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:13:50.594554    3130 handlers.go:161] GET /api/v1/nodes?resourceVersion=0: (351.877µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47186]
+I0509 09:13:53.595764    3130 handlers.go:161] GET /api/v1/watch/nodes?resourceVersion=3&timeoutSeconds=3: (3.00063283s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47186]
+I0509 09:13:54.599582    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:13:54.599749    3130 handlers.go:161] GET /api/v1/nodes?resourceVersion=0: (870.08µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47186]
+I0509 09:13:55.425071    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:13:55.425260    3130 handlers.go:161] GET /api/v1/nodes: (1.581213ms) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-controller] 192.168.33.10:47221]
+I0509 09:13:57.601172    3130 handlers.go:161] GET /api/v1/watch/nodes?resourceVersion=3&timeoutSeconds=3: (3.000720708s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47186]
+I0509 09:13:58.604365    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:13:58.604482    3130 handlers.go:161] GET /api/v1/nodes?resourceVersion=0: (412.442µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47186]
+I0509 09:14:00.428623    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:14:00.429089    3130 handlers.go:161] GET /api/v1/nodes: (2.067108ms) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-controller] 192.168.33.10:47221]
+I0509 09:14:01.606668    3130 handlers.go:161] GET /api/v1/watch/nodes?resourceVersion=3&timeoutSeconds=3: (3.001735403s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47186]
+I0509 09:14:02.608146    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:14:02.608250    3130 handlers.go:161] GET /api/v1/nodes?resourceVersion=0: (389.301µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47186]
+I0509 09:14:05.431815    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:14:05.433637    3130 handlers.go:161] GET /api/v1/nodes: (3.309445ms) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-controller] 192.168.33.10:47221]
+I0509 09:14:05.609695    3130 handlers.go:161] GET /api/v1/watch/nodes?resourceVersion=3&timeoutSeconds=3: (3.000878806s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47186]
+I0509 09:14:05.820495    3130 handlers.go:161] GET /api: (261.174µs) 200 [[kubectl/v0.0.0 (linux/amd64) kubernetes/32621b0] 192.168.33.10:47224]
+I0509 09:14:05.821572    3130 handlers.go:161] GET /apis: (376.362µs) 200 [[kubectl/v0.0.0 (linux/amd64) kubernetes/32621b0] 192.168.33.10:47224]
+I0509 09:14:05.822384    3130 handlers.go:161] GET /api: (148.263µs) 200 [[kubectl/v0.0.0 (linux/amd64) kubernetes/32621b0] 192.168.33.10:47224]
+I0509 09:14:05.823252    3130 handlers.go:161] GET /apis: (138.456µs) 200 [[kubectl/v0.0.0 (linux/amd64) kubernetes/32621b0] 192.168.33.10:47224]
+I0509 09:14:06.612669    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:14:06.612837    3130 handlers.go:161] GET /api/v1/nodes?resourceVersion=0: (570.868µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47186]
+I0509 09:14:08.177667    3130 handlers.go:161] GET /api/v1/watch/replicationcontrollers?resourceVersion=3&timeoutSeconds=28: (28.002215212s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/replication-controller] 192.168.33.10:47200]
+I0509 09:14:08.177820    3130 handlers.go:161] GET /api/v1/watch/services?resourceVersion=7&timeoutSeconds=28: (28.00191647s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/endpoint-controller] 192.168.33.10:47194]
+I0509 09:14:08.217554    3130 handlers.go:161] GET /apis/extensions/v1beta1/watch/horizontalpodautoscalers?resourceVersion=3&timeoutSeconds=28: (28.000854038s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/horizontal-pod-autoscaler] 192.168.33.10:47209]
+I0509 09:14:08.217705    3130 handlers.go:161] GET /apis/extensions/v1beta1/watch/replicasets?resourceVersion=3&timeoutSeconds=28: (28.000600799s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/replicaset-controller] 192.168.33.10:47213]
+I0509 09:14:08.217762    3130 handlers.go:161] GET /apis/batch/v1/watch/jobs?resourceVersion=3&timeoutSeconds=28: (28.000899873s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/job-controller] 192.168.33.10:47212]
+I0509 09:14:08.217721    3130 handlers.go:161] GET /apis/extensions/v1beta1/watch/daemonsets?resourceVersion=3&timeoutSeconds=28: (28.001280411s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/daemon-set-controller] 192.168.33.10:47211]
+I0509 09:14:08.218739    3130 handlers.go:161] GET /apis/extensions/v1beta1/watch/deployments?resourceVersion=3&timeoutSeconds=28: (28.00110178s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/deployment-controller] 192.168.33.10:47214]
+I0509 09:14:09.179114    3130 meta.go:46] Calling Accessor on non-internal object: *api.ServiceList
+I0509 09:14:09.179189    3130 meta.go:46] Calling Accessor on non-internal object: *api.ReplicationControllerList
+I0509 09:14:09.179303    3130 handlers.go:161] GET /api/v1/replicationcontrollers?resourceVersion=0: (478.068µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/replication-controller] 192.168.33.10:47221]
+I0509 09:14:09.179544    3130 handlers.go:161] GET /api/v1/services?resourceVersion=0: (774.928µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/endpoint-controller] 192.168.33.10:47194]
+I0509 09:14:09.220497    3130 meta.go:46] Calling Accessor on non-internal object: *batch.JobList
+I0509 09:14:09.220550    3130 meta.go:46] Calling Accessor on non-internal object: *extensions.DaemonSetList
+I0509 09:14:09.220710    3130 handlers.go:161] GET /apis/batch/v1/jobs?resourceVersion=0: (424.819µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/job-controller] 192.168.33.10:47226]
+I0509 09:14:09.220739    3130 handlers.go:161] GET /apis/extensions/v1beta1/daemonsets?resourceVersion=0: (425.534µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/daemon-set-controller] 192.168.33.10:47225]
+I0509 09:14:09.221178    3130 meta.go:46] Calling Accessor on non-internal object: *extensions.ReplicaSetList
+I0509 09:14:09.221284    3130 meta.go:46] Calling Accessor on non-internal object: *extensions.HorizontalPodAutoscalerList
+I0509 09:14:09.221350    3130 handlers.go:161] GET /apis/extensions/v1beta1/replicasets?resourceVersion=0: (450.289µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/replicaset-controller] 192.168.33.10:47227]
+I0509 09:14:09.221455    3130 handlers.go:161] GET /apis/extensions/v1beta1/horizontalpodautoscalers?resourceVersion=0: (516.925µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/horizontal-pod-autoscaler] 192.168.33.10:47229]
+I0509 09:14:09.221710    3130 meta.go:46] Calling Accessor on non-internal object: *extensions.DeploymentList
+I0509 09:14:09.221822    3130 handlers.go:161] GET /apis/extensions/v1beta1/deployments?resourceVersion=0: (308.498µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/deployment-controller] 192.168.33.10:47228]
+I0509 09:14:09.614308    3130 handlers.go:161] GET /api/v1/watch/nodes?resourceVersion=3&timeoutSeconds=3: (3.000781804s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47186]
+I0509 09:14:10.441190    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:14:10.442483    3130 handlers.go:161] GET /api/v1/nodes: (3.179208ms) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-controller] 192.168.33.10:47186]
+I0509 09:14:10.617379    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:14:10.617532    3130 handlers.go:161] GET /api/v1/nodes?resourceVersion=0: (407.284µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47186]
+I0509 09:14:11.250214    3130 handlers.go:161] GET /api: (268.229µs) 200 [[kubectl/v0.0.0 (linux/amd64) kubernetes/32621b0] 192.168.33.10:47230]
+I0509 09:14:11.250843    3130 handlers.go:161] GET /apis: (107.628µs) 200 [[kubectl/v0.0.0 (linux/amd64) kubernetes/32621b0] 192.168.33.10:47230]
+I0509 09:14:11.251722    3130 handlers.go:161] GET /version: (183.529µs) 200 [[kubectl/v0.0.0 (linux/amd64) kubernetes/32621b0] 192.168.33.10:47230]
+I0509 09:14:11.252383    3130 handlers.go:161] GET /api: (150.168µs) 200 [[kubectl/v0.0.0 (linux/amd64) kubernetes/32621b0] 192.168.33.10:47230]
+I0509 09:14:11.253425    3130 handlers.go:161] GET /apis: (305.269µs) 200 [[kubectl/v0.0.0 (linux/amd64) kubernetes/32621b0] 192.168.33.10:47230]
+I0509 09:14:11.304187    3130 handlers.go:161] POST /api/v1/namespaces/default/pods: (6.376485ms) 201 [[kubectl/v0.0.0 (linux/amd64) kubernetes/32621b0] 192.168.33.10:47230]
+I0509 09:14:13.619841    3130 handlers.go:161] GET /api/v1/watch/nodes?resourceVersion=3&timeoutSeconds=3: (3.001604327s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47186]
+I0509 09:14:14.623171    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:14:14.623342    3130 handlers.go:161] GET /api/v1/nodes?resourceVersion=0: (581.127µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47186]
+I0509 09:14:15.446009    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:14:15.446350    3130 handlers.go:161] GET /api/v1/nodes: (1.903999ms) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-controller] 192.168.33.10:47232]
+I0509 09:14:16.128441    3130 handlers.go:161] GET /api/v1/watch/nodes?resourceVersion=3&timeoutSeconds=326: (5m26.001508575s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-controller] 192.168.33.10:47065]
+I0509 09:14:17.625455    3130 handlers.go:161] GET /api/v1/watch/nodes?resourceVersion=3&timeoutSeconds=3: (3.001545091s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47186]
+I0509 09:14:18.628792    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:14:18.629094    3130 handlers.go:161] GET /api/v1/nodes?resourceVersion=0: (800.552µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47186]
+I0509 09:14:20.137184    3130 handlers.go:161] GET /api/v1/watch/replicationcontrollers?resourceVersion=3&timeoutSeconds=330: (5m30.001683699s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/resource-quota-controller] 192.168.33.10:47068]
+I0509 09:14:20.450626    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:14:20.451390    3130 handlers.go:161] GET /api/v1/nodes: (2.228555ms) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-controller] 192.168.33.10:47232]
+I0509 09:14:21.630658    3130 handlers.go:161] GET /api/v1/watch/nodes?resourceVersion=3&timeoutSeconds=3: (3.000855492s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47186]
+I0509 09:14:22.632861    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:14:22.633127    3130 handlers.go:161] GET /api/v1/nodes?resourceVersion=0: (501.251µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47186]
+I0509 09:14:25.461137    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:14:25.462055    3130 handlers.go:161] GET /api/v1/nodes: (2.377368ms) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-controller] 192.168.33.10:47232]
+I0509 09:14:25.635750    3130 handlers.go:161] GET /api/v1/watch/nodes?resourceVersion=3&timeoutSeconds=3: (3.001907899s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47186]
+I0509 09:14:26.638659    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:14:26.638780    3130 handlers.go:161] GET /api/v1/nodes?resourceVersion=0: (533.599µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47186]
+I0509 09:14:29.640064    3130 handlers.go:161] GET /api/v1/watch/nodes?resourceVersion=3&timeoutSeconds=3: (3.00063256s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47186]
+I0509 09:14:30.466632    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:14:30.466795    3130 handlers.go:161] GET /api/v1/nodes: (1.491679ms) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-controller] 192.168.33.10:47186]
+I0509 09:14:30.643056    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:14:30.643236    3130 handlers.go:161] GET /api/v1/nodes?resourceVersion=0: (645.559µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47186]
+I0509 09:14:33.646450    3130 handlers.go:161] GET /api/v1/watch/nodes?resourceVersion=3&timeoutSeconds=3: (3.002600519s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47186]
+I0509 09:14:34.175255    3130 handlers.go:161] GET /api/v1/watch/serviceaccounts?fieldSelector=metadata.name%3Ddefault&resourceVersion=3&timeoutSeconds=344: (5m44.000560342s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/service-account-controller] 192.168.33.10:47081]
+I0509 09:14:34.649704    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:14:34.649887    3130 handlers.go:161] GET /api/v1/nodes?resourceVersion=0: (760.337µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47232]
+I0509 09:14:35.471187    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:14:35.472977    3130 handlers.go:161] GET /api/v1/nodes: (3.037149ms) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-controller] 192.168.33.10:47235]
+I0509 09:14:37.176540    3130 handlers.go:161] GET /api/v1/watch/persistentvolumes?resourceVersion=3&timeoutSeconds=347: (5m47.001674112s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/persistent-volume-recycler] 192.168.33.10:47085]
+I0509 09:14:37.188271    3130 handlers.go:161] GET /api/v1/watch/services?resourceVersion=7&timeoutSeconds=28: (28.007956784s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/endpoint-controller] 192.168.33.10:47194]
+I0509 09:14:37.188600    3130 handlers.go:161] GET /api/v1/watch/replicationcontrollers?resourceVersion=3&timeoutSeconds=28: (28.008664114s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/replication-controller] 192.168.33.10:47221]
+I0509 09:14:37.225939    3130 handlers.go:161] GET /apis/extensions/v1beta1/watch/daemonsets?resourceVersion=3&timeoutSeconds=28: (28.003527834s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/daemon-set-controller] 192.168.33.10:47228]
+I0509 09:14:37.225983    3130 handlers.go:161] GET /apis/extensions/v1beta1/watch/horizontalpodautoscalers?resourceVersion=3&timeoutSeconds=28: (28.003383023s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/horizontal-pod-autoscaler] 192.168.33.10:47229]
+I0509 09:14:37.225939    3130 handlers.go:161] GET /apis/batch/v1/watch/jobs?resourceVersion=3&timeoutSeconds=28: (28.003350126s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/job-controller] 192.168.33.10:47225]
+I0509 09:14:37.226120    3130 handlers.go:161] GET /apis/extensions/v1beta1/watch/replicasets?resourceVersion=3&timeoutSeconds=28: (28.003455308s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/replicaset-controller] 192.168.33.10:47226]
+I0509 09:14:37.226161    3130 handlers.go:161] GET /apis/extensions/v1beta1/watch/deployments?resourceVersion=3&timeoutSeconds=28: (28.003351808s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/deployment-controller] 192.168.33.10:47227]
+I0509 09:14:37.658623    3130 handlers.go:161] GET /api/v1/watch/nodes?resourceVersion=3&timeoutSeconds=3: (3.007894993s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47232]
+I0509 09:14:38.190503    3130 meta.go:46] Calling Accessor on non-internal object: *api.ReplicationControllerList
+I0509 09:14:38.190593    3130 meta.go:46] Calling Accessor on non-internal object: *api.ServiceList
+I0509 09:14:38.190636    3130 handlers.go:161] GET /api/v1/replicationcontrollers?resourceVersion=0: (467.453µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/replication-controller] 192.168.33.10:47221]
+I0509 09:14:38.190739    3130 handlers.go:161] GET /api/v1/services?resourceVersion=0: (355.079µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/endpoint-controller] 192.168.33.10:47235]
+I0509 09:14:38.230657    3130 meta.go:46] Calling Accessor on non-internal object: *batch.JobList
+I0509 09:14:38.230872    3130 handlers.go:161] GET /apis/batch/v1/jobs?resourceVersion=0: (404.404µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/job-controller] 192.168.33.10:47237]
+I0509 09:14:38.231320    3130 meta.go:46] Calling Accessor on non-internal object: *extensions.HorizontalPodAutoscalerList
+I0509 09:14:38.231342    3130 meta.go:46] Calling Accessor on non-internal object: *extensions.DaemonSetList
+I0509 09:14:38.231455    3130 handlers.go:161] GET /apis/extensions/v1beta1/horizontalpodautoscalers?resourceVersion=0: (444.65µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/horizontal-pod-autoscaler] 192.168.33.10:47238]
+I0509 09:14:38.231488    3130 handlers.go:161] GET /apis/extensions/v1beta1/daemonsets?resourceVersion=0: (347.569µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/daemon-set-controller] 192.168.33.10:47240]
+I0509 09:14:38.231700    3130 meta.go:46] Calling Accessor on non-internal object: *extensions.DeploymentList
+I0509 09:14:38.231745    3130 meta.go:46] Calling Accessor on non-internal object: *extensions.ReplicaSetList
+I0509 09:14:38.231821    3130 handlers.go:161] GET /apis/extensions/v1beta1/deployments?resourceVersion=0: (250.711µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/deployment-controller] 192.168.33.10:47236]
+I0509 09:14:38.231869    3130 handlers.go:161] GET /apis/extensions/v1beta1/replicasets?resourceVersion=0: (252.009µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/replicaset-controller] 192.168.33.10:47239]
+I0509 09:14:38.661396    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:14:38.661665    3130 handlers.go:161] GET /api/v1/nodes?resourceVersion=0: (529.857µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47241]
+I0509 09:14:40.478416    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:14:40.478873    3130 handlers.go:161] GET /api/v1/nodes: (2.47788ms) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-controller] 192.168.33.10:47242]
+I0509 09:14:41.664839    3130 handlers.go:161] GET /api/v1/watch/nodes?resourceVersion=3&timeoutSeconds=3: (3.002348492s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47241]
+I0509 09:14:42.668253    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:14:42.668453    3130 handlers.go:161] GET /api/v1/nodes?resourceVersion=0: (668.518µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47241]
+I0509 09:14:45.482474    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:14:45.482695    3130 handlers.go:161] GET /api/v1/nodes: (2.603067ms) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-controller] 192.168.33.10:47242]
+I0509 09:14:45.671177    3130 handlers.go:161] GET /api/v1/watch/nodes?resourceVersion=3&timeoutSeconds=3: (3.001696502s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47241]
+I0509 09:14:46.675086    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:14:46.675322    3130 handlers.go:161] GET /api/v1/nodes?resourceVersion=0: (569.02µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47241]
+I0509 09:14:49.677655    3130 handlers.go:161] GET /api/v1/watch/nodes?resourceVersion=3&timeoutSeconds=3: (3.001658573s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47241]
+I0509 09:14:50.486544    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:14:50.487326    3130 handlers.go:161] GET /api/v1/nodes: (2.035798ms) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-controller] 192.168.33.10:47241]
+I0509 09:14:50.679855    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:14:50.680038    3130 handlers.go:161] GET /api/v1/nodes?resourceVersion=0: (681.922µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47241]
+I0509 09:14:53.138936    3130 handlers.go:161] GET /api/v1/watch/pods?fieldSelector=status.phase%21%3DPending%2Cstatus.phase%21%3DRunning%2Cstatus.phase%21%3DUnknown&resourceVersion=3&timeoutSeconds=363: (6m3.002826486s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/garbage-collector] 192.168.33.10:47071]
+I0509 09:14:53.140322    3130 handlers.go:161] GET /api/v1/watch/pods?fieldSelector=status.phase%21%3DPending%2Cstatus.phase%21%3DRunning%2Cstatus.phase%21%3DUnknown&resourceVersion=3&timeoutSeconds=412: (538.953µs) 410
+goroutine 413 [running]:
+k8s.io/kubernetes/pkg/httplog.(*respLogger).recordStatus(0xc820b05a40, 0x19a)
+	/kubernetes/_output/local/go/src/k8s.io/kubernetes/pkg/httplog/log.go:214 +0xa3
+k8s.io/kubernetes/pkg/httplog.(*respLogger).WriteHeader(0xc820b05a40, 0x19a)
+	/kubernetes/_output/local/go/src/k8s.io/kubernetes/pkg/httplog/log.go:193 +0x2b
+k8s.io/kubernetes/pkg/apiserver/metrics.(*responseWriterDelegator).WriteHeader(0xc8218e7020, 0x19a)
+	/kubernetes/_output/local/go/src/k8s.io/kubernetes/pkg/apiserver/metrics/metrics.go:117 +0x4c
+k8s.io/kubernetes/pkg/apiserver.writeNegotiated(0x7f5520eb8ee8, 0xc8202899d0, 0x0, 0x0, 0x2c40d58, 0x2, 0x7f5520f0b148, 0xc82007e218, 0xc820e5e7e0, 0x19a, ...)
+	/kubernetes/_output/local/go/src/k8s.io/kubernetes/pkg/apiserver/apiserver.go:433 +0x173
+k8s.io/kubernetes/pkg/apiserver.errorNegotiated(0x7f5520eb6970, 0xc820fa0700, 0x7f5520eb8ee8, 0xc8202899d0, 0x0, 0x0, 0x2c40d58, 0x2, 0x7f5520f0b148, 0xc82007e218, ...)
+	/kubernetes/_output/local/go/src/k8s.io/kubernetes/pkg/apiserver/apiserver.go:445 +0xf9
+k8s.io/kubernetes/pkg/apiserver.(*RequestScope).err(0xc8204241a0, 0x7f5520eb6970, 0xc820fa0700, 0x7f5520f0b148, 0xc82007e218, 0xc820e5e7e0)
+	/kubernetes/_output/local/go/src/k8s.io/kubernetes/pkg/apiserver/resthandler.go:86 +0x191
+k8s.io/kubernetes/pkg/apiserver.ListResource.func1(0xc8218e6f90, 0xc820f632c0)
+	/kubernetes/_output/local/go/src/k8s.io/kubernetes/pkg/apiserver/resthandler.go:297 +0x10ed
+k8s.io/kubernetes/pkg/apiserver/metrics.InstrumentRouteFunc.func1(0xc8218e6f90, 0xc820f632c0)
+	/kubernetes/_output/local/go/src/k8s.io/kubernetes/pkg/apiserver/metrics/metrics.go:101 +0x25c
+github.com/emicklei/go-restful.(*Container).dispatch(0xc8202d8990, 0x7f5520ecedb0, 0xc820b05a40, 0xc820e5e7e0)
+	/kubernetes/Godeps/_workspace/src/github.com/emicklei/go-restful/container.go:249 +0xf30
+github.com/emicklei/go-restful.(*Container).(github.com/emicklei/go-restful.dispatch)-fm(0x7f5520ecedb0, 0xc820b05a40, 0xc820e5e7e0)
+	/kubernetes/Godeps/_workspace/src/github.com/emicklei/go-restful/container. [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/garbage-collector] 192.168.33.10:47071]
+I0509 09:14:53.682990    3130 handlers.go:161] GET /api/v1/watch/nodes?resourceVersion=3&timeoutSeconds=3: (3.001778204s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47241]
+I0509 09:14:54.271434    3130 meta.go:46] Calling Accessor on non-internal object: *api.PodList
+I0509 09:14:54.271590    3130 handlers.go:161] GET /api/v1/pods?fieldSelector=status.phase%21%3DPending%2Cstatus.phase%21%3DRunning%2Cstatus.phase%21%3DUnknown&resourceVersion=0: (466.989µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/garbage-collector] 192.168.33.10:47071]
+I0509 09:14:54.686104    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:14:54.686260    3130 handlers.go:161] GET /api/v1/nodes?resourceVersion=0: (496.971µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47242]
+I0509 09:14:55.490798    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:14:55.491066    3130 handlers.go:161] GET /api/v1/nodes: (1.482509ms) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-controller] 192.168.33.10:47248]
+I0509 09:14:57.687358    3130 handlers.go:161] GET /api/v1/watch/nodes?resourceVersion=3&timeoutSeconds=3: (3.000578464s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47242]
+I0509 09:14:58.688824    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:14:58.689040    3130 handlers.go:161] GET /api/v1/nodes?resourceVersion=0: (437.748µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47242]
+I0509 09:15:00.494522    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:15:00.494694    3130 handlers.go:161] GET /api/v1/nodes: (1.52358ms) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-controller] 192.168.33.10:47248]
+I0509 09:15:01.691298    3130 handlers.go:161] GET /api/v1/watch/nodes?resourceVersion=3&timeoutSeconds=3: (3.001472695s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47242]
+I0509 09:15:02.138116    3130 handlers.go:161] GET /api/v1/watch/pods?resourceVersion=3&timeoutSeconds=372: (6m12.001822518s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-controller] 192.168.33.10:47072]
+I0509 09:15:02.693969    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:15:02.694129    3130 handlers.go:161] GET /api/v1/nodes?resourceVersion=0: (598.191µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47248]
+I0509 09:15:05.498801    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:15:05.499839    3130 handlers.go:161] GET /api/v1/nodes: (2.613902ms) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-controller] 192.168.33.10:47250]
+I0509 09:15:05.695376    3130 handlers.go:161] GET /api/v1/watch/nodes?resourceVersion=3&timeoutSeconds=3: (3.000631547s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47248]
+I0509 09:15:06.192324    3130 handlers.go:161] GET /api/v1/watch/services?resourceVersion=7&timeoutSeconds=28: (28.000936226s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/endpoint-controller] 192.168.33.10:47235]
+I0509 09:15:06.192324    3130 handlers.go:161] GET /api/v1/watch/replicationcontrollers?resourceVersion=3&timeoutSeconds=28: (28.000573233s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/replication-controller] 192.168.33.10:47221]
+I0509 09:15:06.235006    3130 handlers.go:161] GET /apis/extensions/v1beta1/watch/daemonsets?resourceVersion=3&timeoutSeconds=28: (28.001367192s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/daemon-set-controller] 192.168.33.10:47240]
+I0509 09:15:06.235063    3130 handlers.go:161] GET /apis/batch/v1/watch/jobs?resourceVersion=3&timeoutSeconds=28: (28.001709617s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/job-controller] 192.168.33.10:47237]
+I0509 09:15:06.235204    3130 handlers.go:161] GET /apis/extensions/v1beta1/watch/deployments?resourceVersion=3&timeoutSeconds=28: (28.001729898s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/deployment-controller] 192.168.33.10:47236]
+I0509 09:15:06.235213    3130 handlers.go:161] GET /apis/extensions/v1beta1/watch/replicasets?resourceVersion=3&timeoutSeconds=28: (28.001910514s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/replicaset-controller] 192.168.33.10:47239]
+I0509 09:15:06.235306    3130 handlers.go:161] GET /apis/extensions/v1beta1/watch/horizontalpodautoscalers?resourceVersion=3&timeoutSeconds=28: (28.001795014s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/horizontal-pod-autoscaler] 192.168.33.10:47238]
+I0509 09:15:06.698202    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:15:06.698318    3130 handlers.go:161] GET /api/v1/nodes?resourceVersion=0: (421.824µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47248]
+I0509 09:15:07.195134    3130 meta.go:46] Calling Accessor on non-internal object: *api.ServiceList
+I0509 09:15:07.195305    3130 handlers.go:161] GET /api/v1/services?resourceVersion=0: (614.495µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/endpoint-controller] 192.168.33.10:47250]
+I0509 09:15:07.195931    3130 meta.go:46] Calling Accessor on non-internal object: *api.ReplicationControllerList
+I0509 09:15:07.196083    3130 handlers.go:161] GET /api/v1/replicationcontrollers?resourceVersion=0: (355.721µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/replication-controller] 192.168.33.10:47250]
+I0509 09:15:07.239848    3130 meta.go:46] Calling Accessor on non-internal object: *extensions.DaemonSetList
+I0509 09:15:07.239889    3130 meta.go:46] Calling Accessor on non-internal object: *extensions.HorizontalPodAutoscalerList
+I0509 09:15:07.240093    3130 handlers.go:161] GET /apis/extensions/v1beta1/daemonsets?resourceVersion=0: (489.635µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/daemon-set-controller] 192.168.33.10:47256]
+I0509 09:15:07.240109    3130 handlers.go:161] GET /apis/extensions/v1beta1/horizontalpodautoscalers?resourceVersion=0: (630.701µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/horizontal-pod-autoscaler] 192.168.33.10:47252]
+I0509 09:15:07.240328    3130 meta.go:46] Calling Accessor on non-internal object: *batch.JobList
+I0509 09:15:07.240367    3130 meta.go:46] Calling Accessor on non-internal object: *extensions.ReplicaSetList
+I0509 09:15:07.240441    3130 handlers.go:161] GET /apis/batch/v1/jobs?resourceVersion=0: (215.59µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/job-controller] 192.168.33.10:47253]
+I0509 09:15:07.240483    3130 handlers.go:161] GET /apis/extensions/v1beta1/replicasets?resourceVersion=0: (240.606µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/replicaset-controller] 192.168.33.10:47255]
+I0509 09:15:07.240705    3130 meta.go:46] Calling Accessor on non-internal object: *extensions.DeploymentList
+I0509 09:15:07.240839    3130 handlers.go:161] GET /apis/extensions/v1beta1/deployments?resourceVersion=0: (272.714µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/deployment-controller] 192.168.33.10:47254]
+I0509 09:15:09.699736    3130 handlers.go:161] GET /api/v1/watch/nodes?resourceVersion=3&timeoutSeconds=3: (3.000893856s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47248]
+I0509 09:15:10.504359    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:15:10.504543    3130 handlers.go:161] GET /api/v1/nodes: (2.899736ms) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-controller] 192.168.33.10:47248]
+I0509 09:15:10.702446    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:15:10.703210    3130 handlers.go:161] GET /api/v1/nodes?resourceVersion=0: (1.169913ms) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47248]
+I0509 09:15:13.704498    3130 handlers.go:161] GET /api/v1/watch/nodes?resourceVersion=3&timeoutSeconds=3: (3.000649269s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47248]
+I0509 09:15:14.706812    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:15:14.706990    3130 handlers.go:161] GET /api/v1/nodes?resourceVersion=0: (1.294959ms) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47248]
+I0509 09:15:15.510211    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:15:15.511389    3130 handlers.go:161] GET /api/v1/nodes: (3.23343ms) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-controller] 192.168.33.10:47258]
+I0509 09:15:16.752906    3130 handlers.go:161] GET /api: (297.053µs) 200 [[kubectl/v0.0.0 (linux/amd64) kubernetes/32621b0] 192.168.33.10:47259]
+I0509 09:15:16.756378    3130 handlers.go:161] GET /apis: (241.729µs) 200 [[kubectl/v0.0.0 (linux/amd64) kubernetes/32621b0] 192.168.33.10:47259]
+I0509 09:15:16.757111    3130 handlers.go:161] GET /api: (68.728µs) 200 [[kubectl/v0.0.0 (linux/amd64) kubernetes/32621b0] 192.168.33.10:47259]
+I0509 09:15:16.757746    3130 handlers.go:161] GET /apis: (127.808µs) 200 [[kubectl/v0.0.0 (linux/amd64) kubernetes/32621b0] 192.168.33.10:47259]
+I0509 09:15:16.759620    3130 meta.go:46] Calling Accessor on non-internal object: *api.PodList
+I0509 09:15:16.759698    3130 handlers.go:161] GET /api/v1/namespaces/default/pods: (1.375216ms) 200 [[kubectl/v0.0.0 (linux/amd64) kubernetes/32621b0] 192.168.33.10:47259]
+I0509 09:15:17.708442    3130 handlers.go:161] GET /api/v1/watch/nodes?resourceVersion=3&timeoutSeconds=3: (3.000774641s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47248]
+I0509 09:15:18.711818    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:15:18.712023    3130 handlers.go:161] GET /api/v1/nodes?resourceVersion=0: (770.446µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47248]
+I0509 09:15:20.514718    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:15:20.514870    3130 handlers.go:161] GET /api/v1/nodes: (2.164656ms) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-controller] 192.168.33.10:47258]
+I0509 09:15:21.715018    3130 handlers.go:161] GET /api/v1/watch/nodes?resourceVersion=3&timeoutSeconds=3: (3.001994869s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47248]
+I0509 09:15:22.717976    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:15:22.718101    3130 handlers.go:161] GET /api/v1/nodes?resourceVersion=0: (362.625µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47248]
+I0509 09:15:24.702157    3130 handlers.go:161] GET /api: (404.889µs) 200 [[kubectl/v0.0.0 (linux/amd64) kubernetes/32621b0] 192.168.33.10:47260]
+I0509 09:15:24.706935    3130 handlers.go:161] GET /apis: (241.581µs) 200 [[kubectl/v0.0.0 (linux/amd64) kubernetes/32621b0] 192.168.33.10:47260]
+I0509 09:15:24.707662    3130 handlers.go:161] GET /api: (179.3µs) 200 [[kubectl/v0.0.0 (linux/amd64) kubernetes/32621b0] 192.168.33.10:47260]
+I0509 09:15:24.708674    3130 handlers.go:161] GET /apis: (240.268µs) 200 [[kubectl/v0.0.0 (linux/amd64) kubernetes/32621b0] 192.168.33.10:47260]
+I0509 09:15:24.711455    3130 meta.go:46] Calling Accessor on non-internal object: *api.EventList
+I0509 09:15:24.711669    3130 handlers.go:161] GET /api/v1/namespaces/default/events: (2.342933ms) 200 [[kubectl/v0.0.0 (linux/amd64) kubernetes/32621b0] 192.168.33.10:47260]
+I0509 09:15:25.521106    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:15:25.521388    3130 handlers.go:161] GET /api/v1/nodes: (2.591114ms) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-controller] 192.168.33.10:47258]
+I0509 09:15:25.719233    3130 handlers.go:161] GET /api/v1/watch/nodes?resourceVersion=3&timeoutSeconds=3: (3.00055274s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47248]
+I0509 09:15:26.720783    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:15:26.721138    3130 handlers.go:161] GET /api/v1/nodes?resourceVersion=0: (669.668µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47248]
+I0509 09:15:29.722480    3130 handlers.go:161] GET /api/v1/watch/nodes?resourceVersion=3&timeoutSeconds=3: (3.000792618s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47248]
+I0509 09:15:30.263118    3130 handlers.go:161] GET /api: (183.917µs) 200 [[kubectl/v0.0.0 (linux/amd64) kubernetes/32621b0] 192.168.33.10:47263]
+I0509 09:15:30.263946    3130 handlers.go:161] GET /apis: (239.594µs) 200 [[kubectl/v0.0.0 (linux/amd64) kubernetes/32621b0] 192.168.33.10:47263]
+I0509 09:15:30.264772    3130 handlers.go:161] GET /api: (149.182µs) 200 [[kubectl/v0.0.0 (linux/amd64) kubernetes/32621b0] 192.168.33.10:47263]
+I0509 09:15:30.265753    3130 handlers.go:161] GET /apis: (216.869µs) 200 [[kubectl/v0.0.0 (linux/amd64) kubernetes/32621b0] 192.168.33.10:47263]
+I0509 09:15:30.268260    3130 meta.go:46] Calling Accessor on non-internal object: *api.ReplicationControllerList
+I0509 09:15:30.268363    3130 handlers.go:161] GET /api/v1/namespaces/default/replicationcontrollers: (1.954927ms) 200 [[kubectl/v0.0.0 (linux/amd64) kubernetes/32621b0] 192.168.33.10:47263]
+I0509 09:15:30.524553    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:15:30.524753    3130 handlers.go:161] GET /api/v1/nodes: (1.67277ms) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-controller] 192.168.33.10:47248]
+I0509 09:15:30.724003    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:15:30.724252    3130 handlers.go:161] GET /api/v1/nodes?resourceVersion=0: (601.517µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47248]
+I0509 09:15:33.725802    3130 handlers.go:161] GET /api/v1/watch/nodes?resourceVersion=3&timeoutSeconds=3: (3.000739662s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47248]
+I0509 09:15:34.728501    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:15:34.728691    3130 handlers.go:161] GET /api/v1/nodes?resourceVersion=0: (656.79µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47248]
+I0509 09:15:35.198121    3130 handlers.go:161] GET /api/v1/watch/services?resourceVersion=7&timeoutSeconds=28: (28.002055292s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/endpoint-controller] 192.168.33.10:47251]
+I0509 09:15:35.198299    3130 handlers.go:161] GET /api/v1/watch/replicationcontrollers?resourceVersion=3&timeoutSeconds=28: (28.001857198s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/replication-controller] 192.168.33.10:47250]
+I0509 09:15:35.248293    3130 handlers.go:161] GET /apis/extensions/v1beta1/watch/horizontalpodautoscalers?resourceVersion=3&timeoutSeconds=28: (28.006493355s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/horizontal-pod-autoscaler] 192.168.33.10:47252]
+I0509 09:15:35.248447    3130 handlers.go:161] GET /apis/extensions/v1beta1/watch/replicasets?resourceVersion=3&timeoutSeconds=28: (28.006152625s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/replicaset-controller] 192.168.33.10:47255]
+I0509 09:15:35.248502    3130 handlers.go:161] GET /apis/extensions/v1beta1/watch/daemonsets?resourceVersion=3&timeoutSeconds=28: (28.006579233s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/daemon-set-controller] 192.168.33.10:47256]
+I0509 09:15:35.248458    3130 handlers.go:161] GET /apis/batch/v1/watch/jobs?resourceVersion=3&timeoutSeconds=28: (28.006921215s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/job-controller] 192.168.33.10:47253]
+I0509 09:15:35.248599    3130 handlers.go:161] GET /apis/extensions/v1beta1/watch/deployments?resourceVersion=3&timeoutSeconds=28: (28.006536749s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/deployment-controller] 192.168.33.10:47254]
+I0509 09:15:35.528424    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:15:35.529433    3130 handlers.go:161] GET /api/v1/nodes: (2.516854ms) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-controller] 192.168.33.10:47251]
+I0509 09:15:36.138632    3130 handlers.go:161] GET /api/v1/watch/secrets?resourceVersion=3&timeoutSeconds=406: (6m46.002189186s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/resource-quota-controller] 192.168.33.10:47060]
+I0509 09:15:36.200444    3130 meta.go:46] Calling Accessor on non-internal object: *api.ReplicationControllerList
+I0509 09:15:36.200686    3130 handlers.go:161] GET /api/v1/replicationcontrollers?resourceVersion=0: (663.268µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/replication-controller] 192.168.33.10:47258]
+I0509 09:15:36.201153    3130 meta.go:46] Calling Accessor on non-internal object: *api.ServiceList
+I0509 09:15:36.201397    3130 handlers.go:161] GET /api/v1/services?resourceVersion=0: (479.217µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/endpoint-controller] 192.168.33.10:47266]
+I0509 09:15:36.252131    3130 meta.go:46] Calling Accessor on non-internal object: *batch.JobList
+I0509 09:15:36.252391    3130 handlers.go:161] GET /apis/batch/v1/jobs?resourceVersion=0: (488.643µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/job-controller] 192.168.33.10:47268]
+I0509 09:15:36.253182    3130 meta.go:46] Calling Accessor on non-internal object: *extensions.DaemonSetList
+I0509 09:15:36.253348    3130 handlers.go:161] GET /apis/extensions/v1beta1/daemonsets?resourceVersion=0: (294.495µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/daemon-set-controller] 192.168.33.10:47270]
+I0509 09:15:36.253663    3130 meta.go:46] Calling Accessor on non-internal object: *extensions.ReplicaSetList
+I0509 09:15:36.253784    3130 handlers.go:161] GET /apis/extensions/v1beta1/replicasets?resourceVersion=0: (252.709µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/replicaset-controller] 192.168.33.10:47271]
+I0509 09:15:36.254104    3130 meta.go:46] Calling Accessor on non-internal object: *extensions.HorizontalPodAutoscalerList
+I0509 09:15:36.254226    3130 handlers.go:161] GET /apis/extensions/v1beta1/horizontalpodautoscalers?resourceVersion=0: (256.357µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/horizontal-pod-autoscaler] 192.168.33.10:47272]
+I0509 09:15:36.255130    3130 meta.go:46] Calling Accessor on non-internal object: *extensions.DeploymentList
+I0509 09:15:36.255258    3130 handlers.go:161] GET /apis/extensions/v1beta1/deployments?resourceVersion=0: (2.59341ms) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/deployment-controller] 192.168.33.10:47267]
+I0509 09:15:36.934443    3130 handlers.go:161] GET /api: (207.218µs) 200 [[kubectl/v0.0.0 (linux/amd64) kubernetes/32621b0] 192.168.33.10:47273]
+I0509 09:15:36.937419    3130 handlers.go:161] GET /apis: (362.016µs) 200 [[kubectl/v0.0.0 (linux/amd64) kubernetes/32621b0] 192.168.33.10:47273]
+I0509 09:15:36.938729    3130 handlers.go:161] GET /api: (159.469µs) 200 [[kubectl/v0.0.0 (linux/amd64) kubernetes/32621b0] 192.168.33.10:47273]
+I0509 09:15:36.939561    3130 handlers.go:161] GET /apis: (336.642µs) 200 [[kubectl/v0.0.0 (linux/amd64) kubernetes/32621b0] 192.168.33.10:47273]
+I0509 09:15:36.941575    3130 handlers.go:161] GET /api/v1/namespaces/default/pods/tomcat: (1.473995ms) 200 [[kubectl/v0.0.0 (linux/amd64) kubernetes/32621b0] 192.168.33.10:47273]
+I0509 09:15:36.942385    3130 handlers.go:161] GET /api: (101.023µs) 200 [[kubectl/v0.0.0 (linux/amd64) kubernetes/32621b0] 192.168.33.10:47273]
+I0509 09:15:36.943209    3130 handlers.go:161] GET /apis: (191.149µs) 200 [[kubectl/v0.0.0 (linux/amd64) kubernetes/32621b0] 192.168.33.10:47273]
+I0509 09:15:36.944693    3130 meta.go:46] Calling Accessor on non-internal object: *rest.LocationStreamer
+I0509 09:15:36.944808    3130 handlers.go:161] GET /api/v1/namespaces/default/pods/tomcat/log: (974.638µs) 204
+goroutine 2192 [running]:
+k8s.io/kubernetes/pkg/httplog.(*respLogger).recordStatus(0xc820ede2a0, 0xcc)
+	/kubernetes/_output/local/go/src/k8s.io/kubernetes/pkg/httplog/log.go:214 +0xa3
+k8s.io/kubernetes/pkg/httplog.(*respLogger).WriteHeader(0xc820ede2a0, 0xcc)
+	/kubernetes/_output/local/go/src/k8s.io/kubernetes/pkg/httplog/log.go:193 +0x2b
+k8s.io/kubernetes/pkg/apiserver/metrics.(*responseWriterDelegator).WriteHeader(0xc8215776e0, 0xcc)
+	/kubernetes/_output/local/go/src/k8s.io/kubernetes/pkg/apiserver/metrics/metrics.go:117 +0x4c
+k8s.io/kubernetes/pkg/apiserver.write(0xc8, 0x0, 0x0, 0x2c40d58, 0x2, 0x7f5520eb8ee8, 0xc8202899d0, 0x7f5520e65010, 0xc82136e9c0, 0x7f5520f0b148, ...)
+	/kubernetes/_output/local/go/src/k8s.io/kubernetes/pkg/apiserver/apiserver.go:395 +0x2f0
+k8s.io/kubernetes/pkg/apiserver.getResourceHandler.func1(0xc821577650, 0xc82107cb40)
+	/kubernetes/_output/local/go/src/k8s.io/kubernetes/pkg/apiserver/resthandler.go:118 +0x44a
+k8s.io/kubernetes/pkg/apiserver/metrics.InstrumentRouteFunc.func1(0xc821577650, 0xc82107cb40)
+	/kubernetes/_output/local/go/src/k8s.io/kubernetes/pkg/apiserver/metrics/metrics.go:101 +0x25c
+github.com/emicklei/go-restful.(*Container).dispatch(0xc8202d8990, 0x7f5520ecedb0, 0xc820ede2a0, 0xc820c470a0)
+	/kubernetes/Godeps/_workspace/src/github.com/emicklei/go-restful/container.go:249 +0xf30
+github.com/emicklei/go-restful.(*Container).(github.com/emicklei/go-restful.dispatch)-fm(0x7f5520ecedb0, 0xc820ede2a0, 0xc820c470a0)
+	/kubernetes/Godeps/_workspace/src/github.com/emicklei/go-restful/container.go:95 +0x3e
+net/http.HandlerFunc.ServeHTTP(0xc820ea68c0, 0x7f5520ecedb0, 0xc820ede2a0, 0xc820c470a0)
+	/usr/local/go/src/net/http/server.go:1618 +0x3a
+net/http.(*ServeMux).ServeHTTP(0xc8201a0690, 0x7f5520ecedb0, 0xc820ede2a0, 0xc820c470a0)
+	/usr/local/go/src/net/http/server.go:1910 +0x17d
+k8s.io/kubernetes/pkg/api.NewRequestContextFilter.func1(0x7f5520ecedb0, 0xc820ede2a0, 0xc820c470a0)
+	/kubernetes/_output/local/go/src/k8s.io/kubernetes/pkg/api/requestcontext.go:101 +0x157
+net/http.HandlerF [[kubectl/v0.0.0 (linux/amd64) kubernetes/32621b0] 192.168.33.10:47273]
+I0509 09:15:37.730448    3130 handlers.go:161] GET /api/v1/watch/nodes?resourceVersion=3&timeoutSeconds=3: (3.000875983s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47248]
+I0509 09:15:38.213146    3130 handlers.go:161] GET /api/v1/watch/pods?resourceVersion=3&timeoutSeconds=408: (6m48.077240114s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/resource-quota-controller] 192.168.33.10:47070]
+I0509 09:15:38.733224    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:15:38.733444    3130 handlers.go:161] GET /api/v1/nodes?resourceVersion=0: (687.247µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47248]
+I0509 09:15:39.173761    3130 handlers.go:161] GET /api/v1/watch/persistentvolumes?resourceVersion=3&timeoutSeconds=409: (6m49.000688126s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/persistent-volume-binder] 192.168.33.10:47095]
+I0509 09:15:40.533319    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:15:40.533567    3130 handlers.go:161] GET /api/v1/nodes: (2.136085ms) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-controller] 192.168.33.10:47274]
+I0509 09:15:41.736026    3130 handlers.go:161] GET /api/v1/watch/nodes?resourceVersion=3&timeoutSeconds=3: (3.001643896s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47248]
+I0509 09:15:42.738136    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:15:42.738272    3130 handlers.go:161] GET /api/v1/nodes?resourceVersion=0: (541.217µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47248]
+I0509 09:15:44.364167    3130 handlers.go:161] GET /api: (463.219µs) 200 [[kubectl/v0.0.0 (linux/amd64) kubernetes/32621b0] 192.168.33.10:47275]
+I0509 09:15:44.365011    3130 handlers.go:161] GET /apis: (334.335µs) 200 [[kubectl/v0.0.0 (linux/amd64) kubernetes/32621b0] 192.168.33.10:47275]
+I0509 09:15:44.365905    3130 handlers.go:161] GET /api: (211.418µs) 200 [[kubectl/v0.0.0 (linux/amd64) kubernetes/32621b0] 192.168.33.10:47275]
+I0509 09:15:44.366689    3130 handlers.go:161] GET /apis: (262.773µs) 200 [[kubectl/v0.0.0 (linux/amd64) kubernetes/32621b0] 192.168.33.10:47275]
+I0509 09:15:44.368277    3130 meta.go:46] Calling Accessor on non-internal object: *api.EventList
+I0509 09:15:44.368390    3130 handlers.go:161] GET /api/v1/namespaces/default/events: (1.225465ms) 200 [[kubectl/v0.0.0 (linux/amd64) kubernetes/32621b0] 192.168.33.10:47275]
+I0509 09:15:45.537986    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:15:45.539227    3130 handlers.go:161] GET /api/v1/nodes: (3.123441ms) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-controller] 192.168.33.10:47274]
+I0509 09:15:45.739439    3130 handlers.go:161] GET /api/v1/watch/nodes?resourceVersion=3&timeoutSeconds=3: (3.000485134s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47248]
+I0509 09:15:46.743417    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:15:46.743533    3130 handlers.go:161] GET /api/v1/nodes?resourceVersion=0: (417.326µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47248]
+I0509 09:15:49.746121    3130 handlers.go:161] GET /api/v1/watch/nodes?resourceVersion=3&timeoutSeconds=3: (3.001925659s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47248]
+I0509 09:15:50.543110    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:15:50.543342    3130 handlers.go:161] GET /api/v1/nodes: (2.63061ms) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-controller] 192.168.33.10:47248]
+I0509 09:15:50.748652    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:15:50.748831    3130 handlers.go:161] GET /api/v1/nodes?resourceVersion=0: (599.761µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47248]
+I0509 09:15:53.750413    3130 handlers.go:161] GET /api/v1/watch/nodes?resourceVersion=3&timeoutSeconds=3: (3.000816885s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47248]
+I0509 09:15:54.759681    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:15:54.759859    3130 handlers.go:161] GET /api/v1/nodes?resourceVersion=0: (649.088µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47248]
+I0509 09:15:55.546179    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:15:55.546350    3130 handlers.go:161] GET /api/v1/nodes: (1.7006ms) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-controller] 192.168.33.10:47274]
+I0509 09:15:57.761269    3130 handlers.go:161] GET /api/v1/watch/nodes?resourceVersion=3&timeoutSeconds=3: (3.000668134s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47248]
+I0509 09:15:58.764592    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:15:58.764754    3130 handlers.go:161] GET /api/v1/nodes?resourceVersion=0: (1.361905ms) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47248]
+I0509 09:16:00.550890    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:16:00.552073    3130 handlers.go:161] GET /api/v1/nodes: (3.311997ms) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-controller] 192.168.33.10:47274]
+I0509 09:16:01.766079    3130 handlers.go:161] GET /api/v1/watch/nodes?resourceVersion=3&timeoutSeconds=3: (3.000664029s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47248]
+I0509 09:16:02.768116    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:16:02.768307    3130 handlers.go:161] GET /api/v1/nodes?resourceVersion=0: (761.47µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47248]
+I0509 09:16:04.202637    3130 handlers.go:161] GET /api/v1/watch/replicationcontrollers?resourceVersion=3&timeoutSeconds=28: (28.000788738s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/replication-controller] 192.168.33.10:47258]
+I0509 09:16:04.203423    3130 handlers.go:161] GET /api/v1/watch/services?resourceVersion=7&timeoutSeconds=28: (28.00060848s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/endpoint-controller] 192.168.33.10:47266]
+I0509 09:16:04.255970    3130 handlers.go:161] GET /apis/extensions/v1beta1/watch/daemonsets?resourceVersion=3&timeoutSeconds=28: (28.001426961s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/daemon-set-controller] 192.168.33.10:47270]
+I0509 09:16:04.256149    3130 handlers.go:161] GET /apis/extensions/v1beta1/watch/horizontalpodautoscalers?resourceVersion=3&timeoutSeconds=28: (28.00129174s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/horizontal-pod-autoscaler] 192.168.33.10:47272]
+I0509 09:16:04.256174    3130 handlers.go:161] GET /apis/extensions/v1beta1/watch/replicasets?resourceVersion=3&timeoutSeconds=28: (28.001846643s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/replicaset-controller] 192.168.33.10:47271]
+I0509 09:16:04.256360    3130 handlers.go:161] GET /apis/batch/v1/watch/jobs?resourceVersion=3&timeoutSeconds=28: (28.001674116s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/job-controller] 192.168.33.10:47268]
+I0509 09:16:04.256620    3130 handlers.go:161] GET /apis/extensions/v1beta1/watch/deployments?resourceVersion=3&timeoutSeconds=28: (28.000654621s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/deployment-controller] 192.168.33.10:47267]
+I0509 09:16:05.205932    3130 meta.go:46] Calling Accessor on non-internal object: *api.ReplicationControllerList
+I0509 09:16:05.206080    3130 meta.go:46] Calling Accessor on non-internal object: *api.ServiceList
+I0509 09:16:05.206110    3130 handlers.go:161] GET /api/v1/replicationcontrollers?resourceVersion=0: (591.243µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/replication-controller] 192.168.33.10:47274]
+I0509 09:16:05.206296    3130 handlers.go:161] GET /api/v1/services?resourceVersion=0: (515.803µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/endpoint-controller] 192.168.33.10:47258]
+I0509 09:16:05.259215    3130 meta.go:46] Calling Accessor on non-internal object: *extensions.DaemonSetList
+I0509 09:16:05.259385    3130 handlers.go:161] GET /apis/extensions/v1beta1/daemonsets?resourceVersion=0: (405.331µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/daemon-set-controller] 192.168.33.10:47282]
+I0509 09:16:05.259682    3130 meta.go:46] Calling Accessor on non-internal object: *extensions.HorizontalPodAutoscalerList
+I0509 09:16:05.259781    3130 meta.go:46] Calling Accessor on non-internal object: *extensions.ReplicaSetList
+I0509 09:16:05.259892    3130 handlers.go:161] GET /apis/extensions/v1beta1/horizontalpodautoscalers?resourceVersion=0: (337.342µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/horizontal-pod-autoscaler] 192.168.33.10:47283]
+I0509 09:16:05.259915    3130 handlers.go:161] GET /apis/extensions/v1beta1/replicasets?resourceVersion=0: (325.562µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/replicaset-controller] 192.168.33.10:47285]
+I0509 09:16:05.260142    3130 meta.go:46] Calling Accessor on non-internal object: *batch.JobList
+I0509 09:16:05.260162    3130 meta.go:46] Calling Accessor on non-internal object: *extensions.DeploymentList
+I0509 09:16:05.260259    3130 handlers.go:161] GET /apis/batch/v1/jobs?resourceVersion=0: (223.079µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/job-controller] 192.168.33.10:47284]
+I0509 09:16:05.260280    3130 handlers.go:161] GET /apis/extensions/v1beta1/deployments?resourceVersion=0: (261.674µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/deployment-controller] 192.168.33.10:47281]
+I0509 09:16:05.555951    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:16:05.556169    3130 handlers.go:161] GET /api/v1/nodes: (1.795258ms) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-controller] 192.168.33.10:47287]
+I0509 09:16:05.771072    3130 handlers.go:161] GET /api/v1/watch/nodes?resourceVersion=3&timeoutSeconds=3: (3.001483414s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47248]
+I0509 09:16:06.773779    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:16:06.773880    3130 handlers.go:161] GET /api/v1/nodes?resourceVersion=0: (485.622µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47248]
+I0509 09:16:07.177178    3130 handlers.go:161] GET /api/v1/watch/persistentvolumeclaims?resourceVersion=3&timeoutSeconds=437: (7m17.000880964s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/persistent-volume-binder] 192.168.33.10:47097]
+I0509 09:16:09.775250    3130 handlers.go:161] GET /api/v1/watch/nodes?resourceVersion=3&timeoutSeconds=3: (3.000717556s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47248]
+I0509 09:16:10.559244    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:16:10.560300    3130 handlers.go:161] GET /api/v1/nodes: (2.553443ms) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-controller] 192.168.33.10:47248]
+I0509 09:16:10.778055    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:16:10.778354    3130 handlers.go:161] GET /api/v1/nodes?resourceVersion=0: (1.583063ms) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47248]
+I0509 09:16:11.160886    3130 handlers.go:161] GET /api/v1/watch/nodes?resourceVersion=3&timeoutSeconds=441: (7m21.001298111s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/daemon-set-controller] 192.168.33.10:47080]
+I0509 09:16:13.780057    3130 handlers.go:161] GET /api/v1/watch/nodes?resourceVersion=3&timeoutSeconds=3: (3.000803827s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47248]
+I0509 09:16:14.783675    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:16:14.783875    3130 handlers.go:161] GET /api/v1/nodes?resourceVersion=0: (568.552µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47248]
+I0509 09:16:15.138161    3130 handlers.go:161] GET /api/v1/watch/pods?resourceVersion=3&timeoutSeconds=445: (7m25.010672673s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/replication-controller] 192.168.33.10:47062]
+I0509 09:16:15.564660    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:16:15.565222    3130 handlers.go:161] GET /api/v1/nodes: (2.218261ms) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-controller] 192.168.33.10:47287]
+I0509 09:16:17.786453    3130 handlers.go:161] GET /api/v1/watch/nodes?resourceVersion=3&timeoutSeconds=3: (3.001711677s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47248]
+I0509 09:16:18.788607    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:16:18.788812    3130 handlers.go:161] GET /api/v1/nodes?resourceVersion=0: (680.11µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47248]
+I0509 09:16:20.569889    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:16:20.570768    3130 handlers.go:161] GET /api/v1/nodes: (2.465652ms) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-controller] 192.168.33.10:47287]
+I0509 09:16:21.791803    3130 handlers.go:161] GET /api/v1/watch/nodes?resourceVersion=3&timeoutSeconds=3: (3.002109939s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47248]
+I0509 09:16:22.795039    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:16:22.795207    3130 handlers.go:161] GET /api/v1/nodes?resourceVersion=0: (548.473µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47248]
+I0509 09:16:23.164771    3130 handlers.go:161] GET /api/v1/watch/namespaces?resourceVersion=6&timeoutSeconds=453: (7m33.000692898s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/service-account-controller] 192.168.33.10:47090]
+I0509 09:16:25.574687    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:16:25.574833    3130 handlers.go:161] GET /api/v1/nodes: (1.80457ms) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-controller] 192.168.33.10:47287]
+I0509 09:16:25.796638    3130 handlers.go:161] GET /api/v1/watch/nodes?resourceVersion=3&timeoutSeconds=3: (3.000798089s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47248]
+I0509 09:16:26.799155    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:16:26.799266    3130 handlers.go:161] GET /api/v1/nodes?resourceVersion=0: (377.037µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47248]
+I0509 09:16:27.137000    3130 handlers.go:161] GET /api/v1/watch/services?resourceVersion=7&timeoutSeconds=457: (7m37.002004501s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/resource-quota-controller] 192.168.33.10:47073]
+I0509 09:16:29.801360    3130 handlers.go:161] GET /api/v1/watch/nodes?resourceVersion=3&timeoutSeconds=3: (3.00156925s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47248]
+I0509 09:16:30.579882    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:16:30.580808    3130 handlers.go:161] GET /api/v1/nodes: (3.095892ms) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-controller] 192.168.33.10:47248]
+I0509 09:16:30.803185    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:16:30.803350    3130 handlers.go:161] GET /api/v1/nodes?resourceVersion=0: (653.604µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47248]
+I0509 09:16:33.208181    3130 handlers.go:161] GET /api/v1/watch/replicationcontrollers?resourceVersion=3&timeoutSeconds=28: (28.000787822s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/replication-controller] 192.168.33.10:47258]
+I0509 09:16:33.208299    3130 handlers.go:161] GET /api/v1/watch/services?resourceVersion=7&timeoutSeconds=28: (28.000533579s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/endpoint-controller] 192.168.33.10:47274]
+I0509 09:16:33.268751    3130 handlers.go:161] GET /apis/extensions/v1beta1/watch/horizontalpodautoscalers?resourceVersion=3&timeoutSeconds=28: (28.006714708s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/horizontal-pod-autoscaler] 192.168.33.10:47283]
+I0509 09:16:33.268819    3130 handlers.go:161] GET /apis/extensions/v1beta1/watch/deployments?resourceVersion=3&timeoutSeconds=28: (28.005225588s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/deployment-controller] 192.168.33.10:47281]
+I0509 09:16:33.268948    3130 handlers.go:161] GET /apis/extensions/v1beta1/watch/daemonsets?resourceVersion=3&timeoutSeconds=28: (28.007023316s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/daemon-set-controller] 192.168.33.10:47282]
+I0509 09:16:33.269138    3130 handlers.go:161] GET /apis/batch/v1/watch/jobs?resourceVersion=3&timeoutSeconds=28: (28.006835625s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/job-controller] 192.168.33.10:47284]
+I0509 09:16:33.269171    3130 handlers.go:161] GET /apis/extensions/v1beta1/watch/replicasets?resourceVersion=3&timeoutSeconds=28: (28.006852603s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/replicaset-controller] 192.168.33.10:47285]
+I0509 09:16:33.806288    3130 handlers.go:161] GET /api/v1/watch/nodes?resourceVersion=3&timeoutSeconds=3: (3.002347251s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47248]
+I0509 09:16:34.209970    3130 meta.go:46] Calling Accessor on non-internal object: *api.ReplicationControllerList
+I0509 09:16:34.210149    3130 handlers.go:161] GET /api/v1/replicationcontrollers?resourceVersion=0: (571.305µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/replication-controller] 192.168.33.10:47287]
+I0509 09:16:34.209982    3130 meta.go:46] Calling Accessor on non-internal object: *api.ServiceList
+I0509 09:16:34.210516    3130 handlers.go:161] GET /api/v1/services?resourceVersion=0: (841.672µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/endpoint-controller] 192.168.33.10:47258]
+I0509 09:16:34.271881    3130 meta.go:46] Calling Accessor on non-internal object: *extensions.HorizontalPodAutoscalerList
+I0509 09:16:34.272066    3130 handlers.go:161] GET /apis/extensions/v1beta1/horizontalpodautoscalers?resourceVersion=0: (585.206µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/horizontal-pod-autoscaler] 192.168.33.10:47290]
+I0509 09:16:34.272367    3130 meta.go:46] Calling Accessor on non-internal object: *batch.JobList
+I0509 09:16:34.272496    3130 handlers.go:161] GET /apis/batch/v1/jobs?resourceVersion=0: (249.103µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/job-controller] 192.168.33.10:47293]
+I0509 09:16:34.272780    3130 meta.go:46] Calling Accessor on non-internal object: *extensions.ReplicaSetList
+I0509 09:16:34.273360    3130 meta.go:46] Calling Accessor on non-internal object: *extensions.DeploymentList
+I0509 09:16:34.273470    3130 handlers.go:161] GET /apis/extensions/v1beta1/deployments?resourceVersion=0: (372.124µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/deployment-controller] 192.168.33.10:47290]
+I0509 09:16:34.273750    3130 meta.go:46] Calling Accessor on non-internal object: *extensions.DaemonSetList
+I0509 09:16:34.273880    3130 handlers.go:161] GET /apis/extensions/v1beta1/daemonsets?resourceVersion=0: (283.614µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/daemon-set-controller] 192.168.33.10:47294]
+I0509 09:16:34.274905    3130 handlers.go:161] GET /apis/extensions/v1beta1/replicasets?resourceVersion=0: (2.282175ms) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/replicaset-controller] 192.168.33.10:47291]
+I0509 09:16:34.808884    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:16:34.809139    3130 handlers.go:161] GET /api/v1/nodes?resourceVersion=0: (580.732µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47296]
+I0509 09:16:35.583949    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:16:35.584173    3130 handlers.go:161] GET /api/v1/nodes: (1.643831ms) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-controller] 192.168.33.10:47298]
+I0509 09:16:37.811886    3130 handlers.go:161] GET /api/v1/watch/nodes?resourceVersion=3&timeoutSeconds=3: (3.002323952s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47296]
+I0509 09:16:38.813523    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:16:38.813660    3130 handlers.go:161] GET /api/v1/nodes?resourceVersion=0: (442.651µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47296]
+I0509 09:16:40.589561    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:16:40.589762    3130 handlers.go:161] GET /api/v1/nodes: (2.001923ms) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-controller] 192.168.33.10:47298]
+I0509 09:16:41.815076    3130 handlers.go:161] GET /api/v1/watch/nodes?resourceVersion=3&timeoutSeconds=3: (3.000753545s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47296]
+I0509 09:16:42.818554    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:16:42.818732    3130 handlers.go:161] GET /api/v1/nodes?resourceVersion=0: (592.772µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47296]
+I0509 09:16:45.593395    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:16:45.593501    3130 handlers.go:161] GET /api/v1/nodes: (2.072575ms) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-controller] 192.168.33.10:47298]
+I0509 09:16:45.821747    3130 handlers.go:161] GET /api/v1/watch/nodes?resourceVersion=3&timeoutSeconds=3: (3.002343096s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47296]
+I0509 09:16:46.823385    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:16:46.823521    3130 handlers.go:161] GET /api/v1/nodes?resourceVersion=0: (371.692µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47296]
+I0509 09:16:49.825626    3130 handlers.go:161] GET /api/v1/watch/nodes?resourceVersion=3&timeoutSeconds=3: (3.001588103s) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47296]
+I0509 09:16:50.597349    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:16:50.597472    3130 handlers.go:161] GET /api/v1/nodes: (1.699809ms) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-controller] 192.168.33.10:47296]
+I0509 09:16:50.828601    3130 meta.go:46] Calling Accessor on non-internal object: *api.NodeList
+I0509 09:16:50.828795    3130 handlers.go:161] GET /api/v1/nodes?resourceVersion=0: (701.823µs) 200 [[km/v0.0.0 (linux/amd64) kubernetes/32621b0/node-status-controller] 192.168.33.10:47296]

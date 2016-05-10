@@ -13,4 +13,5 @@ docker run -d \
   -e MESOS_IP=$1 \
   -e MESOS_QUORUM=$2 \
   -e MESOS_ZK=$MESOS_ZK \
+  -e DOCKER_API_VERSION=v1.21 \
   --name mesos-master-node$2 --net host --restart always $image
