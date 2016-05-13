@@ -6,7 +6,7 @@ set -x
 source init.sh
 source zk/init.sh
 
-image=`cat images|grep marathon`
+image=`cat images|grep mesoscloud/marathon:1.1.1-centos-7`
 
 init-docker-client $1
 docker run -d \

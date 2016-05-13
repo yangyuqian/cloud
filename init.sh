@@ -18,6 +18,7 @@ function init-docker-client(){
 }
 
 export MESOS_ZK="zk://"
+ZK_HOSTS=""
 
 ID=1
 for host in $HOSTS
@@ -26,12 +27,15 @@ do
   if test $ID -gt 1
   then
     export MESOS_ZK="$MESOS_ZK,"
+    export ZK_HOSTS="$ZK_HOSTS,"
   fi
 
   export MESOS_ZK="${MESOS_ZK}${host}:2181"
+  export ZK_HOSTS="${ZK_HOSTS}${host}:2181"
 
   ID=$((ID + 1))
 done
+
 export ZK_CLUSTER="$MESOS_ZK"
 export MESOS_ZK="$ZK_CLUSTER/mesos"
 export MARATHON_ZK="$ZK_CLUSTER/marathon"
