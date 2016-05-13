@@ -16,4 +16,5 @@ docker run -d \
   -e MARATHON_HTTP_ADDRESS=$1 \
   -e MARATHON_MASTER=$MESOS_ZK \
   -e MARATHON_ZK=$MARATHON_ZK \
+  --hostname marathon-node$2 \
   --name marathon-node$2 --net host --restart always $image

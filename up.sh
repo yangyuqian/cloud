@@ -32,3 +32,4 @@ do
   ID=$((ID + 1))
 done
 
+./mesos-dns/start.sh $CAPITAL_HOST

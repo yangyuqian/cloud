@@ -1,6 +1,7 @@
 #!/bin/bash
 
 export HOSTS=`cat ./hosts`
+export CAPITAL_HOST=`cat ./hosts|head -n 1`
 export IMAGES=`cat ./images`
 export USELESS_REGEX=`cat ./useless`
 

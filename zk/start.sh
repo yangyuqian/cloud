@@ -13,5 +13,6 @@ docker run -d \
 -e MYID=$2 \
 -e LIBPROCESS_IP=$1 \
 -e SERVERS=$hosts \
+--hostname zk-node$2 \
 --name=zk-node$2 --net=host --restart=always $image
 

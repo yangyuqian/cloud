@@ -17,5 +17,6 @@ docker run -d \
   -v /var/run/docker.sock:/var/run/docker.sock \
   -v /var/lib/docker:/var/lib/docker \
   -v /tmp:/tmp \
+  --hostname mesos-slave-node$2 \
   --name mesos-slave-node$2 --net host --privileged --restart always \
   $image
