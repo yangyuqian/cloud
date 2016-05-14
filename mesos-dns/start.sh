@@ -13,5 +13,4 @@ docker run -d \
   -e LIBPROCESS_IP=$1 \
   -v "/root/config.json:/config.json" \
   -v "/root/logs:/tmp" \
-  --hostname mesos-dns-node$2 \
-  --name mesos-dns-node$2 --net host --restart always $image /mesos-dns -v=2 -config=/config.json
+  --name mesos-dns-node$2 --net host $image /mesos-dns -v=2 -config=/config.json
