@@ -5,3 +5,5 @@ mesoscloud/marathon:1.1.1-centos-7
 mesosphere/mesos-dns:latest
 mesoscloud/haproxy:1.5.14-centos-7
 yangyuqian/haproxy-marathon:latest
+yangyuqian/graphviz-webapp
+omerio/graphviz-server
