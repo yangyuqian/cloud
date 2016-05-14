@@ -33,12 +33,12 @@ do
 done
 
 # service discovery with marathon-haproxy
-# sleep 10
-# ID=1
-# for host in $HOSTS
-# do
-#   ./haproxy-marathon/start.sh $host $ID
-#   ID=$((ID + 1))
-# done
+sleep 10
+ID=1
+for host in $HOSTS
+do
+  ./haproxy-marathon/start.sh $host $ID
+  ID=$((ID + 1))
+done
 
 ./mesos-dns/start.sh $CAPITAL_HOST
