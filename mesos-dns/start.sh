@@ -14,4 +14,4 @@ docker run -d \
   -v "/root/config.json:/config.json" \
   -v "/root/logs:/tmp" \
   --hostname mesos-dns-node$2 \
-  --name mesos-dns-node$2 --net host --restart always $image /usr/bin/mesos-dns -v=2 -config=/config.json
+  --name mesos-dns-node$2 --net host --restart always $image /mesos-dns -v=2 -config=/config.json

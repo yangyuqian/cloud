@@ -2,7 +2,6 @@ mesoscloud/zookeeper:3.4.8-centos-7
 mesoscloud/mesos-master:0.24.1-centos-7
 mesoscloud/mesos-slave:0.24.1-centos-7
 mesoscloud/marathon:1.1.1-centos-7
-yangyuqian/kubernetes:latest
 mesosphere/mesos-dns:latest
 mesoscloud/haproxy:1.5.14-centos-7
 yangyuqian/haproxy-marathon:latest
